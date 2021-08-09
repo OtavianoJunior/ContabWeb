@@ -2214,8 +2214,8 @@
       "modelType": "Table",
       "name": "MUNICIPIO",
       "position": {
-        "x": 1094,
-        "y": 254
+        "x": 1098,
+        "y": 260
       },
       "queries": [],
       "realName": "",
