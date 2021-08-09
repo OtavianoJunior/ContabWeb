@@ -3,6 +3,8 @@
     <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
+        <class>app.entity.MUNICIPIO</class>
+        <class>app.entity.UF</class>
         <class>app.entity.RoleSecurable</class>
         <class>app.entity.Securable</class>
         <class>app.entity.UserSecurable</class>
