@@ -21,7 +21,8 @@ public static Var DataLastrec() throws Exception {
  return new Callable<Var>() {
 
    public Var call() throws Exception {
-    return Var.VAR_NULL;
+    return
+cronapi.dateTime.Operations.getNow();
    }
  }.call();
 }
