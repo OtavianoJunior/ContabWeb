@@ -39,23 +39,5 @@ Var.valueOf("this[0].normalizedUserName"));
  }.call();
 }
 
-/**
- *
- * @return Var
- */
-// Usuario
-public static Var ObterMunicipioUsuarioLogado() throws Exception {
- return new Callable<Var>() {
-
-   public Var call() throws Exception {
-    return
-cronapi.database.Operations.getField(
-cronapi.database.Operations.query(Var.valueOf("app.entity.User"),Var.valueOf("select u from User u where u.normalizedUserName = :normalizedUserName"),Var.valueOf("normalizedUserName",
-cronapi.util.Operations.getCurrentUserName())),
-Var.VAR_NULL);
-   }
- }.call();
-}
-
 }
 
