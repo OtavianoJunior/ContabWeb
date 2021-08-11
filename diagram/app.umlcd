@@ -2214,13 +2214,8 @@
       "modelType": "Table",
       "name": "MUNICIPIO",
       "position": {
-<<<<<<< HEAD
-        "x": 1096,
-        "y": 254
-=======
         "x": 1098,
         "y": 260
->>>>>>> branch 'master' of https://github.com/OtavianoJunior/ContabWeb.git
       },
       "queries": [],
       "realName": "",

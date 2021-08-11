@@ -1,0 +1,167 @@
+{
+  "customId": "query122461",
+  "queryName": "Entidade-users",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "ENTIDADE",
+  "entityFullName": "app.entity.ENTIDADE",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "ENTIDADE",
+        "namespace": "app.entity.ENTIDADE",
+        "alias": "e"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "e",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "e.coD_USUARIO",
+          "field": "e.coD_USUARIO",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":coD_USUARIO",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "coD_USUARIO",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "obterIdLogado",
+        "blocklyClass": "blockly.ValidaUser",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.ValidaUser",
+          "sourcePath": "src/main/java/blockly/valida-user.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "obterIdLogado",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id_ENTIDADE": null,
+    "coD_ENTIDADE": null,
+    "deS_TIPOENTIDADE": null,
+    "nrO_CGC": null,
+    "nrO_INSCESTADUAL": null,
+    "deS_ENTIDADE": null,
+    "deS_LOGRADOURO": null,
+    "nrO_ENDERECO": null,
+    "deS_COMPLEMENTO": null,
+    "deS_BAIRRO": null,
+    "nrO_CEP": null,
+    "nrO_TELEFONE": null,
+    "nrO_FAX": null,
+    "deS_EMAIL": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_MUNICIPIO": null
+  },
+  "defaultValuesProperties": {
+    "id_ENTIDADE": null,
+    "coD_ENTIDADE": null,
+    "deS_TIPOENTIDADE": null,
+    "nrO_CGC": null,
+    "nrO_INSCESTADUAL": null,
+    "deS_ENTIDADE": null,
+    "deS_LOGRADOURO": null,
+    "nrO_ENDERECO": null,
+    "deS_COMPLEMENTO": null,
+    "deS_BAIRRO": null,
+    "nrO_CEP": null,
+    "nrO_TELEFONE": null,
+    "nrO_FAX": null,
+    "deS_EMAIL": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_MUNICIPIO": null
+  },
+  "security": {
+    "id_ENTIDADE": null,
+    "coD_ENTIDADE": null,
+    "deS_TIPOENTIDADE": null,
+    "nrO_CGC": null,
+    "nrO_INSCESTADUAL": null,
+    "deS_ENTIDADE": null,
+    "deS_LOGRADOURO": null,
+    "nrO_ENDERECO": null,
+    "deS_COMPLEMENTO": null,
+    "deS_BAIRRO": null,
+    "nrO_CEP": null,
+    "nrO_TELEFONE": null,
+    "nrO_FAX": null,
+    "deS_EMAIL": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_MUNICIPIO": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query122461/",
+  "audit": false
+}
