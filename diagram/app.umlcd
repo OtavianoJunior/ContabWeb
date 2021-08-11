@@ -33,6 +33,427 @@
     {
       "angle": 0,
       "attributes": [
+        "ID_ANOFISCAL:java.lang.Integer",
+        "NRO_ANOFISCAL:java.lang.Integer",
+        "COD_ENTIDADE:java.lang.Integer",
+        "COD_MUNICIPIO:java.lang.Integer",
+        "DES_MASCCONTAB:java.lang.String",
+        "DES_UNIDORC:java.lang.String",
+        "DES_MASCRECEITA:java.lang.String",
+        "DES_MASCDESPESAFIXA:java.lang.String",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String",
+        "ID_ESTRUTURAPLANO:PCA_ESTRUTURAPLANO"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 250,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_ANOFISCAL\nNRO_ANOFISCAL\nCOD_ENTIDADE\nCOD_MUNICIPIO\nDES_MASCCONTAB\nDES_UNIDORC\nDES_MASCRECEITA\nDES_MASCDESPESAFIXA\nDAT_LASTREC\nCOD_USUARIO\nID_ESTRUTURAPLANO\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 171.59375,
+          "text": "Inteiro\nInteiro\nInteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nPCA_ESTRUTURAPLANO\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,300)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "ANOFISCALENTIDADE"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_ANOFISCAL",
+          "type": "java.lang.Integer",
+          "dbName": "ID_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Id_anofiscal",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "NRO_ANOFISCAL",
+          "type": "java.lang.Integer",
+          "dbName": "NRO_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_ENTIDADE",
+          "type": "java.lang.Integer",
+          "dbName": "COD_ENTIDADE",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Entidade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_MUNICIPIO",
+          "type": "java.lang.Integer",
+          "dbName": "COD_MUNICIPIO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Município",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_MASCCONTAB",
+          "type": "java.lang.String",
+          "dbName": "DES_MASCCONTAB",
+          "dbLength": 20,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Máscara Contábil",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_UNIDORC",
+          "type": "java.lang.String",
+          "dbName": "DES_UNIDORC",
+          "dbLength": 20,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Máscara da Unidade Orçamentária",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_MASCRECEITA",
+          "type": "java.lang.String",
+          "dbName": "DES_MASCRECEITA",
+          "dbLength": 20,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Máscara da Receita",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_MASCDESPESAFIXA",
+          "type": "java.lang.String",
+          "dbName": "DES_MASCDESPESAFIXA",
+          "dbLength": 20,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Máscara da Despesa",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ESTRUTURAPLANO",
+          "type": "PCA_ESTRUTURAPLANO",
+          "dbName": "ID_ESTRUTURAPLANO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Estrutura do Plano de Contas",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "2166da61-583a-4185-8d73-700c21589979",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "ANOFISCALENTIDADE",
+      "position": {
+        "x": 1842,
+        "y": 18
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 205.984130859375,
+        "width": 323.296875
+      },
+      "tableName": "ANOFISCALENTIDADE",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 32
+    },
+    {
+      "angle": 0,
+      "attributes": [
         "id:java.lang.String",
         "name:java.lang.String"
       ],
@@ -765,6 +1186,912 @@
       "tableName": "AUDIT_LOG",
       "type": "uml.Class",
       "z": 14
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "ID_DESPESACLASSIFICACAO:java.lang.Integer",
+        "COD_DESPESA:java.lang.String",
+        "COD_DESPESASEMMASCARA:java.lang.String",
+        "DES_DESPESA:java.lang.StringBuffer",
+        "FLG_SICOM:java.lang.String",
+        "IDT_TIPODESPESA:java.lang.String",
+        "FLG_SINTETICA:java.lang.String",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String",
+        "COD_DESPESASUP:DESPESACLASSIFICACAO",
+        "ID_ANOFISCAL:ANOFISCALENTIDADE"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 250,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_DESPESACLASSIFICACAO\nCOD_DESPESA\nCOD_DESPESASEMMASCARA\nDES_DESPESA\nFLG_SICOM\nIDT_TIPODESPESA\nFLG_SINTETICA\nDAT_LASTREC\nCOD_USUARIO\nCOD_DESPESASUP\nID_ANOFISCAL\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 195.4375,
+          "text": "Inteiro\nTexto\nTexto\nTexto Longo\nTexto\nTexto\nTexto\nData e Hora\nTexto\nDESPESACLASSIFICACAO\nANOFISCALENTIDADE\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,300)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "DESPESACLASSIFICACAO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_DESPESACLASSIFICACAO",
+          "type": "java.lang.Integer",
+          "dbName": "ID_DESPESACLASSIFICACAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "ID  DESPESACLASSIFICACAO",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_DESPESA",
+          "type": "java.lang.String",
+          "dbName": "COD_DESPESA",
+          "dbLength": 13,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_DESPESASEMMASCARA",
+          "type": "java.lang.String",
+          "dbName": "COD_DESPESASEMMASCARA",
+          "dbLength": 13,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código da Despesa sem Máscara",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_DESPESA",
+          "type": "java.lang.StringBuffer",
+          "dbName": "DES_DESPESA",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_SICOM",
+          "type": "java.lang.String",
+          "dbName": "FLG_SICOM",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Sicom",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "IDT_TIPODESPESA",
+          "type": "java.lang.String",
+          "dbName": "IDT_TIPODESPESA",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Tipo de Despesa",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_SINTETICA",
+          "type": "java.lang.String",
+          "dbName": "FLG_SINTETICA",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Sintética",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_DESPESASUP",
+          "type": "DESPESACLASSIFICACAO",
+          "dbName": "COD_DESPESASUP",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código Superior",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ANOFISCAL",
+          "type": "ANOFISCALENTIDADE",
+          "dbName": "ID_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "e7a63482-11d4-4835-9b4c-9ee024984e30",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "DESPESACLASSIFICACAO",
+      "position": {
+        "x": 2642,
+        "y": 972
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 205.984130859375,
+        "width": 353.875
+      },
+      "tableName": "DESPESACLASSIFICACAO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 47
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "SEQ_DESPESAORCAMENTO:java.lang.Integer",
+        "COD_FICHA:java.lang.String",
+        "VLR_FIXADO:java.lang.Double",
+        "DAT_LASREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String",
+        "ID_ANOFISCAL:ANOFISCALENTIDADE",
+        "ID_UNIDORC:PPA_UNIDADEORCAMENTO",
+        "ID_FUNCAO:PPA_FUNCAO",
+        "ID_SUBFUNCAO:PPA_SUBFUNCAO",
+        "ID_PROGRAMA:PPA_PROGRAMA",
+        "ID_ACAO:PPA_ACAO",
+        "ID_DESPESA:DESPESACLASSIFICACAO",
+        "ID_FONTERECURSO:FONTERECURSO"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 290,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "SEQ_DESPESAORCAMENTO\nCOD_FICHA\nVLR_FIXADO\nDAT_LASREC\nCOD_USUARIO\nID_ANOFISCAL\nID_UNIDORC\nID_FUNCAO\nID_SUBFUNCAO\nID_PROGRAMA\nID_ACAO\nID_DESPESA\nID_FONTERECURSO\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 188.0625,
+          "text": "Inteiro\nTexto\nNumérico\nData e Hora\nTexto\nANOFISCALENTIDADE\nPPA_UNIDADEORCAMENTO\nPPA_FUNCAO\nPPA_SUBFUNCAO\nPPA_PROGRAMA\nPPA_ACAO\nDESPESACLASSIFICACAO\nFONTERECURSO\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,340)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "DESPESAORCAMENTO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "SEQ_DESPESAORCAMENTO",
+          "type": "java.lang.Integer",
+          "dbName": "SEQ_DESPESAORCAMENTO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Sequência Despesa",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_FICHA",
+          "type": "java.lang.String",
+          "dbName": "COD_FICHA",
+          "dbLength": 10,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ficha",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "VLR_FIXADO",
+          "type": "java.lang.Double",
+          "dbName": "VLR_FIXADO",
+          "dbLength": 18,
+          "dbPrecision": 2,
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Valor Fixado",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ANOFISCAL",
+          "type": "ANOFISCALENTIDADE",
+          "dbName": "ID_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_UNIDORC",
+          "type": "PPA_UNIDADEORCAMENTO",
+          "dbName": "ID_UNIDORC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Unidade Orçamentária",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_FUNCAO",
+          "type": "PPA_FUNCAO",
+          "dbName": "ID_FUNCAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Função",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_SUBFUNCAO",
+          "type": "PPA_SUBFUNCAO",
+          "dbName": "ID_SUBFUNCAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Subfunção",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_PROGRAMA",
+          "type": "PPA_PROGRAMA",
+          "dbName": "ID_PROGRAMA",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Programa",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ACAO",
+          "type": "PPA_ACAO",
+          "dbName": "ID_ACAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Projeto / Atividade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_DESPESA",
+          "type": "DESPESACLASSIFICACAO",
+          "dbName": "ID_DESPESA",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Natureza da Despesa",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_FONTERECURSO",
+          "type": "FONTERECURSO",
+          "dbName": "ID_FONTERECURSO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Fonte Recurso",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "DESPESAORCAMENTO",
+      "position": {
+        "x": 2596,
+        "y": 572
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 227.90223693847656,
+        "width": 354.625
+      },
+      "tableName": "DESPESAORCAMENTO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 43
     },
     {
       "angle": 0,
@@ -1593,7 +2920,7 @@
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
-          "label": "ID  MUNICIPIO",
+          "label": "Município",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -1624,8 +2951,8 @@
       "modelType": "Table",
       "name": "ENTIDADE",
       "position": {
-        "x": 1492,
-        "y": 102
+        "x": 1488,
+        "y": 60
       },
       "queries": [],
       "realName": "",
@@ -1640,6 +2967,427 @@
       "tableScheme": null,
       "type": "uml.Class",
       "z": 27
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "ID_FONTERECURSO:java.lang.Integer",
+        "COD_FONTERECURSO:java.lang.Integer",
+        "DES_FONTERECURSO:java.lang.String",
+        "COD_FONTERECURSODESTINACAOSUP:java.lang.String",
+        "COD_FONTESEMMASCARA:java.lang.String",
+        "IDT_TIPORECURSO:java.lang.String",
+        "FLG_SINTETICA:java.lang.String",
+        "FLG_SICOM:java.lang.String",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String",
+        "ID_ANOFISCAL:ANOFISCALENTIDADE"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 250,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_FONTERECURSO\nCOD_FONTERECURSO\nDES_FONTERECURSO\nCOD_FONTERECURSODESTINACAOSUP\nCOD_FONTESEMMASCARA\nIDT_TIPORECURSO\nFLG_SINTETICA\nFLG_SICOM\nDAT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 251.640625,
+          "text": "Inteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,300)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "FONTERECURSO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_FONTERECURSO",
+          "type": "java.lang.Integer",
+          "dbName": "ID_FONTERECURSO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Id_fonterecurso",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_FONTERECURSO",
+          "type": "java.lang.Integer",
+          "dbName": "COD_FONTERECURSO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Fonte de Recurso",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_FONTERECURSO",
+          "type": "java.lang.String",
+          "dbName": "DES_FONTERECURSO",
+          "dbLength": 40,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_FONTERECURSODESTINACAOSUP",
+          "type": "java.lang.String",
+          "dbName": "COD_FONTERECURSODESTINACAOSUP",
+          "dbLength": 20,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código Superior",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_FONTESEMMASCARA",
+          "type": "java.lang.String",
+          "dbName": "COD_FONTESEMMASCARA",
+          "dbLength": 20,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código sem máscara",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "IDT_TIPORECURSO",
+          "type": "java.lang.String",
+          "dbName": "IDT_TIPORECURSO",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Tipo do Recurso",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_SINTETICA",
+          "type": "java.lang.String",
+          "dbName": "FLG_SINTETICA",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Conta Sintética",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_SICOM",
+          "type": "java.lang.String",
+          "dbName": "FLG_SICOM",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Sicom",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ANOFISCAL",
+          "type": "ANOFISCALENTIDADE",
+          "dbName": "ID_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "FONTERECURSO",
+      "position": {
+        "x": 3040,
+        "y": 366
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 205.984130859375,
+        "width": 388.28125
+      },
+      "tableName": "FONTERECURSO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 44
     },
     {
       "angle": 0,
@@ -2183,7 +3931,7 @@
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
-          "label": "ID  UF",
+          "label": "UF",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -2214,8 +3962,8 @@
       "modelType": "Table",
       "name": "MUNICIPIO",
       "position": {
-        "x": 1098,
-        "y": 260
+        "x": 1070,
+        "y": 274
       },
       "queries": [],
       "realName": "",
@@ -2230,6 +3978,2409 @@
       "tableScheme": null,
       "type": "uml.Class",
       "z": 26
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "ID_ORGAOSICOM:java.lang.Integer",
+        "NRO_ANOFISCAL:java.lang.Integer",
+        "COD_ORGAOSICOM:java.lang.Integer",
+        "DES_ORGAOSICOM:java.lang.String",
+        "COD_CPFGESTOR:java.lang.String",
+        "DES_NOMEGESTOR:java.lang.String",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 190,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_ORGAOSICOM\nNRO_ANOFISCAL\nCOD_ORGAOSICOM\nDES_ORGAOSICOM\nCOD_CPFGESTOR\nDES_NOMEGESTOR\nDAT_LASTREC\nCOD_USUARIO\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 143.046875,
+          "text": "Inteiro\nInteiro\nInteiro\nTexto\nTexto\nTexto\nData e Hora\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,240)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "ORGAOSICOM"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_ORGAOSICOM",
+          "type": "java.lang.Integer",
+          "dbName": "ID_ORGAOSICOM",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Id Orgao",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "NRO_ANOFISCAL",
+          "type": "java.lang.Integer",
+          "dbName": "NRO_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_ORGAOSICOM",
+          "type": "java.lang.Integer",
+          "dbName": "COD_ORGAOSICOM",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Órgão ",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_ORGAOSICOM",
+          "type": "java.lang.String",
+          "dbName": "DES_ORGAOSICOM",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_CPFGESTOR",
+          "type": "java.lang.String",
+          "dbName": "COD_CPFGESTOR",
+          "dbLength": 20,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "CPF Gestor",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_NOMEGESTOR",
+          "type": "java.lang.String",
+          "dbName": "DES_NOMEGESTOR",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Nome Gestor",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "83c93365-a696-461e-aef3-731645a0b96d",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "ORGAOSICOM",
+      "position": {
+        "x": 2798,
+        "y": 126
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 173.1524887084961,
+        "width": 220.359375
+      },
+      "tableName": "ORGAOSICOM",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 38
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "ID_ESTRUTURAPLANO:java.lang.Integer",
+        "COD_ESTRUTURA:java.lang.String",
+        "DES_ESTRUTURA:java.lang.StringBuffer",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String",
+        "ID_ENTIDADE:ENTIDADE"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 150,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_ESTRUTURAPLANO\nCOD_ESTRUTURA\nDES_ESTRUTURA\nDAT_LASTREC\nCOD_USUARIO\nID_ENTIDADE\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 156.078125,
+          "text": "Inteiro\nTexto\nTexto Longo\nData e Hora\nTexto\nENTIDADE\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,200)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "PCA_ESTRUTURAPLANO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_ESTRUTURAPLANO",
+          "type": "java.lang.Integer",
+          "dbName": "ID_ESTRUTURAPLANO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "id_estruturaplano",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_ESTRUTURA",
+          "type": "java.lang.String",
+          "dbName": "COD_ESTRUTURA",
+          "dbLength": 6,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código da Estrutura",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_ESTRUTURA",
+          "type": "java.lang.StringBuffer",
+          "dbName": "DES_ESTRUTURA",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ENTIDADE",
+          "type": "ENTIDADE",
+          "dbName": "ID_ENTIDADE",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Entidade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "fb86ad78-bbb0-4f7f-9d98-44d9a304bfef",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "PCA_ESTRUTURAPLANO",
+      "position": {
+        "x": 3108,
+        "y": -12
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 151.31351470947266,
+        "width": 234.015625
+      },
+      "tableName": "PCA_ESTRUTURAPLANO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 46
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "ID_ACAO:java.lang.Integer",
+        "COD_ACAO:java.lang.Integer",
+        "DES_ACAO:java.lang.StringBuffer",
+        "DES_ACAORESUMIDA:java.lang.String",
+        "IDT_TIPOACAO:java.lang.String",
+        "DES_PRODUTO:java.lang.StringBuffer",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String",
+        "ID_ANOFISCAL:ANOFISCALENTIDADE"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 210,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_ACAO\nCOD_ACAO\nDES_ACAO\nDES_ACAORESUMIDA\nIDT_TIPOACAO\nDES_PRODUTO\nDAT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 152.640625,
+          "text": "Inteiro\nInteiro\nTexto Longo\nTexto\nTexto\nTexto Longo\nData e Hora\nTexto\nANOFISCALENTIDADE\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,260)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "PPA_ACAO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_ACAO",
+          "type": "java.lang.Integer",
+          "dbName": "ID_ACAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Id_acao",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_ACAO",
+          "type": "java.lang.Integer",
+          "dbName": "COD_ACAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ação",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_ACAO",
+          "type": "java.lang.StringBuffer",
+          "dbName": "DES_ACAO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_ACAORESUMIDA",
+          "type": "java.lang.String",
+          "dbName": "DES_ACAORESUMIDA",
+          "dbLength": 40,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição Resumida ",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "IDT_TIPOACAO",
+          "type": "java.lang.String",
+          "dbName": "IDT_TIPOACAO",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Tipo de Ação",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_PRODUTO",
+          "type": "java.lang.StringBuffer",
+          "dbName": "DES_PRODUTO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Produto",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ANOFISCAL",
+          "type": "ANOFISCALENTIDADE",
+          "dbName": "ID_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "d5beb815-b456-45d1-bd14-d99fa6604bde",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "PPA_ACAO",
+      "position": {
+        "x": 1506,
+        "y": 606
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 184.088623046875,
+        "width": 289.28125
+      },
+      "tableName": "PPA_ACAO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 45
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "ID_FUNCAO:java.lang.Integer",
+        "COD_FUNCAO:java.lang.String",
+        "DES_FUNCAO:java.lang.String",
+        "FLG_SAUDE:java.lang.String",
+        "FLG_EDUCACAO:java.lang.String",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 170,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_FUNCAO\nCOD_FUNCAO\nDES_FUNCAO\nFLG_SAUDE\nFLG_EDUCACAO\nDAT_LASTREC\nCOD_USUARIO\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 124.296875,
+          "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,220)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "PPA_FUNCAO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_FUNCAO",
+          "type": "java.lang.Integer",
+          "dbName": "ID_FUNCAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Id_Funcao",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_FUNCAO",
+          "type": "java.lang.String",
+          "dbName": "COD_FUNCAO",
+          "dbLength": 2,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Função",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_FUNCAO",
+          "type": "java.lang.String",
+          "dbName": "DES_FUNCAO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_SAUDE",
+          "type": "java.lang.String",
+          "dbName": "FLG_SAUDE",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Saúde",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_EDUCACAO",
+          "type": "java.lang.String",
+          "dbName": "FLG_EDUCACAO",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Educação",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "ca776754-e2e5-4872-89ce-d02a052ab4d2",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "PPA_FUNCAO",
+      "position": {
+        "x": 1834,
+        "y": 810
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 162.2265625,
+        "width": 201.609375
+      },
+      "tableName": "PPA_FUNCAO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 36
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "ID_PROGRAMA:java.lang.Integer",
+        "COD_PROGRAMA:java.lang.String",
+        "DES_PROGRAMA:java.lang.StringBuffer",
+        "DES_PROGRAMA_ORC:java.lang.String",
+        "DES_PIBLICOALVO:java.lang.StringBuffer",
+        "DES_FORMULA:java.lang.StringBuffer",
+        "FLG_NOVO:java.lang.String",
+        "FLG_CAPTURADOORCAMENTO:java.lang.String",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String",
+        "ID_ANOFISCAL:ANOFISCALENTIDADE"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 250,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_PROGRAMA\nCOD_PROGRAMA\nDES_PROGRAMA\nDES_PROGRAMA_ORC\nDES_PIBLICOALVO\nDES_FORMULA\nFLG_NOVO\nFLG_CAPTURADOORCAMENTO\nDAT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 202.328125,
+          "text": "Inteiro\nTexto\nTexto Longo\nTexto\nTexto Longo\nTexto Longo\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,300)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "PPA_PROGRAMA"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_PROGRAMA",
+          "type": "java.lang.Integer",
+          "dbName": "ID_PROGRAMA",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Id_programa",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_PROGRAMA",
+          "type": "java.lang.String",
+          "dbName": "COD_PROGRAMA",
+          "dbLength": 4,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Programa",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_PROGRAMA",
+          "type": "java.lang.StringBuffer",
+          "dbName": "DES_PROGRAMA",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Denominação",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_PROGRAMA_ORC",
+          "type": "java.lang.String",
+          "dbName": "DES_PROGRAMA_ORC",
+          "dbLength": 40,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Denominação Resumida",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_PIBLICOALVO",
+          "type": "java.lang.StringBuffer",
+          "dbName": "DES_PIBLICOALVO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Público Alvo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_FORMULA",
+          "type": "java.lang.StringBuffer",
+          "dbName": "DES_FORMULA",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Fórluma Cálculo",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_NOVO",
+          "type": "java.lang.String",
+          "dbName": "FLG_NOVO",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Situação",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_CAPTURADOORCAMENTO",
+          "type": "java.lang.String",
+          "dbName": "FLG_CAPTURADOORCAMENTO",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Natureza",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ANOFISCAL",
+          "type": "ANOFISCALENTIDADE",
+          "dbName": "ID_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "90449c8e-3365-4350-843d-de1e66f88b75",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "PPA_PROGRAMA",
+      "position": {
+        "x": 1844,
+        "y": 412
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 205.984130859375,
+        "width": 338.96875
+      },
+      "tableName": "PPA_PROGRAMA",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 35
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "ID_SUBFUNCAO:java.lang.Integer",
+        "COD_SUBFUNCAO:java.lang.String",
+        "DES_SUBFUNCAO:java.lang.String",
+        "FLG_SAUDE:java.lang.String",
+        "FLG_EDUCACAO:java.lang.String",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 170,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_SUBFUNCAO\nCOD_SUBFUNCAO\nDES_SUBFUNCAO\nFLG_SAUDE\nFLG_EDUCACAO\nDAT_LASTREC\nCOD_USUARIO\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 134.078125,
+          "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,220)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "PPA_SUBFUNCAO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_SUBFUNCAO",
+          "type": "java.lang.Integer",
+          "dbName": "ID_SUBFUNCAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Id_subfuncao",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_SUBFUNCAO",
+          "type": "java.lang.String",
+          "dbName": "COD_SUBFUNCAO",
+          "dbLength": 3,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Subfunção",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_SUBFUNCAO",
+          "type": "java.lang.String",
+          "dbName": "DES_SUBFUNCAO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_SAUDE",
+          "type": "java.lang.String",
+          "dbName": "FLG_SAUDE",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Saúde",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_EDUCACAO",
+          "type": "java.lang.String",
+          "dbName": "FLG_EDUCACAO",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Educação",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "8d5e5044-e238-49ea-9c56-f6cbe1d9e807",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "PPA_SUBFUNCAO",
+      "position": {
+        "x": 1826,
+        "y": 1008
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 162.2265625,
+        "width": 211.390625
+      },
+      "tableName": "PPA_SUBFUNCAO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 37
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "ID_UNIDORC:java.lang.Integer",
+        "COD_UNIDORC:java.lang.String",
+        "DES_UNIDADEORC:java.lang.String",
+        "FLG_SINTETICA:java.lang.String",
+        "COD_UNIDORCSEMMASCARA:java.lang.String",
+        "DAT_CRIACAO:java.sql.Date",
+        "DAT_EXTINCAO:java.sql.Date",
+        "DAT_LASTREC:java.sql.Date",
+        "COD_USUARIO:java.lang.String",
+        "ID_UNIDORCSUP:PPA_UNIDADEORCAMENTO",
+        "ID_ORGAOSICOM:ORGAOSICOM",
+        "ID_ANOFISCALENTIDADE:ANOFISCALENTIDADE"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 270,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_UNIDORC\nCOD_UNIDORC\nDES_UNIDADEORC\nFLG_SINTETICA\nCOD_UNIDORCSEMMASCARA\nDAT_CRIACAO\nDAT_EXTINCAO\nDAT_LASTREC\nCOD_USUARIO\nID_UNIDORCSUP\nID_ORGAOSICOM\nID_ANOFISCALENTIDADE\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 194.796875,
+          "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nData e Hora\nData e Hora\nTexto\nPPA_UNIDADEORCAMENTO\nORGAOSICOM\nANOFISCALENTIDADE\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,320)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "PPA_UNIDADEORCAMENTO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_UNIDORC",
+          "type": "java.lang.Integer",
+          "dbName": "ID_UNIDORC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "ID  UNIDORC",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_UNIDORC",
+          "type": "java.lang.String",
+          "dbName": "COD_UNIDORC",
+          "dbLength": 8,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DES_UNIDADEORC",
+          "type": "java.lang.String",
+          "dbName": "DES_UNIDADEORC",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "FLG_SINTETICA",
+          "type": "java.lang.String",
+          "dbName": "FLG_SINTETICA",
+          "dbLength": 1,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Conta Sintética",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_UNIDORCSEMMASCARA",
+          "type": "java.lang.String",
+          "dbName": "COD_UNIDORCSEMMASCARA",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código sem máscara",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_CRIACAO",
+          "type": "java.sql.Date",
+          "dbName": "DAT_CRIACAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Data da Criação",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_EXTINCAO",
+          "type": "java.sql.Date",
+          "dbName": "DAT_EXTINCAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Data da Extinção",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DAT_LASTREC",
+          "type": "java.sql.Date",
+          "dbName": "DAT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_UNIDORCSUP",
+          "type": "PPA_UNIDADEORCAMENTO",
+          "dbName": "ID_UNIDORCSUP",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código Superior",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ORGAOSICOM",
+          "type": "ORGAOSICOM",
+          "dbName": "ID_ORGAOSICOM",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Órgão Sicom",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ANOFISCALENTIDADE",
+          "type": "ANOFISCALENTIDADE",
+          "dbName": "ID_ANOFISCALENTIDADE",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "9ef94dfa-d23e-4bc1-ad20-d36870a91dd5",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "PPA_UNIDADEORCAMENTO",
+      "position": {
+        "x": 2256,
+        "y": 160
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 216.94085693359375,
+        "width": 361.359375
+      },
+      "tableName": "PPA_UNIDADEORCAMENTO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 34
     },
     {
       "angle": 0,
@@ -3249,6 +7400,203 @@
     {
       "angle": 0,
       "attributes": [
+        "ID_USER:java.lang.String",
+        "ID_ENTIDADE:ENTIDADE",
+        "ID_ANOFISCAL:ANOFISCALENTIDADE",
+        "user:User"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 110,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "ID_USER\nID_ENTIDADE\nID_ANOFISCAL\nuser\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 114.359375,
+          "text": "Texto\nENTIDADE\nANOFISCALENTIDADE\nUser\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,160)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "USERACESSO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "ID_USER",
+          "type": "java.lang.String",
+          "dbName": "ID_USER",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ENTIDADE",
+          "type": "ENTIDADE",
+          "dbName": "ID_ENTIDADE",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Entidade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ANOFISCAL",
+          "type": "ANOFISCALENTIDADE",
+          "dbName": "ID_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "user",
+          "type": "User",
+          "dbName": "fk_user",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "9349d8af-328b-4879-ad00-7e83ba9e884b",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "USERACESSO",
+      "position": {
+        "x": 1196,
+        "y": 514
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 129.54235076904297,
+        "width": 251
+      },
+      "tableName": "USERACESSO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 63
+    },
+    {
+      "angle": 0,
+      "attributes": [
         "id:java.lang.String",
         "accessFailedCount:java.lang.Integer",
         "email:java.lang.String",
@@ -3406,7 +7754,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "accessFailedCount",
@@ -3436,7 +7785,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "email",
@@ -3466,7 +7816,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "emailConfirmed",
@@ -3496,7 +7847,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "lockoutEnabled",
@@ -3526,7 +7878,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "lockoutEnd",
@@ -3556,7 +7909,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "name",
@@ -3586,7 +7940,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "normalizedEmail",
@@ -3616,7 +7971,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "normalizedUserName",
@@ -3646,7 +8002,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "password",
@@ -3676,7 +8033,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "phoneNumber",
@@ -3706,7 +8064,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "phoneNumberConfirmed",
@@ -3736,7 +8095,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "securityStamp",
@@ -3766,7 +8126,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "twoFactorEnabled",
@@ -3796,7 +8157,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "userName",
@@ -3826,7 +8188,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "theme",
@@ -3856,7 +8219,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         },
         {
           "name": "picture",
@@ -3886,7 +8250,8 @@
           "storageId": "",
           "storageKey": "",
           "storageType": "",
-          "storageSecret": ""
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
@@ -3945,8 +8310,8 @@
         "userName"
       ],
       "position": {
-        "x": 738.25,
-        "y": 277.87567138671875
+        "x": 738,
+        "y": 278
       },
       "primaryKeys": [
         "id"
@@ -4854,6 +9219,202 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "02604d46-50a4-4a8b-b9b2-43b8073c2ab7",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ANOFISCAL:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "target": {
+        "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 62
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "id": "04703c86-85e6-4a8a-bb58-ddd7d000b52f",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "previous_source": {
+        "id": "e7a63482-11d4-4835-9b4c-9ee024984e30"
+      },
+      "previous_target": {
+        "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2"
+      },
+      "queries": [],
+      "relationFields": [
+        "ID_DESPESA:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "e7a63482-11d4-4835-9b4c-9ee024984e30"
+      },
+      "target": {
+        "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 59
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "connector": {
+        "name": "rounded"
+      },
+      "id": "0c2c62f1-d47b-4122-928d-8954c34b5b39",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_UNIDORCSUP:target"
+      ],
+      "router": {
+        "name": "orthogonal"
+      },
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "9ef94dfa-d23e-4bc1-ad20-d36870a91dd5"
+      },
+      "target": {
+        "id": "9ef94dfa-d23e-4bc1-ad20-d36870a91dd5"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 39
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "0c2f64ab-cd09-4ba6-82c6-c79e293ef90c",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ANOFISCAL:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "target": {
+        "id": "90449c8e-3365-4350-843d-de1e66f88b75"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 49
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
         ".": {
           "display": "none"
         },
@@ -4898,6 +9459,231 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 22
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "21636759-cee6-49f0-b250-6165838e6d13",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ORGAOSICOM:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "83c93365-a696-461e-aef3-731645a0b96d"
+      },
+      "target": {
+        "id": "9ef94dfa-d23e-4bc1-ad20-d36870a91dd5"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 40
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "2f9d1f38-dcbe-4afe-9c14-2c97d93fbdd2",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ENTIDADE:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "82710122-fe02-48e8-8326-64049676b13b"
+      },
+      "target": {
+        "id": "fb86ad78-bbb0-4f7f-9d98-44d9a304bfef"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 61
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "2fc5a2af-a4bc-4490-9a1f-9fc8b73c8521",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_SUBFUNCAO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "8d5e5044-e238-49ea-9c56-f6cbe1d9e807"
+      },
+      "target": {
+        "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 57
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "349e018a-9698-4aa6-b727-74240069c388",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_FUNCAO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "ca776754-e2e5-4872-89ce-d02a052ab4d2"
+      },
+      "target": {
+        "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 56
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "35305b92-096d-4cb8-bd08-e724e44e61ba",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ACAO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "d5beb815-b456-45d1-bd14-d99fa6604bde"
+      },
+      "target": {
+        "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 58
     },
     {
       "attrs": {
@@ -5154,6 +9940,51 @@
       "z": "4"
     },
     {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "7c01ec1b-943b-4f6c-bee7-81609f6455c0",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ANOFISCALENTIDADE:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "target": {
+        "id": "9ef94dfa-d23e-4bc1-ad20-d36870a91dd5"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 41
+    },
+    {
       "attrs": {
         ".": {
           "display": "none"
@@ -5198,6 +10029,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": "4"
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "83fdeff3-f6a2-4aa3-bec1-e72a068ff63b",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ENTIDADE:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "82710122-fe02-48e8-8326-64049676b13b"
+      },
+      "target": {
+        "id": "9349d8af-328b-4879-ad00-7e83ba9e884b"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 64
     },
     {
       "associationType": "Association",
@@ -5291,6 +10167,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 30
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "9db09047-1486-400a-b0ca-e27e8ce632d0",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_UNIDORC:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "9ef94dfa-d23e-4bc1-ad20-d36870a91dd5"
+      },
+      "target": {
+        "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 54
     },
     {
       "attrs": {
@@ -5434,6 +10355,141 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "d417d346-ff80-45a0-823e-140352d7f259",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ESTRUTURAPLANO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "fb86ad78-bbb0-4f7f-9d98-44d9a304bfef"
+      },
+      "target": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 48
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "d91f58ae-4da3-45e0-b547-515c05cc9a92",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ANOFISCAL:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "target": {
+        "id": "9349d8af-328b-4879-ad00-7e83ba9e884b"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 65
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "de5c46f5-d6f7-497c-bb3b-760e9daa491d",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_FONTERECURSO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0"
+      },
+      "target": {
+        "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 60
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
         ".": {
           "display": "none"
         },
@@ -5526,6 +10582,292 @@
       "z": "4"
     },
     {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "id": "e8d9dff1-c6e9-40c5-b6c1-bb12bee92bd3",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "previous_source": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "previous_target": {
+        "id": "e7a63482-11d4-4835-9b4c-9ee024984e30"
+      },
+      "queries": [],
+      "relationFields": [
+        "ID_ANOFISCAL:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "target": {
+        "id": "e7a63482-11d4-4835-9b4c-9ee024984e30"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 52
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "connector": {
+        "name": "rounded"
+      },
+      "id": "ea7a0033-7694-41b7-a5cd-ea409cbc67f5",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "COD_DESPESASUP:target"
+      ],
+      "router": {
+        "name": "orthogonal"
+      },
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "e7a63482-11d4-4835-9b4c-9ee024984e30"
+      },
+      "target": {
+        "id": "e7a63482-11d4-4835-9b4c-9ee024984e30"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 51
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "ec23f374-6b75-4161-bde9-333bcc19af6a",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ANOFISCAL:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "target": {
+        "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 53
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "edab6aa0-3080-4f93-95c4-00f80be5afbd",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_PROGRAMA:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "90449c8e-3365-4350-843d-de1e66f88b75"
+      },
+      "target": {
+        "id": "c3b2b294-7554-40d2-925b-2e5a47ca17e2"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 55
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "f0c6a6b6-6304-4dc0-806f-5840e98b0aff",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ANOFISCAL:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "target": {
+        "id": "d5beb815-b456-45d1-bd14-d99fa6604bde"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 50
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "f2e0a2c7-eef4-448a-8a17-ec4a4b4ca056",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "1",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "user:source"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToOne",
+      "source": {
+        "id": "9349d8af-328b-4879-ad00-7e83ba9e884b"
+      },
+      "target": {
+        "id": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 66
+    },
+    {
       "attrs": {
         ".": {
           "display": "none"
@@ -5583,31 +10925,55 @@
       "name": "Adiantamento",
       "id": "b64d769f-e6ad-4e0d-acd0-fa5b6d98a88e",
       "cells": [
+        "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0",
+        "8d5e5044-e238-49ea-9c56-f6cbe1d9e807",
+        "83c93365-a696-461e-aef3-731645a0b96d",
         "ef100764-ba06-45b3-a708-d0852b54b4e8",
+        "2166da61-583a-4185-8d73-700c21589979",
+        "c3b2b294-7554-40d2-925b-2e5a47ca17e2",
+        "90449c8e-3365-4350-843d-de1e66f88b75",
+        "d5beb815-b456-45d1-bd14-d99fa6604bde",
+        "8282bb26-d38b-4a68-a742-27a8de9b04e7",
+        "9ef94dfa-d23e-4bc1-ad20-d36870a91dd5",
+        "fb86ad78-bbb0-4f7f-9d98-44d9a304bfef",
+        "e7a63482-11d4-4835-9b4c-9ee024984e30",
         "82710122-fe02-48e8-8326-64049676b13b",
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
-        "8282bb26-d38b-4a68-a742-27a8de9b04e7"
+        "ca776754-e2e5-4872-89ce-d02a052ab4d2",
+        "9349d8af-328b-4879-ad00-7e83ba9e884b"
       ]
     },
     {
       "name": "",
       "id": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
       "cells": [
-        "2b76b50a-bb57-4354-a653-b71b1450ebff",
-        "36b875ac-204a-4346-82e4-aabbd2c6b202",
+        "8d5e5044-e238-49ea-9c56-f6cbe1d9e807",
+        "83c93365-a696-461e-aef3-731645a0b96d",
         "2016ad54-a0f9-4337-ad10-694a48f0435c",
-        "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
         "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
-        "ef100764-ba06-45b3-a708-d0852b54b4e8",
-        "55beab5c-2393-4e53-879f-87138492feb1",
-        "8282bb26-d38b-4a68-a742-27a8de9b04e7",
+        "2166da61-583a-4185-8d73-700c21589979",
+        "90449c8e-3365-4350-843d-de1e66f88b75",
+        "9ef94dfa-d23e-4bc1-ad20-d36870a91dd5",
+        "fb86ad78-bbb0-4f7f-9d98-44d9a304bfef",
+        "e7a63482-11d4-4835-9b4c-9ee024984e30",
         "82710122-fe02-48e8-8326-64049676b13b",
-        "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
         "b194a533-61d6-4661-b9da-ff80ce2835f9",
         "d92238a3-a37d-4cc6-a543-d0687dc207cd",
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
         "a9daca3f-9ddd-41ad-9961-200b89f35561",
-        "e35a650f-29ee-4683-8c1c-5cc61a955ddf"
+        "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+        "ca776754-e2e5-4872-89ce-d02a052ab4d2",
+        "9349d8af-328b-4879-ad00-7e83ba9e884b",
+        "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0",
+        "2b76b50a-bb57-4354-a653-b71b1450ebff",
+        "36b875ac-204a-4346-82e4-aabbd2c6b202",
+        "dcc00b32-aa33-47bd-bc4d-91da88f25cbc",
+        "ef100764-ba06-45b3-a708-d0852b54b4e8",
+        "55beab5c-2393-4e53-879f-87138492feb1",
+        "c3b2b294-7554-40d2-925b-2e5a47ca17e2",
+        "d5beb815-b456-45d1-bd14-d99fa6604bde",
+        "8282bb26-d38b-4a68-a742-27a8de9b04e7",
+        "53b97115-f8a3-4221-9ce6-bad2672b8bd5"
       ]
     }
   ]
