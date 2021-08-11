@@ -3,7 +3,7 @@
     <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
-<<<<<<< HEAD
+         HEAD
         <class>app.entity.USERACESSO</class>
 =======
 >>>>>>> branch 'master' of https://github.com/OtavianoJunior/ContabWeb.git
@@ -11,7 +11,7 @@
         <class>app.entity.UserRole</class>
         <class>app.entity.ApplicationUser</class>
         <class>app.entity.User</class>
-<<<<<<< HEAD
+        HEAD
         <class>app.entity.PCA_ESTRUTURAPLANO</class>
 =======
 >>>>>>> branch 'master' of https://github.com/OtavianoJunior/ContabWeb.git
@@ -30,7 +30,7 @@
         <class>app.entity.DESPESACLASSIFICACAO</class>
         <class>app.entity.Login</class>
         <class>app.entity.View</class>
-<<<<<<< HEAD
+         HEAD
         <class>app.entity.Securable</class>
         <class>app.entity.PPA_PROGRAMA</class>
         <class>app.entity.ANOFISCALENTIDADE</class>
