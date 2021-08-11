@@ -1,0 +1,155 @@
+{
+  "customId": "query78386",
+  "queryName": "Entidade",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "ENTIDADE",
+  "entityFullName": "app.entity.ENTIDADE",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "ENTIDADE",
+        "alias": "e",
+        "namespace": "app.entity.ENTIDADE"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "e"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id_ENTIDADE": null,
+    "coD_ENTIDADE": null,
+    "deS_TIPOENTIDADE": null,
+    "nrO_CGC": null,
+    "nrO_INSCESTADUAL": null,
+    "deS_ENTIDADE": null,
+    "deS_LOGRADOURO": null,
+    "nrO_ENDERECO": null,
+    "deS_COMPLEMENTO": null,
+    "deS_BAIRRO": null,
+    "nrO_CEP": null,
+    "nrO_TELEFONE": null,
+    "nrO_FAX": null,
+    "deS_EMAIL": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": {
+      "type": "server",
+      "blocklyMethod": "ObterIdUsuarioLogado",
+      "blocklyClass": "blockly.Usuario",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Usuario",
+        "sourcePath": "src/main/java/blockly/Usuario.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterMunicipioUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "id_MUNICIPIO": null
+  },
+  "defaultValuesProperties": {
+    "id_ENTIDADE": null,
+    "coD_ENTIDADE": null,
+    "deS_TIPOENTIDADE": null,
+    "nrO_CGC": null,
+    "nrO_INSCESTADUAL": null,
+    "deS_ENTIDADE": null,
+    "deS_LOGRADOURO": null,
+    "nrO_ENDERECO": null,
+    "deS_COMPLEMENTO": null,
+    "deS_BAIRRO": null,
+    "nrO_CEP": null,
+    "nrO_TELEFONE": null,
+    "nrO_FAX": null,
+    "deS_EMAIL": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_MUNICIPIO": null
+  },
+  "security": {
+    "id_ENTIDADE": null,
+    "coD_ENTIDADE": null,
+    "deS_TIPOENTIDADE": null,
+    "nrO_CGC": null,
+    "nrO_INSCESTADUAL": null,
+    "deS_ENTIDADE": null,
+    "deS_LOGRADOURO": null,
+    "nrO_ENDERECO": null,
+    "deS_COMPLEMENTO": null,
+    "deS_BAIRRO": null,
+    "nrO_CEP": null,
+    "nrO_TELEFONE": null,
+    "nrO_FAX": null,
+    "deS_EMAIL": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_MUNICIPIO": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query78386/",
+  "audit": false
+}

@@ -1,0 +1,128 @@
+{
+  "customId": "query489074",
+  "queryName": "Usuário",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "MUNICIPIO",
+  "entityFullName": "app.entity.MUNICIPIO",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "MUNICIPIO",
+        "alias": "m",
+        "namespace": "app.entity.MUNICIPIO"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "m"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id_MUNICIPIO": null,
+    "coD_MUNICIPIO": null,
+    "deS_MUNICIPIO": null,
+    "nrO_SIAF": null,
+    "coD_MUNICIPIOSICOM": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": {
+      "type": "server",
+      "blocklyMethod": "ObterIdUsuarioLogado",
+      "blocklyClass": "blockly.Usuario",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Usuario",
+        "sourcePath": "src/main/java/blockly/Usuario.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterMunicipioUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "id_UF": null
+  },
+  "defaultValuesProperties": {
+    "id_MUNICIPIO": null,
+    "coD_MUNICIPIO": null,
+    "deS_MUNICIPIO": null,
+    "nrO_SIAF": null,
+    "coD_MUNICIPIOSICOM": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_UF": null
+  },
+  "security": {
+    "id_MUNICIPIO": null,
+    "coD_MUNICIPIO": null,
+    "deS_MUNICIPIO": null,
+    "nrO_SIAF": null,
+    "coD_MUNICIPIOSICOM": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_UF": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query489074/",
+  "audit": false
+}

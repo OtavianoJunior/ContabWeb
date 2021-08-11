@@ -1,0 +1,146 @@
+{
+  "customId": "query167888",
+  "queryName": "UF",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "UF",
+  "entityFullName": "app.entity.UF",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "UF",
+        "alias": "u",
+        "namespace": "app.entity.UF"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "u"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id_UF": null,
+    "coD_UF": null,
+    "deS_UF": null,
+    "coD_IBGE": null,
+    "daT_LASTREC": {
+      "type": "server",
+      "blocklyMethod": "DataLastrec",
+      "blocklyClass": "blockly.DataLastrec",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.DataLastrec",
+        "sourcePath": "src/main/java/blockly/DataLastrec.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "DataLastrec",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "coD_USUARIO": {
+      "type": "server",
+      "blocklyMethod": "ObterIdUsuarioLogado",
+      "blocklyClass": "blockly.Usuario",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Usuario",
+        "sourcePath": "src/main/java/blockly/Usuario.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterMunicipioUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    }
+  },
+  "defaultValuesProperties": {
+    "id_UF": null,
+    "coD_UF": null,
+    "deS_UF": null,
+    "coD_IBGE": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null
+  },
+  "security": {
+    "id_UF": null,
+    "coD_UF": null,
+    "deS_UF": null,
+    "coD_IBGE": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query167888/",
+  "audit": false
+}
