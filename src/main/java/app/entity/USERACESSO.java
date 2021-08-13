@@ -44,23 +44,17 @@ public class USERACESSO implements Serializable {
     /**
     * @generated
     */
-    @Column(name = "COD_MUNICIPIO", nullable = true, unique = false, insertable=true, updatable=true)
-        
-        private java.lang.Integer coD_MUNICIPIO;
-
-    /**
-    * @generated
-    */
-    @Column(name = "COD_ENTIDADE", nullable = true, unique = false, insertable=true, updatable=true)
-        
-        private java.lang.Integer coD_ENTIDADE;
-
-    /**
-    * @generated
-    */
     @Column(name = "NRO_ANOFISCAL", nullable = true, unique = false, insertable=true, updatable=true)
         
         private java.lang.Integer nrO_ANOFISCAL;
+
+    /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="ID_ENTIDADE", nullable = true, referencedColumnName = "ID_ENTIDADE", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+        
+        private ENTIDADE id_ENTIDADE;
 
     /**
     * Construtor
@@ -108,44 +102,6 @@ public class USERACESSO implements Serializable {
         return this;
     }
     /**
-    * Obtém coD_MUNICIPIO
-    * return coD_MUNICIPIO
-    * @generated
-    */
-    
-    public java.lang.Integer getCoD_MUNICIPIO(){
-        return this.coD_MUNICIPIO;
-    }
-
-    /**
-    * Define coD_MUNICIPIO
-    * @param coD_MUNICIPIO coD_MUNICIPIO
-    * @generated
-    */
-    public USERACESSO setCoD_MUNICIPIO(java.lang.Integer coD_MUNICIPIO){
-        this.coD_MUNICIPIO = coD_MUNICIPIO;
-        return this;
-    }
-    /**
-    * Obtém coD_ENTIDADE
-    * return coD_ENTIDADE
-    * @generated
-    */
-    
-    public java.lang.Integer getCoD_ENTIDADE(){
-        return this.coD_ENTIDADE;
-    }
-
-    /**
-    * Define coD_ENTIDADE
-    * @param coD_ENTIDADE coD_ENTIDADE
-    * @generated
-    */
-    public USERACESSO setCoD_ENTIDADE(java.lang.Integer coD_ENTIDADE){
-        this.coD_ENTIDADE = coD_ENTIDADE;
-        return this;
-    }
-    /**
     * Obtém nrO_ANOFISCAL
     * return nrO_ANOFISCAL
     * @generated
@@ -162,6 +118,25 @@ public class USERACESSO implements Serializable {
     */
     public USERACESSO setNrO_ANOFISCAL(java.lang.Integer nrO_ANOFISCAL){
         this.nrO_ANOFISCAL = nrO_ANOFISCAL;
+        return this;
+    }
+    /**
+    * Obtém id_ENTIDADE
+    * return id_ENTIDADE
+    * @generated
+    */
+    
+    public ENTIDADE getId_ENTIDADE(){
+        return this.id_ENTIDADE;
+    }
+
+    /**
+    * Define id_ENTIDADE
+    * @param id_ENTIDADE id_ENTIDADE
+    * @generated
+    */
+    public USERACESSO setId_ENTIDADE(ENTIDADE id_ENTIDADE){
+        this.id_ENTIDADE = id_ENTIDADE;
         return this;
     }
 

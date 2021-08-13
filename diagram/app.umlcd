@@ -35,36 +35,35 @@
       "attributes": [
         "ID_ANOFISCAL:java.lang.Integer",
         "NRO_ANOFISCAL:java.lang.Integer",
-        "COD_ENTIDADE:java.lang.Integer",
-        "COD_MUNICIPIO:java.lang.Integer",
         "DES_MASCCONTAB:java.lang.String",
         "DES_UNIDORC:java.lang.String",
         "DES_MASCRECEITA:java.lang.String",
         "DES_MASCDESPESAFIXA:java.lang.String",
         "DAT_LASTREC:java.sql.Date",
         "COD_USUARIO:java.lang.String",
-        "ID_ESTRUTURAPLANO:PCA_ESTRUTURAPLANO"
+        "ID_ESTRUTURAPLANO:PCA_ESTRUTURAPLANO",
+        "ID_ENTIDADE:ENTIDADE"
       ],
       "attrs": {
         ".": {
           "display": "normal"
         },
         ".uml-class-attrs-rect": {
-          "height": 250,
+          "height": 230,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_ANOFISCAL\nNRO_ANOFISCAL\nCOD_ENTIDADE\nCOD_MUNICIPIO\nDES_MASCCONTAB\nDES_UNIDORC\nDES_MASCRECEITA\nDES_MASCDESPESAFIXA\nDAT_LASTREC\nCOD_USUARIO\nID_ESTRUTURAPLANO\n"
+          "text": "ID_ANOFISCAL\nNRO_ANOFISCAL\nDES_MASCCONTAB\nDES_UNIDORC\nDES_MASCRECEITA\nDES_MASCDESPESAFIXA\nDAT_LASTREC\nCOD_USUARIO\nID_ESTRUTURAPLANO\nID_ENTIDADE\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 173.609375,
-          "text": "Inteiro\nInteiro\nInteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nPCA_ESTRUTURAPLANO\n"
+          "ref-x": 171.59375,
+          "text": "Inteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nPCA_ESTRUTURAPLANO\nENTIDADE\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,300)"
+          "transform": "translate(0,280)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -128,68 +127,6 @@
           "dbScale": "",
           "dbDefaultValue": "",
           "label": "Ano Fiscal",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "COD_ENTIDADE",
-          "type": "java.lang.Integer",
-          "dbName": "COD_ENTIDADE",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Entidade",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "COD_MUNICIPIO",
-          "type": "java.lang.Integer",
-          "dbName": "COD_MUNICIPIO",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Município",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -428,6 +365,37 @@
           "storageType": "",
           "storageSecret": "",
           "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ENTIDADE",
+          "type": "ENTIDADE",
+          "dbName": "ID_ENTIDADE",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Entidade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -437,8 +405,8 @@
       "modelType": "Table",
       "name": "ANOFISCALENTIDADE",
       "position": {
-        "x": 1848,
-        "y": 16
+        "x": 1846,
+        "y": 14
       },
       "queries": [],
       "realName": "",
@@ -446,8 +414,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 207.429443359375,
-        "width": 326.75
+        "height": 195.0330047607422,
+        "width": 323.296875
       },
       "tableName": "ANOFISCALENTIDADE",
       "tableScheme": null,
@@ -9743,30 +9711,29 @@
       "attributes": [
         "ID_USERACESSO:java.lang.String",
         "ID_USER:User",
-        "COD_MUNICIPIO:java.lang.Integer",
-        "COD_ENTIDADE:java.lang.Integer",
-        "NRO_ANOFISCAL:java.lang.Integer"
+        "NRO_ANOFISCAL:java.lang.Integer",
+        "ID_ENTIDADE:ENTIDADE"
       ],
       "attrs": {
         ".": {
           "display": "normal"
         },
         ".uml-class-attrs-rect": {
-          "height": 130,
+          "height": 110,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_USERACESSO\nID_USER\nCOD_MUNICIPIO\nCOD_ENTIDADE\nNRO_ANOFISCAL\n"
+          "text": "ID_USERACESSO\nID_USER\nNRO_ANOFISCAL\nID_ENTIDADE\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 130.421875,
-          "text": "Texto\nUser\nInteiro\nInteiro\nInteiro\n"
+          "ref-x": 127.984375,
+          "text": "Texto\nUser\nInteiro\nENTIDADE\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,180)"
+          "transform": "translate(0,160)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -9853,68 +9820,6 @@
           "foreignKeyName": ""
         },
         {
-          "name": "COD_MUNICIPIO",
-          "type": "java.lang.Integer",
-          "dbName": "COD_MUNICIPIO",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Município",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "COD_ENTIDADE",
-          "type": "java.lang.Integer",
-          "dbName": "COD_ENTIDADE",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Entidade",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
           "name": "NRO_ANOFISCAL",
           "type": "java.lang.Integer",
           "dbName": "NRO_ANOFISCAL",
@@ -9923,6 +9828,37 @@
           "dbScale": "",
           "dbDefaultValue": "",
           "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ENTIDADE",
+          "type": "ENTIDADE",
+          "dbName": "ID_ENTIDADE",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "ID  ENTIDADE",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -9953,8 +9889,8 @@
       "modelType": "Table",
       "name": "USERACESSO",
       "position": {
-        "x": 1176,
-        "y": 502
+        "x": 1186,
+        "y": 500
       },
       "queries": [],
       "realName": "",
@@ -9962,13 +9898,13 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 141.8623504638672,
-        "width": 180.46875
+        "height": 129.54235076904297,
+        "width": 202.265625
       },
       "tableName": "USERACESSO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 63
+      "z": 94
     },
     {
       "angle": 0,
@@ -11941,6 +11877,10 @@
         ".marker-target": {
           "d": "",
           "fill": ""
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
         }
       },
       "id": "2f9d1f38-dcbe-4afe-9c14-2c97d93fbdd2",
@@ -11961,6 +11901,12 @@
         }
       ],
       "name": null,
+      "previous_source": {
+        "id": "82710122-fe02-48e8-8326-64049676b13b"
+      },
+      "previous_target": {
+        "id": "fb86ad78-bbb0-4f7f-9d98-44d9a304bfef"
+      },
       "queries": [],
       "relationFields": [
         "ID_ENTIDADE:target"
@@ -12204,6 +12150,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 19
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "4a5c52dc-a600-442e-aea5-2c7a8821845a",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ENTIDADE:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "82710122-fe02-48e8-8326-64049676b13b"
+      },
+      "target": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 96
     },
     {
       "associationType": "Association",
@@ -12728,6 +12719,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 79
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "8f218b52-3d91-46d9-822d-7b6634397df0",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ENTIDADE:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "82710122-fe02-48e8-8326-64049676b13b"
+      },
+      "target": {
+        "id": "9349d8af-328b-4879-ad00-7e83ba9e884b"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 95
     },
     {
       "associationType": "Association",
