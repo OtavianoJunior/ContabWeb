@@ -39,5 +39,59 @@ Var.valueOf("this[0].normalizedUserName"));
  }.call();
 }
 
+/**
+ *
+ * @return Var
+ */
+// Usuario
+public static Var ValidarCPF() throws Exception {
+ return new Callable<Var>() {
+
+   private Var validador = Var.VAR_NULL;
+
+   public Var call() throws Exception {
+
+    validador =
+    cronapi.validation.Operations.validateCPF(
+    cronapi.screen.Operations.getValueOfField(
+    Var.valueOf("ORGAOSICOM.active.coD_CPFGESTOR")));
+
+    if (
+    Var.valueOf(validador.equals(
+    Var.VAR_FALSE)).getObjectAsBoolean()) {
+
+        cronapi.util.Operations.callClientFunction( Var.valueOf("cronapi.screen.notify"), Var.valueOf("error"),
+        Var.valueOf("CPF Inválido"));
+    }
+    return validador;
+   }
+ }.call();
+}
+
+/**
+ */
+// Descreva esta função...
+public static void ValidarCadastroOrg_C3_A3o() throws Exception {
+  new Callable<Var>() {
+
+   public Var call() throws Exception {
+
+    if (
+    Var.valueOf(
+    Var.valueOf(ValidarCPF()).equals(
+    Var.VAR_FALSE)).getObjectAsBoolean()) {
+
+        cronapi.util.Operations.callClientFunction( Var.valueOf("cronapi.screen.notify"), Var.valueOf("error"),
+        Var.valueOf("CPF Inválido"));
+    } else {
+
+        cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.post"),
+        Var.valueOf("ORGAOSICOM"));
+    }
+   return Var.VAR_NULL;
+   }
+ }.call();
+}
+
 }
 
