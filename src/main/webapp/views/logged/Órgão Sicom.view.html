@@ -1,0 +1,241 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="" primary-datasource="ORGAOSICOM">
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-85527">ÓRGÃO SICOM</h1>
+
+<datasource data-component="crn-datasource" filter="" name="ORGAOSICOM" entity="app.query726367" keys="_objectKey" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id_ORGAOSICOM&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_ANOFISCAL&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_ORGAOSICOM&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_ORGAOSICOM&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_CPFGESTOR&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_NOMEGESTOR&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}]" condition="" lazy="true" parameters="" dependent-lazy-post="" checkrequired=""></datasource>
+
+        <div role="search" ng-hide="ORGAOSICOM.inserting || ORGAOSICOM.editing" data-component="crn-textinput" id="crn-datasource-filter-general85527" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<section ng-hide="ORGAOSICOM.editing || ORGAOSICOM.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;ORGAOSICOM&quot;,&quot;entity&quot;:&quot;app.query726367&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.query726367&quot;,&quot;customId&quot;:&quot;query726367&quot;,&quot;name&quot;:&quot;ORGAOSICOM&quot;,&quot;customQueryName&quot;:&quot;Órgão Sicom&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.ORGAOSICOM&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id_ORGAOSICOM&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_ANOFISCAL&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_ORGAOSICOM&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_ORGAOSICOM&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_CPFGESTOR&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_NOMEGESTOR&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;customEntityfullname&quot;,&quot;hasError&quot;:false,&quot;folder&quot;:&quot;&quot;},&quot;keys&quot;:&quot;_objectKey&quot;,&quot;rowsPerPage&quot;:&quot;100&quot;,&quot;schema&quot;:[{&quot;name&quot;:&quot;id_ORGAOSICOM&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_ANOFISCAL&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_ORGAOSICOM&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_ORGAOSICOM&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_CPFGESTOR&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_NOMEGESTOR&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;parameters&quot;:&quot;&quot;,&quot;condition&quot;:&quot;&quot;,&quot;dependentLazyPost&quot;:&quot;&quot;,&quot;lazy&quot;:&quot;true&quot;,&quot;checkrequired&quot;:&quot;&quot;,&quot;onBeforeCreate&quot;:&quot;&quot;,&quot;onAfterCreate&quot;:&quot;&quot;,&quot;onBeforeUpdate&quot;:&quot;&quot;,&quot;onAfterUpdate&quot;:&quot;&quot;,&quot;onBeforeDelete&quot;:&quot;&quot;,&quot;onAfterDelete&quot;:&quot;&quot;,&quot;onAfterFill&quot;:&quot;&quot;,&quot;dataComponent&quot;:&quot;crn-datasource&quot;,&quot;id&quot;:&quot;&quot;,&quot;oldName&quot;:&quot;&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;batchMode&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;pathView&quot;:&quot;src/main/webapp/views/logged/Órgão Sicom.view.html&quot;,&quot;modelGrid&quot;:&quot;custom&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;coD_ORGAOSICOM&quot;,&quot;headerText&quot;:&quot;Órgão &quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;99;1&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;alignment&quot;:&quot;left&quot;,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;deS_ORGAOSICOM&quot;,&quot;headerText&quot;:&quot;Descrição&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]}}],&quot;details&quot;:[],&quot;groupings&quot;:[]}" ng-model="vars.grid85527" class="" style="" scrollable="false">
+    </cron-grid>
+</section>
+
+<div data-component="crn-form" id="crn-form-form-ORGAOSICOM-85527">
+    <section class="form" ng-show="ORGAOSICOM.editing || ORGAOSICOM.inserting">
+        <form crn-datasource="ORGAOSICOM" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <button aria-label="{{'StartInserting' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startInserting()"><span class="k-icon k-i-plus"></span></button>
+                <button aria-label="{{'StartEditing' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startEditing()"><span class="k-icon k-i-edit"></span></button>
+                <button aria-label="{{'Before' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasPrevious()" ng-click="datasource.previous()"><span class="k-icon k-i-arrow-chevron-left"></span></button>
+                <button aria-label="{{'Next' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasNext()" ng-click="datasource.next()"><span class="k-icon k-i-arrow-chevron-right"></span></button>
+                <button aria-label="{{'Remove' | translate}}" class="btn btn-danger btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <button aria-label="{{'SaveChanges' | translate}}" class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="cronapi.server('blockly.Usuario.ValidarCadastroOrg_C3_A3o').names().run()"><span class="k-icon k-i-check"></span></button>
+                <button aria-label="{{'CancelChanges' | translate}}" class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button>
+            </div>
+            <br>
+            <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-coD_ORGAOSICOM-85527" class="style1197">
+                        <div class="form-group">
+                                <label for="textinput-coD_ORGAOSICOM" class="">Órgão </label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="ORGAOSICOM.active.coD_ORGAOSICOM" class="form-control k-textbox" id="textinput-coD_ORGAOSICOM" placeholder="Órgão " mask="99;1" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div><div data-component="crn-textinput" id="crn-textinput-deS_ORGAOSICOM-85527" class="style2529">
+                        <div class="form-group">
+                                <label for="textinput-deS_ORGAOSICOM" class="">Descrição</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="100" type="text" ng-model="ORGAOSICOM.active.deS_ORGAOSICOM" class="form-control k-textbox" id="textinput-deS_ORGAOSICOM" placeholder="Descrição" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div><div data-component="crn-textinput" id="crn-textinput-coD_CPFGESTOR-85527" class="style1217">
+                        <div class="form-group">
+                                <label for="textinput-coD_CPFGESTOR" class="">CPF Gestor</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="20" type="text" ng-model="ORGAOSICOM.active.coD_CPFGESTOR" class="form-control k-textbox" id="textinput-coD_CPFGESTOR" placeholder="CPF Gestor" mask="999.999.999-99;0" mask-placeholder="" ng-required="false" ng-blur="cronapi.server('blockly.Usuario.ValidarCPF').names().run()" ng-click="">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div><div data-component="crn-textinput" id="crn-textinput-deS_NOMEGESTOR-85527" class="style6842">
+                        <div class="form-group">
+                                <label for="textinput-deS_NOMEGESTOR" class="">Nome Gestor</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input maxlength="100" type="text" ng-model="ORGAOSICOM.active.deS_NOMEGESTOR" class="form-control k-textbox" id="textinput-deS_NOMEGESTOR" placeholder="Nome Gestor" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    
+
+
+                    
+
+
+                    
+
+
+                    
+
+
+                    
+
+
+                    
+                <!-- NtoN  -->
+
+                    
+
+                        
+                        
+
+                    
+
+                        
+                        
+                <!-- NtoN  end-->
+            </div>
+        </form>
+    </section>
+    <section class="form" ng-show="ORGAOSICOM.editing || ORGAOSICOM.inserting">
+        <form>
+            
+        </form>
+    </section>
+</div>
+
+
+    <div class="modal fade" id="modalPPA_UNIDADEORCAMENTOGrid">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="{{'Home.view.Close' | translate}}"><span aria-hidden="true">×</span></button>
+                        <h3 class="modal-title">PPA_UNIDADEORCAMENTO</h3>
+                    </div>
+                    <div class="modal-body">
+                        <div class="list-group list-group-sm row">
+<!-- else of !model.hasCronappFramework() -->
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-COD_UNIDORC-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-COD_UNIDORC">Código</label>
+                                                    <input type="text" maxlength="8" ng-model="PPA_UNIDADEORCAMENTOGrid.active.coD_UNIDORC" class="form-control k-textbox" id="textinput-modal-COD_UNIDORC" placeholder="Código" mask="" mask-placeholder="" ng-required="false">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-DES_UNIDADEORC-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-DES_UNIDADEORC">Descrição</label>
+                                                    <input type="text" maxlength="100" ng-model="PPA_UNIDADEORCAMENTOGrid.active.deS_UNIDADEORC" class="form-control k-textbox" id="textinput-modal-DES_UNIDADEORC" placeholder="Descrição" mask="" mask-placeholder="" ng-required="false">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-FLG_SINTETICA-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-FLG_SINTETICA">Conta Sintética</label>
+                                                    <input type="text" maxlength="1" ng-model="PPA_UNIDADEORCAMENTOGrid.active.flG_SINTETICA" class="form-control k-textbox" id="textinput-modal-FLG_SINTETICA" placeholder="Conta Sintética" mask="" mask-placeholder="" ng-required="false">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-COD_UNIDORCSEMMASCARA-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-COD_UNIDORCSEMMASCARA">Código sem máscara</label>
+                                                    <input type="text" maxlength="100" ng-model="PPA_UNIDADEORCAMENTOGrid.active.coD_UNIDORCSEMMASCARA" class="form-control k-textbox" id="textinput-modal-COD_UNIDORCSEMMASCARA" placeholder="Código sem máscara" mask="" mask-placeholder="" ng-required="false">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-DAT_CRIACAO-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-DAT_CRIACAO">Data da Criação</label>
+                                                    <input type="datetime" ng-model="PPA_UNIDADEORCAMENTOGrid.active.daT_CRIACAO" class="form-control k-textbox" id="textinput-modal-DAT_CRIACAO" placeholder="Data da Criação" mask="" mask-placeholder="" ng-required="false">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-DAT_EXTINCAO-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-DAT_EXTINCAO">Data da Extinção</label>
+                                                    <input type="datetime" ng-model="PPA_UNIDADEORCAMENTOGrid.active.daT_EXTINCAO" class="form-control k-textbox" id="textinput-modal-DAT_EXTINCAO" placeholder="Data da Extinção" mask="" mask-placeholder="" ng-required="false">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-DAT_LASTREC-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-DAT_LASTREC">Dt. Manut.</label>
+                                                    <input type="datetime" ng-model="PPA_UNIDADEORCAMENTOGrid.active.daT_LASTREC" class="form-control k-textbox" id="textinput-modal-DAT_LASTREC" placeholder="Dt. Manut." mask="" mask-placeholder="" ng-required="false">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+
+
+                                        <div data-component="crn-textinput" id="crn-modal-textinput-COD_USUARIO-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                            <div class="form-group">
+                                                    <label for="textinput-modal-COD_USUARIO">Usuário</label>
+                                                    <input type="text" maxlength="100" ng-model="PPA_UNIDADEORCAMENTOGrid.active.coD_USUARIO" class="form-control k-textbox" id="textinput-modal-COD_USUARIO" placeholder="Usuário" mask="" mask-placeholder="" ng-required="false">
+                                            </div>
+                                        </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+                                            <datasource name="PPA_UNIDADEORCAMENTOGridForCombo" entity="app.PPA_UNIDADEORCAMENTO" keys="_objectKey" rows-per-page="100" schema="[{&quot;name&quot;:&quot;id_UNIDORC&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_UNIDORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_UNIDADEORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;flG_SINTETICA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_UNIDORCSEMMASCARA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_CRIACAO&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_EXTINCAO&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_UNIDORCSUP&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ORGAOSICOM&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ANOFISCALENTIDADE&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;id_UNIDORCSUP_coD_UNIDORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ORGAOSICOM_deS_ORGAOSICOM&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ANOFISCALENTIDADE_deS_MASCCONTAB&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy="true"></datasource>
+                                            <div data-component="crn-enterprise-dynamic-combobox" id="crn-combobox-PPA_UNIDADEORCAMENTOGrid.active.id_UNIDORCSUP-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="combobox-modal-id_UNIDORCSUP-85527" class="">Código Superior</label>
+                                                    <cron-dynamic-select id="combobox-modal-id_UNIDORCSUP-85527" name="combobox-modal-id_UNIDORCSUP-85527" options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;PPA_UNIDADEORCAMENTOGridForCombo&quot;,&quot;entity&quot;:&quot;app.PPA_UNIDADEORCAMENTO&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.PPA_UNIDADEORCAMENTO&quot;,&quot;customId&quot;:&quot;PPA_UNIDADEORCAMENTO&quot;,&quot;name&quot;:&quot;PPA_UNIDADEORCAMENTOGridForCombo&quot;,&quot;customQueryName&quot;:&quot;app.PPA_UNIDADEORCAMENTO&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.PPA_UNIDADEORCAMENTO&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id_UNIDORC&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_UNIDORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_UNIDADEORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;flG_SINTETICA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_UNIDORCSEMMASCARA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_CRIACAO&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_EXTINCAO&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_UNIDORCSUP&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ORGAOSICOM&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ANOFISCALENTIDADE&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;id_UNIDORCSUP_coD_UNIDORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ORGAOSICOM_deS_ORGAOSICOM&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ANOFISCALENTIDADE_deS_MASCCONTAB&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;id_UNIDORC&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_UNIDORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_UNIDADEORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;flG_SINTETICA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_UNIDORCSEMMASCARA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_CRIACAO&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_EXTINCAO&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_UNIDORCSUP&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ORGAOSICOM&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ANOFISCALENTIDADE&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;id_UNIDORCSUP_coD_UNIDORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ORGAOSICOM_deS_ORGAOSICOM&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ANOFISCALENTIDADE_deS_MASCCONTAB&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;app.PPA_UNIDADEORCAMENTO&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;coD_UNIDORC&quot;,&quot;dataValueField&quot;:&quot;_objectKey&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true,&quot;customTemplate&quot;:false}" ng-model="PPA_UNIDADEORCAMENTOGrid.active.id_UNIDORCSUP" class="crn-select form-control">
+                                                    </cron-dynamic-select>
+                                                </div>
+                                            </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+                                 <!-- end if !model.hasCronappFramework() -->
+
+<!-- else of !model.hasCronappFramework() -->
+                                            <datasource name="ANOFISCALENTIDADEGridForCombo" entity="app.ANOFISCALENTIDADE" keys="_objectKey" rows-per-page="100" schema="[{&quot;name&quot;:&quot;id_ANOFISCAL&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_ANOFISCAL&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_ENTIDADE&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_MUNICIPIO&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_MASCCONTAB&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_UNIDORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_MASCRECEITA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_MASCDESPESAFIXA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ESTRUTURAPLANO&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;id_ESTRUTURAPLANO_coD_ESTRUTURA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" lazy="true"></datasource>
+                                            <div data-component="crn-enterprise-dynamic-combobox" id="crn-combobox-PPA_UNIDADEORCAMENTOGrid.active.id_ANOFISCALENTIDADE-85527" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                <div class="form-group">
+                                                    <label for="combobox-modal-id_ANOFISCALENTIDADE-85527" class="">Ano Fiscal</label>
+                                                    <cron-dynamic-select id="combobox-modal-id_ANOFISCALENTIDADE-85527" name="combobox-modal-id_ANOFISCALENTIDADE-85527" options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;ANOFISCALENTIDADEGridForCombo&quot;,&quot;entity&quot;:&quot;app.ANOFISCALENTIDADE&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.ANOFISCALENTIDADE&quot;,&quot;customId&quot;:&quot;ANOFISCALENTIDADE&quot;,&quot;name&quot;:&quot;ANOFISCALENTIDADEGridForCombo&quot;,&quot;customQueryName&quot;:&quot;app.ANOFISCALENTIDADE&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.ANOFISCALENTIDADE&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id_ANOFISCAL&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_ANOFISCAL&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_ENTIDADE&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_MUNICIPIO&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_MASCCONTAB&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_UNIDORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_MASCRECEITA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_MASCDESPESAFIXA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ESTRUTURAPLANO&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;id_ESTRUTURAPLANO_coD_ESTRUTURA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;id_ANOFISCAL&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_ANOFISCAL&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_ENTIDADE&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_MUNICIPIO&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_MASCCONTAB&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_UNIDORC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_MASCRECEITA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_MASCDESPESAFIXA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;id_ESTRUTURAPLANO&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;id_ESTRUTURAPLANO_coD_ESTRUTURA&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;app.ANOFISCALENTIDADE&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;deS_MASCCONTAB&quot;,&quot;dataValueField&quot;:&quot;_objectKey&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true,&quot;customTemplate&quot;:false}" ng-model="PPA_UNIDADEORCAMENTOGrid.active.id_ANOFISCALENTIDADE" class="crn-select form-control">
+                                                    </cron-dynamic-select>
+                                                </div>
+                                            </div>
+                                 <!-- end if !model.hasCronappFramework() -->
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
