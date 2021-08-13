@@ -30,32 +30,37 @@ public class USERACESSO implements Serializable {
     * @generated
     */
     @Id
-    @Column(name = "ID_USER", nullable = false, insertable=true, updatable=true)
-        private java.lang.String id_USER = UUID.randomUUID().toString().toUpperCase();
+    @Column(name = "ID_USERACESSO", nullable = false, insertable=true, updatable=true)
+        private java.lang.String id_USERACESSO = UUID.randomUUID().toString().toUpperCase();
 
     /**
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="ID_ENTIDADE", nullable = true, referencedColumnName = "ID_ENTIDADE", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @JoinColumn(name="ID_USER", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
-        private ENTIDADE id_ENTIDADE;
+        private User id_USER;
 
     /**
     * @generated
     */
-    @ManyToOne
-    @JoinColumn(name="ID_ANOFISCAL", nullable = true, referencedColumnName = "ID_ANOFISCAL", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @Column(name = "COD_MUNICIPIO", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private ANOFISCALENTIDADE id_ANOFISCAL;
+        private java.lang.Integer coD_MUNICIPIO;
 
     /**
     * @generated
     */
-    @ManyToOne
-    @JoinColumn(name="fk_user", nullable = true, referencedColumnName = "id", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @Column(name = "COD_ENTIDADE", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private User user;
+        private java.lang.Integer coD_ENTIDADE;
+
+    /**
+    * @generated
+    */
+    @Column(name = "NRO_ANOFISCAL", nullable = true, unique = false, insertable=true, updatable=true)
+        
+        private java.lang.Integer nrO_ANOFISCAL;
 
     /**
     * Construtor
@@ -65,12 +70,31 @@ public class USERACESSO implements Serializable {
     }
 
     /**
+    * Obtém id_USERACESSO
+    * return id_USERACESSO
+    * @generated
+    */
+    
+    public java.lang.String getId_USERACESSO(){
+        return this.id_USERACESSO;
+    }
+
+    /**
+    * Define id_USERACESSO
+    * @param id_USERACESSO id_USERACESSO
+    * @generated
+    */
+    public USERACESSO setId_USERACESSO(java.lang.String id_USERACESSO){
+        this.id_USERACESSO = id_USERACESSO;
+        return this;
+    }
+    /**
     * Obtém id_USER
     * return id_USER
     * @generated
     */
     
-    public java.lang.String getId_USER(){
+    public User getId_USER(){
         return this.id_USER;
     }
 
@@ -79,65 +103,65 @@ public class USERACESSO implements Serializable {
     * @param id_USER id_USER
     * @generated
     */
-    public USERACESSO setId_USER(java.lang.String id_USER){
+    public USERACESSO setId_USER(User id_USER){
         this.id_USER = id_USER;
         return this;
     }
     /**
-    * Obtém id_ENTIDADE
-    * return id_ENTIDADE
+    * Obtém coD_MUNICIPIO
+    * return coD_MUNICIPIO
     * @generated
     */
     
-    public ENTIDADE getId_ENTIDADE(){
-        return this.id_ENTIDADE;
+    public java.lang.Integer getCoD_MUNICIPIO(){
+        return this.coD_MUNICIPIO;
     }
 
     /**
-    * Define id_ENTIDADE
-    * @param id_ENTIDADE id_ENTIDADE
+    * Define coD_MUNICIPIO
+    * @param coD_MUNICIPIO coD_MUNICIPIO
     * @generated
     */
-    public USERACESSO setId_ENTIDADE(ENTIDADE id_ENTIDADE){
-        this.id_ENTIDADE = id_ENTIDADE;
+    public USERACESSO setCoD_MUNICIPIO(java.lang.Integer coD_MUNICIPIO){
+        this.coD_MUNICIPIO = coD_MUNICIPIO;
         return this;
     }
     /**
-    * Obtém id_ANOFISCAL
-    * return id_ANOFISCAL
+    * Obtém coD_ENTIDADE
+    * return coD_ENTIDADE
     * @generated
     */
     
-    public ANOFISCALENTIDADE getId_ANOFISCAL(){
-        return this.id_ANOFISCAL;
+    public java.lang.Integer getCoD_ENTIDADE(){
+        return this.coD_ENTIDADE;
     }
 
     /**
-    * Define id_ANOFISCAL
-    * @param id_ANOFISCAL id_ANOFISCAL
+    * Define coD_ENTIDADE
+    * @param coD_ENTIDADE coD_ENTIDADE
     * @generated
     */
-    public USERACESSO setId_ANOFISCAL(ANOFISCALENTIDADE id_ANOFISCAL){
-        this.id_ANOFISCAL = id_ANOFISCAL;
+    public USERACESSO setCoD_ENTIDADE(java.lang.Integer coD_ENTIDADE){
+        this.coD_ENTIDADE = coD_ENTIDADE;
         return this;
     }
     /**
-    * Obtém user
-    * return user
+    * Obtém nrO_ANOFISCAL
+    * return nrO_ANOFISCAL
     * @generated
     */
     
-    public User getUser(){
-        return this.user;
+    public java.lang.Integer getNrO_ANOFISCAL(){
+        return this.nrO_ANOFISCAL;
     }
 
     /**
-    * Define user
-    * @param user user
+    * Define nrO_ANOFISCAL
+    * @param nrO_ANOFISCAL nrO_ANOFISCAL
     * @generated
     */
-    public USERACESSO setUser(User user){
-        this.user = user;
+    public USERACESSO setNrO_ANOFISCAL(java.lang.Integer nrO_ANOFISCAL){
+        this.nrO_ANOFISCAL = nrO_ANOFISCAL;
         return this;
     }
 
@@ -149,7 +173,7 @@ public class USERACESSO implements Serializable {
         if (this == obj) return true;
         if (obj == null || getClass() != obj.getClass()) return false;
 USERACESSO object = (USERACESSO)obj;
-        if (id_USER != null ? !id_USER.equals(object.id_USER) : object.id_USER != null) return false;
+        if (id_USERACESSO != null ? !id_USERACESSO.equals(object.id_USERACESSO) : object.id_USERACESSO != null) return false;
         return true;
     }
 
@@ -159,7 +183,7 @@ USERACESSO object = (USERACESSO)obj;
     @Override
     public int hashCode() {
         int result = 1;
-        result = 31 * result + ((id_USER == null) ? 0 : id_USER.hashCode());
+        result = 31 * result + ((id_USERACESSO == null) ? 0 : id_USERACESSO.hashCode());
         return result;
     }
 
