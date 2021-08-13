@@ -20,9 +20,16 @@ public static final int TIMEOUT = 300;
 public static Var DataLastrec() throws Exception {
  return new Callable<Var>() {
 
+   private Var dataHora = Var.VAR_NULL;
+
    public Var call() throws Exception {
-    return
-cronapi.dateTime.Operations.getNow();
+
+    dataHora =
+    cronapi.dateTime.Operations.formatDateTime(
+    cronapi.dateTime.Operations.getNow(),
+    Var.valueOf(""),
+    Var.valueOf(-3));
+    return dataHora;
    }
  }.call();
 }
