@@ -4534,8 +4534,8 @@
       "modelType": "Table",
       "name": "ORGAOSICOM",
       "position": {
-        "x": 2798,
-        "y": 126
+        "x": 2796,
+        "y": 128
       },
       "queries": [],
       "realName": "",
@@ -4549,7 +4549,7 @@
       "tableName": "ORGAOSICOM",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 38
+      "z": 93
     },
     {
       "angle": 0,
