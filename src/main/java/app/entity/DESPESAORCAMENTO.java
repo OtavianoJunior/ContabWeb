@@ -37,24 +37,24 @@ public class DESPESAORCAMENTO implements Serializable {
     /**
     * @generated
     */
-    @Column(name = "COD_FICHA", nullable = true, unique = false, length=10, insertable=true, updatable=true)
+    @Column(name = "COD_FICHA", nullable = true, unique = false, length=6, insertable=true, updatable=true)
         
         private java.lang.String coD_FICHA;
 
     /**
     * @generated
     */
-    @Column(name = "VLR_FIXADO", nullable = true, unique = false, length=18, precision=2, insertable=true, updatable=true)
+    @Column(name = "VLR_FIXED", nullable = true, unique = false, length=18, precision=2, insertable=true, updatable=true)
         
-        private java.lang.Double vlR_FIXADO;
+        private java.lang.Double vlR_FIXED;
 
     /**
     * @generated
     */
-    @Temporal(TemporalType.TIMESTAMP)
-    @Column(name = "DAT_LASREC", nullable = true, unique = false, insertable=true, updatable=true)
+    @Temporal(TemporalType.DATE)
+    @Column(name = "DT_LASTREC", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private java.util.Date daT_LASREC;
+        private java.util.Date dt_LASTREC;
 
     /**
     * @generated
@@ -115,7 +115,7 @@ public class DESPESAORCAMENTO implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="ID_DESPESA", nullable = true, referencedColumnName = "ID_DESPESACLASSIFICACAO", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @JoinColumn(name="fk_DESPESACLASSIFICACAO", nullable = true, referencedColumnName = "ID_DESPESACLASSIFICACAO", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private DESPESACLASSIFICACAO id_DESPESA;
 
@@ -123,7 +123,7 @@ public class DESPESAORCAMENTO implements Serializable {
     * @generated
     */
     @ManyToOne
-    @JoinColumn(name="ID_FONTERECURSO", nullable = true, referencedColumnName = "ID_FONTERECURSO", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+    @JoinColumn(name="fk_FONTERECURSO", nullable = true, referencedColumnName = "ID_FONTERECURSO", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
         private FONTERECURSO id_FONTERECURSO;
 
@@ -173,41 +173,41 @@ public class DESPESAORCAMENTO implements Serializable {
         return this;
     }
     /**
-    * Obtém vlR_FIXADO
-    * return vlR_FIXADO
+    * Obtém vlR_FIXED
+    * return vlR_FIXED
     * @generated
     */
     
-    public java.lang.Double getVlR_FIXADO(){
-        return this.vlR_FIXADO;
+    public java.lang.Double getVlR_FIXED(){
+        return this.vlR_FIXED;
     }
 
     /**
-    * Define vlR_FIXADO
-    * @param vlR_FIXADO vlR_FIXADO
+    * Define vlR_FIXED
+    * @param vlR_FIXED vlR_FIXED
     * @generated
     */
-    public DESPESAORCAMENTO setVlR_FIXADO(java.lang.Double vlR_FIXADO){
-        this.vlR_FIXADO = vlR_FIXADO;
+    public DESPESAORCAMENTO setVlR_FIXED(java.lang.Double vlR_FIXED){
+        this.vlR_FIXED = vlR_FIXED;
         return this;
     }
     /**
-    * Obtém daT_LASREC
-    * return daT_LASREC
+    * Obtém dt_LASTREC
+    * return dt_LASTREC
     * @generated
     */
     
-    public java.util.Date getDaT_LASREC(){
-        return this.daT_LASREC;
+    public java.util.Date getDt_LASTREC(){
+        return this.dt_LASTREC;
     }
 
     /**
-    * Define daT_LASREC
-    * @param daT_LASREC daT_LASREC
+    * Define dt_LASTREC
+    * @param dt_LASTREC dt_LASTREC
     * @generated
     */
-    public DESPESAORCAMENTO setDaT_LASREC(java.util.Date daT_LASREC){
-        this.daT_LASREC = daT_LASREC;
+    public DESPESAORCAMENTO setDt_LASTREC(java.util.Date dt_LASTREC){
+        this.dt_LASTREC = dt_LASTREC;
         return this;
     }
     /**
