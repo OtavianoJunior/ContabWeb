@@ -3,6 +3,7 @@
     <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
+        <class>app.entity.PCA_PLANOCONTAS</class>
         <class>app.entity.DESPESAORCAMENTO</class>
         <class>app.entity.ANOFISCALENTIDADE</class>
         <class>app.entity.USERACESSO</class>

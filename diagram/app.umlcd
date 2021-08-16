@@ -2375,8 +2375,8 @@
       "modelType": "Table",
       "name": "DESPESAORCAMENTO",
       "position": {
-        "x": 2320,
-        "y": 712
+        "x": 2324,
+        "y": 716
       },
       "queries": [],
       "realName": "",
@@ -2666,25 +2666,26 @@
         "NRO_CUC:CUC",
         "ID_DESPESACLASSIFICACAO:DESPESACLASSIFICACAO",
         "ID_ADIANTAMENTO:PCA_ADIANTAMENTO",
-        "ID_ANOFISCAL:ANOFISCALENTIDADE"
+        "ID_ANOFISCAL:ANOFISCALENTIDADE",
+        "SEQ_DESPESAORCAMENTO:DESPESAORCAMENTO"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 230,
+          "height": 250,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_EMPENHO\nNRO_EMPENHO\nVLR_EMPENHO\nDAT_EMPENHO\nDAT_LASTREC\nCOD_USUARIO\nNRO_CUC\nID_DESPESACLASSIFICACAO\nID_ADIANTAMENTO\nID_ANOFISCAL\n"
+          "text": "ID_EMPENHO\nNRO_EMPENHO\nVLR_EMPENHO\nDAT_EMPENHO\nDAT_LASTREC\nCOD_USUARIO\nNRO_CUC\nID_DESPESACLASSIFICACAO\nID_ADIANTAMENTO\nID_ANOFISCAL\nSEQ_DESPESAORCAMENTO\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 194,
-          "text": "Inteiro\nInteiro\nNumérico\nData e Hora\nData e Hora\nTexto\nCUC\nDESPESACLASSIFICACAO\nPCA_ADIANTAMENTO\nANOFISCALENTIDADE\n"
+          "ref-x": 192.5625,
+          "text": "Inteiro\nInteiro\nNumérico\nData e Hora\nData e Hora\nTexto\nCUC\nDESPESACLASSIFICACAO\nPCA_ADIANTAMENTO\nANOFISCALENTIDADE\nDESPESAORCAMENTO\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,280)"
+          "transform": "translate(0,300)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -3017,6 +3018,37 @@
           "storageType": "",
           "storageSecret": "",
           "foreignKeyName": ""
+        },
+        {
+          "name": "SEQ_DESPESAORCAMENTO",
+          "type": "DESPESAORCAMENTO",
+          "dbName": "SEQ_DESPESAORCAMENTO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ficha",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -3035,8 +3067,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 196.4783172607422,
-        "width": 353.875
+        "height": 205.984130859375,
+        "width": 351
       },
       "tableName": "EMPENHO",
       "tableScheme": null,
@@ -5501,25 +5533,26 @@
         "COD_USUARIO:java.lang.String",
         "ID_ADIANTAMENTO:PCA_ADIANTAMENTO",
         "ID_DESPESACLASSIFICACAO:DESPESACLASSIFICACAO",
-        "ID_FONTERECURSO:FONTERECURSO"
+        "ID_FONTERECURSO:FONTERECURSO",
+        "SEQ_DESPESAORCAMENTO:DESPESAORCAMENTO"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 230,
+          "height": 250,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_ADIANTAMENTOFICHA\nVLR_CONCEDIDOFONTE\nFLG_REJEITADO\nDES_HISTORICOREJEICAO\nDAT_APROVACAO\nDAT_LASTREC\nCOD_USUARIO\nID_ADIANTAMENTO\nID_DESPESACLASSIFICACAO\nID_FONTERECURSO\n"
+          "text": "ID_ADIANTAMENTOFICHA\nVLR_CONCEDIDOFONTE\nFLG_REJEITADO\nDES_HISTORICOREJEICAO\nDAT_APROVACAO\nDAT_LASTREC\nCOD_USUARIO\nID_ADIANTAMENTO\nID_DESPESACLASSIFICACAO\nID_FONTERECURSO\nSEQ_DESPESAORCAMENTO\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 192.5625,
-          "text": "Inteiro\nNumérico\nTexto\nTexto Longo\nData e Hora\nData e Hora\nTexto\nPCA_ADIANTAMENTO\nDESPESACLASSIFICACAO\nFONTERECURSO\n"
+          "text": "Inteiro\nNumérico\nTexto\nTexto Longo\nData e Hora\nData e Hora\nTexto\nPCA_ADIANTAMENTO\nDESPESACLASSIFICACAO\nFONTERECURSO\nDESPESAORCAMENTO\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,280)"
+          "transform": "translate(0,300)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -5852,6 +5885,37 @@
           "storageType": "",
           "storageSecret": "",
           "foreignKeyName": ""
+        },
+        {
+          "name": "SEQ_DESPESAORCAMENTO",
+          "type": "DESPESAORCAMENTO",
+          "dbName": "SEQ_DESPESAORCAMENTO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ficha",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -5862,7 +5926,7 @@
       "name": "PCA_ADIANTAMENTOFICHAS",
       "position": {
         "x": 3544,
-        "y": 1050
+        "y": 1048
       },
       "queries": [],
       "realName": "",
@@ -5870,7 +5934,7 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 195.0330047607422,
+        "height": 205.984130859375,
         "width": 351
       },
       "tableName": "PCA_ADIANTAMENTOFICHAS",
@@ -6158,25 +6222,26 @@
         "FLG_SINTETIDA:java.lang.String",
         "DAT_LASTREC:java.sql.Date",
         "COD_USUARIO:java.lang.String",
-        "ID_ESTRUTURAPLANO:PCA_ESTRUTURAPLANO"
+        "ID_ESTRUTURAPLANO:PCA_ESTRUTURAPLANO",
+        "ID_CONTASUPERIOR:PCA_PLANOCONTAS"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 310,
+          "height": 330,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_CONTA\nCOD_CONTA\nDES_CONTA\nCOD_CONTASEMMASCARA\nFLG_ULTIMONIVEL\nFLG_ENCERRASALDO\nFGL_INVERSAOSALDO\nIDT_NATUREZACONTA\nIDT_VINCULAVPDVPA\nIDT_VINCULARECEITADESPESA\nFLG_SINTETIDA\nDAT_LASTREC\nCOD_USUARIO\nID_ESTRUTURAPLANO\n"
+          "text": "ID_CONTA\nCOD_CONTA\nDES_CONTA\nCOD_CONTASEMMASCARA\nFLG_ULTIMONIVEL\nFLG_ENCERRASALDO\nFGL_INVERSAOSALDO\nIDT_NATUREZACONTA\nIDT_VINCULAVPDVPA\nIDT_VINCULARECEITADESPESA\nFLG_SINTETIDA\nDAT_LASTREC\nCOD_USUARIO\nID_ESTRUTURAPLANO\nID_CONTASUPERIOR\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 205.015625,
-          "text": "Inteiro\nTexto\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nPCA_ESTRUTURAPLANO\n"
+          "text": "Inteiro\nTexto\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nPCA_ESTRUTURAPLANO\nPCA_PLANOCONTAS\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,360)"
+          "transform": "translate(0,380)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -6611,7 +6676,38 @@
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
-          "label": "ID  ESTRUTURAPLANO",
+          "label": "Estrutura do Pano de Contas",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_CONTASUPERIOR",
+          "type": "PCA_PLANOCONTAS",
+          "dbName": "ID_CONTASUPERIOR",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Conta Superior",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -6643,7 +6739,7 @@
       "name": "PCA_PLANOCONTAS",
       "position": {
         "x": 3484,
-        "y": 36
+        "y": 38
       },
       "queries": [],
       "realName": "",
@@ -6651,7 +6747,7 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 238.86758422851562,
+        "height": 249.83631896972656,
         "width": 356.71875
       },
       "tableName": "PCA_PLANOCONTAS",
@@ -12783,6 +12879,102 @@
           "fill": ""
         }
       },
+      "connector": {
+        "name": "rounded"
+      },
+      "id": "4c4cf62a-c6ae-43ed-8862-b02fae914534",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_CONTASUPERIOR:target"
+      ],
+      "router": {
+        "name": "orthogonal"
+      },
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "c37aba5b-1100-4351-b34d-6dd7ed11bb26"
+      },
+      "target": {
+        "id": "c37aba5b-1100-4351-b34d-6dd7ed11bb26"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 108
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "4cacb35a-bbe1-4ccb-8738-b890f173affa",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "SEQ_DESPESAORCAMENTO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "target": {
+        "id": "41065caa-fb29-46ed-87df-42899895fe61"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 110
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
       "id": "4e6fe0f2-b5a6-4894-96e6-afbde5a5c8d8",
       "labels": [
         {
@@ -14378,6 +14570,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": "4"
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "fcf8dbbf-0b3a-4a6c-a896-f8666c84fd94",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "SEQ_DESPESAORCAMENTO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "target": {
+        "id": "08956b92-0302-46a6-b969-efa59b84b663"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 109
     }
   ],
   "selectedGroup": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
