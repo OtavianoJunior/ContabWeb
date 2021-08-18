@@ -3180,14 +3180,14 @@
         "ID_FONTERECURSO:java.lang.Integer",
         "COD_FONTERECURSO:java.lang.Integer",
         "DES_FONTERECURSO:java.lang.String",
-        "COD_FONTERECURSODESTINACAOSUP:java.lang.String",
         "COD_FONTESEMMASCARA:java.lang.String",
         "IDT_TIPORECURSO:java.lang.String",
         "FLG_SINTETICA:java.lang.String",
         "FLG_SICOM:java.lang.String",
         "DAT_LASTREC:java.sql.Date",
         "COD_USUARIO:java.lang.String",
-        "ID_ANOFISCAL:ANOFISCALENTIDADE"
+        "ID_ANOFISCAL:ANOFISCALENTIDADE",
+        "ID_FONTERECURSOSUP:FONTERECURSO"
       ],
       "attrs": {
         ".": {
@@ -3199,12 +3199,12 @@
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_FONTERECURSO\nCOD_FONTERECURSO\nDES_FONTERECURSO\nCOD_FONTERECURSODESTINACAOSUP\nCOD_FONTESEMMASCARA\nIDT_TIPORECURSO\nFLG_SINTETICA\nFLG_SICOM\nDAT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\n"
+          "text": "ID_FONTERECURSO\nCOD_FONTERECURSO\nDES_FONTERECURSO\nCOD_FONTESEMMASCARA\nIDT_TIPORECURSO\nFLG_SINTETICA\nFLG_SICOM\nDAT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\nID_FONTERECURSOSUP\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 253.65625,
-          "text": "Inteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\n"
+          "ref-x": 180.75,
+          "text": "Inteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\nFONTERECURSO\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
@@ -3303,37 +3303,6 @@
           "dbScale": "",
           "dbDefaultValue": "",
           "label": "Descrição",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "COD_FONTERECURSODESTINACAOSUP",
-          "type": "java.lang.String",
-          "dbName": "COD_FONTERECURSODESTINACAOSUP",
-          "dbLength": 20,
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Código Superior",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -3572,6 +3541,37 @@
           "storageType": "",
           "storageSecret": "",
           "foreignKeyName": ""
+        },
+        {
+          "name": "ID_FONTERECURSOSUP",
+          "type": "FONTERECURSO",
+          "dbName": "fk_FONTERECURSO_0",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "CODIGO SUPERIOR",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -3590,8 +3590,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 207.429443359375,
-        "width": 391.296875
+        "height": 205.984130859375,
+        "width": 317.390625
       },
       "tableName": "FONTERECURSO",
       "tableScheme": null,
@@ -12860,6 +12860,57 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 30
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "connector": {
+        "name": "rounded"
+      },
+      "id": "a3872c9a-4aab-40bf-b387-aa8c16ae0d1d",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_FONTERECURSOSUP:target"
+      ],
+      "router": {
+        "name": "orthogonal"
+      },
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0"
+      },
+      "target": {
+        "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 97
     },
     {
       "attrs": {
