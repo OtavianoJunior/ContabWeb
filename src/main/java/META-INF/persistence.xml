@@ -3,7 +3,8 @@
     <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
-        <class>app.entity.FONTERECURSO</class>
+        <class>app.entity.PCA_PLANOCONTAS</class>
+        <class>app.entity.DESPESAORCAMENTO</class>
         <class>app.entity.ANOFISCALENTIDADE</class>
         <class>app.entity.USERACESSO</class>
         <class>app.entity.PCA_ESTRUTURAPLANO</class>
@@ -14,7 +15,6 @@
         <class>app.entity.PPA_FUNCAO</class>
         <class>app.entity.RoleSecurable</class>
         <class>app.entity.UserSecurable</class>
-        <class>app.entity.DESPESAORCAMENTO</class>
         <class>app.entity.PPA_SUBFUNCAO</class>
         <class>app.entity.PPA_ACAO</class>
         <class>app.entity.UF</class>
@@ -29,6 +29,7 @@
         <class>app.entity.PPA_PROGRAMA</class>
         <class>app.entity.Device</class>
         <class>app.entity.Role</class>
+        <class>app.entity.FONTERECURSO</class>
         <class>app.entity.ORGAOSICOM</class>
         <properties>
             <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>

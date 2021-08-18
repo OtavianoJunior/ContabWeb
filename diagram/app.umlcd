@@ -1512,7 +1512,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 197.4375,
+          "ref-x": 195.4375,
           "text": "Inteiro\nTexto\nTexto\nTexto Longo\nTexto\nTexto\nTexto\nData e Hora\nTexto\nDESPESACLASSIFICACAO\nANOFISCALENTIDADE\n"
         },
         ".uml-class-methods-rect": {
@@ -1890,8 +1890,8 @@
       "modelType": "Table",
       "name": "DESPESACLASSIFICACAO",
       "position": {
-        "x": 2642,
-        "y": 974
+        "x": 2640,
+        "y": 972
       },
       "queries": [],
       "realName": "",
@@ -1899,13 +1899,498 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 207.429443359375,
-        "width": 357.3125
+        "height": 205.984130859375,
+        "width": 353.875
       },
       "tableName": "DESPESACLASSIFICACAO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 47
+      "z": 97
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "SEQ_DESPESAORCAMENTO:java.lang.Integer",
+        "COD_FICHA:java.lang.String",
+        "VLR_FIXED:java.lang.Double",
+        "DT_LASTREC:java.util.Date",
+        "COD_USUARIO:java.lang.String",
+        "ID_ANOFISCAL:ANOFISCALENTIDADE",
+        "ID_UNIDORC:PPA_UNIDADEORCAMENTO",
+        "ID_FUNCAO:PPA_FUNCAO",
+        "ID_SUBFUNCAO:PPA_SUBFUNCAO",
+        "ID_PROGRAMA:PPA_PROGRAMA",
+        "ID_ACAO:PPA_ACAO",
+        "ID_DESPESA:DESPESACLASSIFICACAO",
+        "ID_FONTERECURSO:FONTERECURSO"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "height": 290,
+          "transform": "translate(0,50)"
+        },
+        ".uml-class-attrs-text": {
+          "font-size": 11,
+          "text": "SEQ_DESPESAORCAMENTO\nCOD_FICHA\nVLR_FIXED\nDT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\nID_UNIDORC\nID_FUNCAO\nID_SUBFUNCAO\nID_PROGRAMA\nID_ACAO\nID_DESPESA\nID_FONTERECURSO\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-size": 11,
+          "ref-x": 188.0625,
+          "text": "Inteiro\nTexto\nNumérico\nData\nTexto\nANOFISCALENTIDADE\nPPA_UNIDADEORCAMENTO\nPPA_FUNCAO\nPPA_SUBFUNCAO\nPPA_PROGRAMA\nPPA_ACAO\nDESPESACLASSIFICACAO\nFONTERECURSO\n"
+        },
+        ".uml-class-methods-rect": {
+          "height": 30,
+          "transform": "translate(0,340)"
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "height": 50,
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-size": 12,
+          "font-weight": "bold",
+          "text": "DESPESAORCAMENTO"
+        },
+        "rect": {
+          "stroke": "yellow",
+          "stroke-width": 2
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "SEQ_DESPESAORCAMENTO",
+          "type": "java.lang.Integer",
+          "dbName": "SEQ_DESPESAORCAMENTO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Seq. Orçamento",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "Identity",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_FICHA",
+          "type": "java.lang.String",
+          "dbName": "COD_FICHA",
+          "dbLength": 6,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ficha",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "VLR_FIXED",
+          "type": "java.lang.Double",
+          "dbName": "VLR_FIXED",
+          "dbLength": 18,
+          "dbPrecision": 2,
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Valor Fixado",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "DT_LASTREC",
+          "type": "java.util.Date",
+          "dbName": "DT_LASTREC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Dt. Manut.",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_USUARIO",
+          "type": "java.lang.String",
+          "dbName": "COD_USUARIO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Usuário",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ANOFISCAL",
+          "type": "ANOFISCALENTIDADE",
+          "dbName": "ID_ANOFISCAL",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ano Fiscal",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_UNIDORC",
+          "type": "PPA_UNIDADEORCAMENTO",
+          "dbName": "ID_UNIDORC",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Unidade Orçamentária",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_FUNCAO",
+          "type": "PPA_FUNCAO",
+          "dbName": "ID_FUNCAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Função",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_SUBFUNCAO",
+          "type": "PPA_SUBFUNCAO",
+          "dbName": "ID_SUBFUNCAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Subfunção",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_PROGRAMA",
+          "type": "PPA_PROGRAMA",
+          "dbName": "ID_PROGRAMA",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Programa",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_ACAO",
+          "type": "PPA_ACAO",
+          "dbName": "ID_ACAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ação",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_DESPESA",
+          "type": "DESPESACLASSIFICACAO",
+          "dbName": "fk_DESPESACLASSIFICACAO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Natureza Despesa",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_FONTERECURSO",
+          "type": "FONTERECURSO",
+          "dbName": "fk_FONTERECURSO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Fonte de Recurso",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "DESPESAORCAMENTO",
+      "position": {
+        "x": 2324,
+        "y": 716
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Auto",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 227.90223693847656,
+        "width": 354.625
+      },
+      "tableName": "DESPESAORCAMENTO",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "z": 99
     },
     {
       "angle": 0,
@@ -2181,25 +2666,26 @@
         "NRO_CUC:CUC",
         "ID_DESPESACLASSIFICACAO:DESPESACLASSIFICACAO",
         "ID_ADIANTAMENTO:PCA_ADIANTAMENTO",
-        "ID_ANOFISCAL:ANOFISCALENTIDADE"
+        "ID_ANOFISCAL:ANOFISCALENTIDADE",
+        "SEQ_DESPESAORCAMENTO:DESPESAORCAMENTO"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 230,
+          "height": 250,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_EMPENHO\nNRO_EMPENHO\nVLR_EMPENHO\nDAT_EMPENHO\nDAT_LASTREC\nCOD_USUARIO\nNRO_CUC\nID_DESPESACLASSIFICACAO\nID_ADIANTAMENTO\nID_ANOFISCAL\n"
+          "text": "ID_EMPENHO\nNRO_EMPENHO\nVLR_EMPENHO\nDAT_EMPENHO\nDAT_LASTREC\nCOD_USUARIO\nNRO_CUC\nID_DESPESACLASSIFICACAO\nID_ADIANTAMENTO\nID_ANOFISCAL\nSEQ_DESPESAORCAMENTO\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 194,
-          "text": "Inteiro\nInteiro\nNumérico\nData e Hora\nData e Hora\nTexto\nCUC\nDESPESACLASSIFICACAO\nPCA_ADIANTAMENTO\nANOFISCALENTIDADE\n"
+          "ref-x": 192.5625,
+          "text": "Inteiro\nInteiro\nNumérico\nData e Hora\nData e Hora\nTexto\nCUC\nDESPESACLASSIFICACAO\nPCA_ADIANTAMENTO\nANOFISCALENTIDADE\nDESPESAORCAMENTO\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,280)"
+          "transform": "translate(0,300)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -2532,6 +3018,37 @@
           "storageType": "",
           "storageSecret": "",
           "foreignKeyName": ""
+        },
+        {
+          "name": "SEQ_DESPESAORCAMENTO",
+          "type": "DESPESAORCAMENTO",
+          "dbName": "SEQ_DESPESAORCAMENTO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ficha",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -2550,8 +3067,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 196.4783172607422,
-        "width": 353.875
+        "height": 205.984130859375,
+        "width": 351
       },
       "tableName": "EMPENHO",
       "tableScheme": null,
@@ -3180,14 +3697,14 @@
         "ID_FONTERECURSO:java.lang.Integer",
         "COD_FONTERECURSO:java.lang.Integer",
         "DES_FONTERECURSO:java.lang.String",
+        "COD_FONTERECURSODESTINACAOSUP:java.lang.String",
         "COD_FONTESEMMASCARA:java.lang.String",
         "IDT_TIPORECURSO:java.lang.String",
         "FLG_SINTETICA:java.lang.String",
         "FLG_SICOM:java.lang.String",
         "DAT_LASTREC:java.sql.Date",
         "COD_USUARIO:java.lang.String",
-        "ID_ANOFISCAL:ANOFISCALENTIDADE",
-        "ID_FONTERECURSOSUP:FONTERECURSO"
+        "ID_ANOFISCAL:ANOFISCALENTIDADE"
       ],
       "attrs": {
         ".": {
@@ -3199,12 +3716,12 @@
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_FONTERECURSO\nCOD_FONTERECURSO\nDES_FONTERECURSO\nCOD_FONTESEMMASCARA\nIDT_TIPORECURSO\nFLG_SINTETICA\nFLG_SICOM\nDAT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\nID_FONTERECURSOSUP\n"
+          "text": "ID_FONTERECURSO\nCOD_FONTERECURSO\nDES_FONTERECURSO\nCOD_FONTERECURSODESTINACAOSUP\nCOD_FONTESEMMASCARA\nIDT_TIPORECURSO\nFLG_SINTETICA\nFLG_SICOM\nDAT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 180.75,
-          "text": "Inteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\nFONTERECURSO\n"
+          "ref-x": 251.640625,
+          "text": "Inteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
@@ -3303,6 +3820,37 @@
           "dbScale": "",
           "dbDefaultValue": "",
           "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "COD_FONTERECURSODESTINACAOSUP",
+          "type": "java.lang.String",
+          "dbName": "COD_FONTERECURSODESTINACAOSUP",
+          "dbLength": 20,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código Superior",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -3541,37 +4089,6 @@
           "storageType": "",
           "storageSecret": "",
           "foreignKeyName": ""
-        },
-        {
-          "name": "ID_FONTERECURSOSUP",
-          "type": "FONTERECURSO",
-          "dbName": "fk_FONTERECURSO_0",
-          "dbLength": "",
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "CODIGO SUPERIOR",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -3581,7 +4098,7 @@
       "modelType": "Table",
       "name": "FONTERECURSO",
       "position": {
-        "x": 3040,
+        "x": 3038,
         "y": 364
       },
       "queries": [],
@@ -3591,7 +4108,7 @@
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
         "height": 205.984130859375,
-        "width": 317.390625
+        "width": 388.28125
       },
       "tableName": "FONTERECURSO",
       "tableScheme": null,
@@ -5016,25 +5533,26 @@
         "COD_USUARIO:java.lang.String",
         "ID_ADIANTAMENTO:PCA_ADIANTAMENTO",
         "ID_DESPESACLASSIFICACAO:DESPESACLASSIFICACAO",
-        "ID_FONTERECURSO:FONTERECURSO"
+        "ID_FONTERECURSO:FONTERECURSO",
+        "SEQ_DESPESAORCAMENTO:DESPESAORCAMENTO"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 230,
+          "height": 250,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_ADIANTAMENTOFICHA\nVLR_CONCEDIDOFONTE\nFLG_REJEITADO\nDES_HISTORICOREJEICAO\nDAT_APROVACAO\nDAT_LASTREC\nCOD_USUARIO\nID_ADIANTAMENTO\nID_DESPESACLASSIFICACAO\nID_FONTERECURSO\n"
+          "text": "ID_ADIANTAMENTOFICHA\nVLR_CONCEDIDOFONTE\nFLG_REJEITADO\nDES_HISTORICOREJEICAO\nDAT_APROVACAO\nDAT_LASTREC\nCOD_USUARIO\nID_ADIANTAMENTO\nID_DESPESACLASSIFICACAO\nID_FONTERECURSO\nSEQ_DESPESAORCAMENTO\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 194,
-          "text": "Inteiro\nNumérico\nTexto\nTexto Longo\nData e Hora\nData e Hora\nTexto\nPCA_ADIANTAMENTO\nDESPESACLASSIFICACAO\nFONTERECURSO\n"
+          "ref-x": 192.5625,
+          "text": "Inteiro\nNumérico\nTexto\nTexto Longo\nData e Hora\nData e Hora\nTexto\nPCA_ADIANTAMENTO\nDESPESACLASSIFICACAO\nFONTERECURSO\nDESPESAORCAMENTO\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,280)"
+          "transform": "translate(0,300)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -5367,6 +5885,37 @@
           "storageType": "",
           "storageSecret": "",
           "foreignKeyName": ""
+        },
+        {
+          "name": "SEQ_DESPESAORCAMENTO",
+          "type": "DESPESAORCAMENTO",
+          "dbName": "SEQ_DESPESAORCAMENTO",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Ficha",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -5376,8 +5925,8 @@
       "modelType": "Table",
       "name": "PCA_ADIANTAMENTOFICHAS",
       "position": {
-        "x": 3546,
-        "y": 1050
+        "x": 3544,
+        "y": 1048
       },
       "queries": [],
       "realName": "",
@@ -5385,8 +5934,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 196.4783172607422,
-        "width": 353.875
+        "height": 205.984130859375,
+        "width": 351
       },
       "tableName": "PCA_ADIANTAMENTOFICHAS",
       "tableScheme": null,
@@ -5673,25 +6222,26 @@
         "FLG_SINTETIDA:java.lang.String",
         "DAT_LASTREC:java.sql.Date",
         "COD_USUARIO:java.lang.String",
-        "ID_ESTRUTURAPLANO:PCA_ESTRUTURAPLANO"
+        "ID_ESTRUTURAPLANO:PCA_ESTRUTURAPLANO",
+        "ID_CONTASUPERIOR:PCA_PLANOCONTAS"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 310,
+          "height": 330,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_CONTA\nCOD_CONTA\nDES_CONTA\nCOD_CONTASEMMASCARA\nFLG_ULTIMONIVEL\nFLG_ENCERRASALDO\nFGL_INVERSAOSALDO\nIDT_NATUREZACONTA\nIDT_VINCULAVPDVPA\nIDT_VINCULARECEITADESPESA\nFLG_SINTETIDA\nDAT_LASTREC\nCOD_USUARIO\nID_ESTRUTURAPLANO\n"
+          "text": "ID_CONTA\nCOD_CONTA\nDES_CONTA\nCOD_CONTASEMMASCARA\nFLG_ULTIMONIVEL\nFLG_ENCERRASALDO\nFGL_INVERSAOSALDO\nIDT_NATUREZACONTA\nIDT_VINCULAVPDVPA\nIDT_VINCULARECEITADESPESA\nFLG_SINTETIDA\nDAT_LASTREC\nCOD_USUARIO\nID_ESTRUTURAPLANO\nID_CONTASUPERIOR\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 205.015625,
-          "text": "Inteiro\nTexto\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nPCA_ESTRUTURAPLANO\n"
+          "text": "Inteiro\nTexto\nTexto Longo\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nPCA_ESTRUTURAPLANO\nPCA_PLANOCONTAS\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,360)"
+          "transform": "translate(0,380)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -6126,7 +6676,38 @@
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
-          "label": "ID  ESTRUTURAPLANO",
+          "label": "Estrutura do Pano de Contas",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
+          "name": "ID_CONTASUPERIOR",
+          "type": "PCA_PLANOCONTAS",
+          "dbName": "ID_CONTASUPERIOR",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Conta Superior",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -6158,7 +6739,7 @@
       "name": "PCA_PLANOCONTAS",
       "position": {
         "x": 3484,
-        "y": 36
+        "y": 38
       },
       "queries": [],
       "realName": "",
@@ -6166,7 +6747,7 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 238.86758422851562,
+        "height": 249.83631896972656,
         "width": 356.71875
       },
       "tableName": "PCA_PLANOCONTAS",
@@ -7961,7 +8542,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 136.515625,
+          "ref-x": 134.078125,
           "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -8215,7 +8796,7 @@
       "modelType": "Table",
       "name": "PPA_SUBFUNCAO",
       "position": {
-        "x": 1826,
+        "x": 1828,
         "y": 1008
       },
       "queries": [],
@@ -8224,8 +8805,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 163.671875,
-        "width": 215.296875
+        "height": 162.2265625,
+        "width": 211.390625
       },
       "tableName": "PPA_SUBFUNCAO",
       "tableScheme": null,
@@ -8262,7 +8843,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 196.8125,
+          "ref-x": 194.796875,
           "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nData e Hora\nData e Hora\nTexto\nPPA_UNIDADEORCAMENTO\nORGAOSICOM\nANOFISCALENTIDADE\n"
         },
         ".uml-class-methods-rect": {
@@ -8671,7 +9252,7 @@
       "modelType": "Table",
       "name": "PPA_UNIDADEORCAMENTO",
       "position": {
-        "x": 2256,
+        "x": 2258,
         "y": 160
       },
       "queries": [],
@@ -8680,8 +9261,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 218.38616943359375,
-        "width": 364.8125
+        "height": 216.94085693359375,
+        "width": 361.359375
       },
       "tableName": "PPA_UNIDADEORCAMENTO",
       "tableScheme": null,
@@ -12106,6 +12687,51 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "42944468-064e-432d-9130-27eb51ec26d0",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ANOFISCAL:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "2166da61-583a-4185-8d73-700c21589979"
+      },
+      "target": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 100
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
         ".": {
           "display": "normal"
         },
@@ -12150,6 +12776,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 19
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "47f3ffb2-5874-47ca-8eef-8f0932265254",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_ACAO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "d5beb815-b456-45d1-bd14-d99fa6604bde"
+      },
+      "target": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 105
     },
     {
       "associationType": "Association",
@@ -12208,6 +12879,102 @@
           "fill": ""
         }
       },
+      "connector": {
+        "name": "rounded"
+      },
+      "id": "4c4cf62a-c6ae-43ed-8862-b02fae914534",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_CONTASUPERIOR:target"
+      ],
+      "router": {
+        "name": "orthogonal"
+      },
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "c37aba5b-1100-4351-b34d-6dd7ed11bb26"
+      },
+      "target": {
+        "id": "c37aba5b-1100-4351-b34d-6dd7ed11bb26"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 108
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "4cacb35a-bbe1-4ccb-8738-b890f173affa",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "SEQ_DESPESAORCAMENTO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "target": {
+        "id": "41065caa-fb29-46ed-87df-42899895fe61"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 110
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
       "id": "4e6fe0f2-b5a6-4894-96e6-afbde5a5c8d8",
       "labels": [
         {
@@ -12240,6 +13007,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 83
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "5741acc8-f238-49be-9461-b44e81ae5693",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_UNIDORC:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "9ef94dfa-d23e-4bc1-ad20-d36870a91dd5"
+      },
+      "target": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 101
     },
     {
       "associationType": "Association",
@@ -12490,6 +13302,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": "4"
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "6a76a010-6f4b-47c2-800f-851334bcf59f",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_FUNCAO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "ca776754-e2e5-4872-89ce-d02a052ab4d2"
+      },
+      "target": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 102
     },
     {
       "associationType": "Association",
@@ -12873,10 +13730,7 @@
           "fill": ""
         }
       },
-      "connector": {
-        "name": "rounded"
-      },
-      "id": "a3872c9a-4aab-40bf-b387-aa8c16ae0d1d",
+      "id": "a22b083b-6fc4-416c-a1ac-18471f18f478",
       "labels": [
         {
           "position": 0.9,
@@ -12896,21 +13750,18 @@
       "name": null,
       "queries": [],
       "relationFields": [
-        "ID_FONTERECURSOSUP:target"
+        "ID_DESPESA:target"
       ],
-      "router": {
-        "name": "orthogonal"
-      },
       "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
       "source": {
-        "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0"
+        "id": "e7a63482-11d4-4835-9b4c-9ee024984e30"
       },
       "target": {
-        "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0"
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
       },
       "type": "uml.Composition",
       "vertices": [],
-      "z": 97
+      "z": 106
     },
     {
       "attrs": {
@@ -12957,6 +13808,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": "4"
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "afc51ec4-729e-4163-9638-4e1dcb87b397",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_FONTERECURSO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0"
+      },
+      "target": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 107
     },
     {
       "associationType": "Association",
@@ -13009,6 +13905,51 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "b9359691-a7fa-42b3-af51-684ea23adb08",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_SUBFUNCAO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "8d5e5044-e238-49ea-9c56-f6cbe1d9e807"
+      },
+      "target": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 103
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
         ".": {
           "display": "normal"
         },
@@ -13053,6 +13994,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 23
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "c58078bf-ff45-41ad-be6b-511d6d6461c8",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_PROGRAMA:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "90449c8e-3365-4350-843d-de1e66f88b75"
+      },
+      "target": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 104
     },
     {
       "associationType": "Association",
@@ -13584,6 +14570,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": "4"
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "fcf8dbbf-0b3a-4a6c-a896-f8666c84fd94",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "SEQ_DESPESAORCAMENTO:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "7adbcda8-363d-474c-8f9a-d0c89866bd50"
+      },
+      "target": {
+        "id": "08956b92-0302-46a6-b969-efa59b84b663"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 109
     }
   ],
   "selectedGroup": "1d7f906f-a526-482d-aaf4-08d227ae8c18",
@@ -13635,6 +14666,7 @@
         "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
         "a9daca3f-9ddd-41ad-9961-200b89f35561",
         "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+        "7adbcda8-363d-474c-8f9a-d0c89866bd50",
         "ca776754-e2e5-4872-89ce-d02a052ab4d2",
         "9349d8af-328b-4879-ad00-7e83ba9e884b",
         "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0",
