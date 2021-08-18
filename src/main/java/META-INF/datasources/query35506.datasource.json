@@ -1,0 +1,166 @@
+{
+  "customId": "query35506",
+  "queryName": "FonteRecurso",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "FONTERECURSO",
+  "entityFullName": "app.entity.FONTERECURSO",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "FONTERECURSO",
+        "alias": "f",
+        "namespace": "app.entity.FONTERECURSO"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "f"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id_FONTERECURSO": null,
+    "coD_FONTERECURSO": null,
+    "deS_FONTERECURSO": null,
+    "coD_FONTERECURSODESTINACAOSUP": null,
+    "coD_FONTESEMMASCARA": null,
+    "idT_TIPORECURSO": null,
+    "flG_SINTETICA": null,
+    "flG_SICOM": null,
+    "daT_LASTREC": {
+      "type": "server",
+      "blocklyMethod": "DataLastrec",
+      "blocklyClass": "blockly.DataLastrec",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.DataLastrec",
+        "sourcePath": "src/main/java/blockly/DataLastrec.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "DataLastrec",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "coD_USUARIO": {
+      "type": "server",
+      "blocklyMethod": "ObterIdUsuarioLogado",
+      "blocklyClass": "blockly.Usuario",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Usuario",
+        "sourcePath": "src/main/java/blockly/Usuario.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ValidarCPF",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ValidarCadastroOrgão",
+            "hasReturn": "false",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "id_ANOFISCAL": null
+  },
+  "defaultValuesProperties": {
+    "id_FONTERECURSO": null,
+    "coD_FONTERECURSO": null,
+    "deS_FONTERECURSO": null,
+    "coD_FONTERECURSODESTINACAOSUP": null,
+    "coD_FONTESEMMASCARA": null,
+    "idT_TIPORECURSO": null,
+    "flG_SINTETICA": null,
+    "flG_SICOM": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ANOFISCAL": null
+  },
+  "security": {
+    "id_FONTERECURSO": null,
+    "coD_FONTERECURSO": null,
+    "deS_FONTERECURSO": null,
+    "coD_FONTERECURSODESTINACAOSUP": null,
+    "coD_FONTESEMMASCARA": null,
+    "idT_TIPORECURSO": null,
+    "flG_SINTETICA": null,
+    "flG_SICOM": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ANOFISCAL": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query35506/",
+  "audit": false
+}
