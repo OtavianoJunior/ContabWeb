@@ -1,0 +1,172 @@
+{
+  "customId": "query841916",
+  "queryName": "Despesa Orçamento",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "DESPESAORCAMENTO",
+  "entityFullName": "app.entity.DESPESAORCAMENTO",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "DESPESAORCAMENTO",
+        "alias": "d",
+        "namespace": "app.entity.DESPESAORCAMENTO"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "d"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": {
+      "type": "server",
+      "blocklyMethod": "DataLastrec",
+      "blocklyClass": "blockly.DataLastrec",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.DataLastrec",
+        "sourcePath": "src/main/java/blockly/DataLastrec.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "DataLastrec",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "coD_USUARIO": {
+      "type": "server",
+      "blocklyMethod": "ObterIdUsuarioLogado",
+      "blocklyClass": "blockly.Usuario",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Usuario",
+        "sourcePath": "src/main/java/blockly/Usuario.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ValidarCPF",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ValidarCadastroOrgão",
+            "hasReturn": "false",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
+  },
+  "defaultValuesProperties": {
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
+  },
+  "security": {
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query841916/",
+  "audit": false
+}
