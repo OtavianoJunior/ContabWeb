@@ -37,9 +37,9 @@ public class FONTERECURSO implements Serializable {
     /**
     * @generated
     */
-    @Column(name = "COD_FONTERECURSO", nullable = true, unique = false, insertable=true, updatable=true)
+    @Column(name = "COD_FONTERECURSO", nullable = true, unique = false, length=12, insertable=true, updatable=true)
         
-        private java.lang.Integer coD_FONTERECURSO;
+        private java.lang.String coD_FONTERECURSO;
 
     /**
     * @generated
@@ -138,7 +138,7 @@ public class FONTERECURSO implements Serializable {
     * @generated
     */
     
-    public java.lang.Integer getCoD_FONTERECURSO(){
+    public java.lang.String getCoD_FONTERECURSO(){
         return this.coD_FONTERECURSO;
     }
 
@@ -147,7 +147,7 @@ public class FONTERECURSO implements Serializable {
     * @param coD_FONTERECURSO coD_FONTERECURSO
     * @generated
     */
-    public FONTERECURSO setCoD_FONTERECURSO(java.lang.Integer coD_FONTERECURSO){
+    public FONTERECURSO setCoD_FONTERECURSO(java.lang.String coD_FONTERECURSO){
         this.coD_FONTERECURSO = coD_FONTERECURSO;
         return this;
     }

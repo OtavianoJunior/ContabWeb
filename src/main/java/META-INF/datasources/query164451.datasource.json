@@ -1,6 +1,6 @@
 {
-  "customId": "query78386",
-  "queryName": "Entidade",
+  "customId": "query164451",
+  "queryName": "Combo Entidade",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
@@ -30,7 +30,17 @@
     "rulesOrderBy": [],
     "rules": {
       "condition": "AND",
-      "rules": [],
+      "rules": [
+        {
+          "id": "e.coD_ENTIDADE",
+          "field": "e.coD_ENTIDADE",
+          "type": "integer",
+          "input": "text",
+          "operator": "equal",
+          "value": ":entidade",
+          "valueIsField": false
+        }
+      ],
       "not": false,
       "valid": true
     },
@@ -39,7 +49,40 @@
     "paginatorAutomatic": false,
     "pagination": false
   },
-  "queryParamsValues": [],
+  "queryParamsValues": [
+    {
+      "fieldName": "entidade",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "ObterEntidadeUsuario",
+        "blocklyClass": "blockly.FuncoesComuns",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.FuncoesComuns",
+          "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "ObterIdUsuarioLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterDataeHora",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterEntidadeUsuario",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
+    }
+  ],
   "verbs": {
     "GET": true,
     "GETAuthorities": null,
@@ -79,66 +122,8 @@
     "nrO_TELEFONE": null,
     "nrO_FAX": null,
     "deS_EMAIL": null,
-    "daT_LASTREC": {
-      "type": "server",
-      "blocklyMethod": "DataLastrec",
-      "blocklyClass": "blockly.DataLastrec",
-      "blocklyLanguage": "java",
-      "blocklyParams": [],
-      "blocklyJson": {
-        "namespace": "blockly.DataLastrec",
-        "sourcePath": "src/main/java/blockly/DataLastrec.blockly",
-        "language": "java",
-        "methods": [
-          {
-            "name": "DataLastrec",
-            "hasReturn": "true",
-            "params": []
-          }
-        ]
-      },
-      "blocklyGETMethod": null,
-      "blocklyPOSTMethod": null,
-      "blocklyPUTMethod": null,
-      "blocklyDELETEMethod": null,
-      "blocklyFILTERMethod": null,
-      "blocklyCOUNTMethod": null
-    },
-    "coD_USUARIO": {
-      "type": "server",
-      "blocklyMethod": "ObterIdUsuarioLogado",
-      "blocklyClass": "blockly.Usuario",
-      "blocklyLanguage": "java",
-      "blocklyParams": [],
-      "blocklyJson": {
-        "namespace": "blockly.Usuario",
-        "sourcePath": "src/main/java/blockly/Usuario.blockly",
-        "language": "java",
-        "methods": [
-          {
-            "name": "ObterIdUsuarioLogado",
-            "hasReturn": "true",
-            "params": []
-          },
-          {
-            "name": "ValidarCPF",
-            "hasReturn": "true",
-            "params": []
-          },
-          {
-            "name": "ValidarCadastroOrgão",
-            "hasReturn": "false",
-            "params": []
-          }
-        ]
-      },
-      "blocklyGETMethod": null,
-      "blocklyPOSTMethod": null,
-      "blocklyPUTMethod": null,
-      "blocklyDELETEMethod": null,
-      "blocklyFILTERMethod": null,
-      "blocklyCOUNTMethod": null
-    },
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
     "id_MUNICIPIO": null
   },
   "defaultValuesProperties": {
@@ -187,6 +172,6 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query78386/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query164451/",
   "audit": false
 }
