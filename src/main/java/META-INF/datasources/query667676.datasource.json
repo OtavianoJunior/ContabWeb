@@ -1,0 +1,239 @@
+{
+  "customId": "planodecontas",
+  "queryName": "Plano de Contas",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "PCA_PLANOCONTAS",
+  "entityFullName": "app.entity.PCA_PLANOCONTAS",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "PCA_PLANOCONTAS",
+        "namespace": "app.entity.PCA_PLANOCONTAS",
+        "alias": "p"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "p",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "p.id_ESTRUTURAPLANO.id_ENTIDADE",
+          "field": "p.id_ESTRUTURAPLANO.id_ENTIDADE",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":id_ESTRUTURAPLANOId_ENTIDADE",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "id_ESTRUTURAPLANOId_ENTIDADE",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "ObterEntidadeUsuario",
+        "blocklyClass": "blockly.FuncoesComuns",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.FuncoesComuns",
+          "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "ObterIdUsuarioLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterDataeHora",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterEntidadeUsuario",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id_CONTA": null,
+    "coD_CONTA": null,
+    "deS_CONTA": null,
+    "coD_CONTASEMMASCARA": null,
+    "flG_ULTIMONIVEL": null,
+    "flG_ENCERRASALDO": null,
+    "fgL_INVERSAOSALDO": null,
+    "idT_NATUREZACONTA": null,
+    "idT_VINCULAVPDVPA": null,
+    "idT_VINCULARECEITADESPESA": null,
+    "flG_SINTETIDA": null,
+    "daT_LASTREC": {
+      "type": "server",
+      "blocklyMethod": "ObterDataeHora",
+      "blocklyClass": "blockly.FuncoesComuns",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.FuncoesComuns",
+        "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterDataeHora",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterEntidadeUsuario",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "coD_USUARIO": {
+      "type": "server",
+      "blocklyMethod": "ObterIdUsuarioLogado",
+      "blocklyClass": "blockly.FuncoesComuns",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.FuncoesComuns",
+        "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterDataeHora",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterEntidadeUsuario",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "id_ESTRUTURAPLANO": null,
+    "id_CONTASUPERIOR": null
+  },
+  "defaultValuesProperties": {
+    "id_CONTA": null,
+    "coD_CONTA": null,
+    "deS_CONTA": null,
+    "coD_CONTASEMMASCARA": null,
+    "flG_ULTIMONIVEL": null,
+    "flG_ENCERRASALDO": null,
+    "fgL_INVERSAOSALDO": null,
+    "idT_NATUREZACONTA": null,
+    "idT_VINCULAVPDVPA": null,
+    "idT_VINCULARECEITADESPESA": null,
+    "flG_SINTETIDA": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ESTRUTURAPLANO": null,
+    "id_CONTASUPERIOR": null
+  },
+  "security": {
+    "id_CONTA": null,
+    "coD_CONTA": null,
+    "deS_CONTA": null,
+    "coD_CONTASEMMASCARA": null,
+    "flG_ULTIMONIVEL": null,
+    "flG_ENCERRASALDO": null,
+    "fgL_INVERSAOSALDO": null,
+    "idT_NATUREZACONTA": null,
+    "idT_VINCULAVPDVPA": null,
+    "idT_VINCULARECEITADESPESA": null,
+    "flG_SINTETIDA": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ESTRUTURAPLANO": null,
+    "id_CONTASUPERIOR": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query667676/",
+  "audit": false
+}

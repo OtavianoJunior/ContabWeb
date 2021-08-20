@@ -39,7 +39,7 @@ public class PPA_ACAO implements Serializable {
     */
     @Column(name = "COD_ACAO", nullable = true, unique = false, insertable=true, updatable=true)
         
-        private java.lang.Integer coD_ACAO;
+        private java.lang.String coD_ACAO;
 
     /**
     * @generated
@@ -124,7 +124,7 @@ public class PPA_ACAO implements Serializable {
     * @generated
     */
     
-    public java.lang.Integer getCoD_ACAO(){
+    public java.lang.String getCoD_ACAO(){
         return this.coD_ACAO;
     }
 
@@ -133,7 +133,7 @@ public class PPA_ACAO implements Serializable {
     * @param coD_ACAO coD_ACAO
     * @generated
     */
-    public PPA_ACAO setCoD_ACAO(java.lang.Integer coD_ACAO){
+    public PPA_ACAO setCoD_ACAO(java.lang.String coD_ACAO){
         this.coD_ACAO = coD_ACAO;
         return this;
     }

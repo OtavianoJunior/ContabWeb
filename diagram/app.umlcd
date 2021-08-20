@@ -1171,6 +1171,9 @@
         "COD_USUARIO:java.lang.String"
       ],
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".uml-class-attrs-rect": {
           "height": 190,
           "transform": "translate(0,50)"
@@ -1925,6 +1928,9 @@
         "ID_FONTERECURSO:FONTERECURSO"
       ],
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".uml-class-attrs-rect": {
           "height": 290,
           "transform": "translate(0,50)"
@@ -2375,8 +2381,8 @@
       "modelType": "Table",
       "name": "DESPESAORCAMENTO",
       "position": {
-        "x": 2324,
-        "y": 716
+        "x": 2296,
+        "y": 720
       },
       "queries": [],
       "realName": "",
@@ -2390,7 +2396,7 @@
       "tableName": "DESPESAORCAMENTO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 99
+      "z": 114
     },
     {
       "angle": 0,
@@ -2670,6 +2676,9 @@
         "SEQ_DESPESAORCAMENTO:DESPESAORCAMENTO"
       ],
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".uml-class-attrs-rect": {
           "height": 250,
           "transform": "translate(0,50)"
@@ -3110,7 +3119,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 151.59375,
+          "ref-x": 149.15625,
           "text": "Inteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nMUNICIPIO\n"
         },
         ".uml-class-methods-rect": {
@@ -3683,8 +3692,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 273.22743225097656,
-        "width": 230.375
+        "height": 271.78211975097656,
+        "width": 226.46875
       },
       "tableName": "ENTIDADE",
       "tableScheme": null,
@@ -3695,16 +3704,16 @@
       "angle": 0,
       "attributes": [
         "ID_FONTERECURSO:java.lang.Integer",
-        "COD_FONTERECURSO:java.lang.Integer",
+        "COD_FONTERECURSO:java.lang.String",
         "DES_FONTERECURSO:java.lang.String",
-        "COD_FONTERECURSODESTINACAOSUP:java.lang.String",
         "COD_FONTESEMMASCARA:java.lang.String",
         "IDT_TIPORECURSO:java.lang.String",
         "FLG_SINTETICA:java.lang.String",
         "FLG_SICOM:java.lang.String",
         "DAT_LASTREC:java.sql.Date",
         "COD_USUARIO:java.lang.String",
-        "ID_ANOFISCAL:ANOFISCALENTIDADE"
+        "ID_ANOFISCAL:ANOFISCALENTIDADE",
+        "ID_FONTERECURSOSUP:FONTERECURSO"
       ],
       "attrs": {
         ".": {
@@ -3716,12 +3725,12 @@
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_FONTERECURSO\nCOD_FONTERECURSO\nDES_FONTERECURSO\nCOD_FONTERECURSODESTINACAOSUP\nCOD_FONTESEMMASCARA\nIDT_TIPORECURSO\nFLG_SINTETICA\nFLG_SICOM\nDAT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\n"
+          "text": "ID_FONTERECURSO\nCOD_FONTERECURSO\nDES_FONTERECURSO\nCOD_FONTESEMMASCARA\nIDT_TIPORECURSO\nFLG_SINTETICA\nFLG_SICOM\nDAT_LASTREC\nCOD_USUARIO\nID_ANOFISCAL\nID_FONTERECURSOSUP\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 251.640625,
-          "text": "Inteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\n"
+          "ref-x": 180.75,
+          "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\nFONTERECURSO\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
@@ -3782,9 +3791,9 @@
         },
         {
           "name": "COD_FONTERECURSO",
-          "type": "java.lang.Integer",
+          "type": "java.lang.String",
           "dbName": "COD_FONTERECURSO",
-          "dbLength": "",
+          "dbLength": 12,
           "dbPrecision": "",
           "dbScale": "",
           "dbDefaultValue": "",
@@ -3820,37 +3829,6 @@
           "dbScale": "",
           "dbDefaultValue": "",
           "label": "Descrição",
-          "mask": "",
-          "isPrimaryKey": false,
-          "isUniqueKey": false,
-          "isNullable": true,
-          "pkType": "",
-          "multitenantContext": "",
-          "jsonIgnore": false,
-          "isTransient": false,
-          "isInsertable": true,
-          "isUpdatable": true,
-          "isEncryption": false,
-          "referencedColumnName": "",
-          "isSearchable": false,
-          "sequence": "",
-          "isCascade": false,
-          "isVersion": false,
-          "storageId": "",
-          "storageKey": "",
-          "storageType": "",
-          "storageSecret": "",
-          "foreignKeyName": ""
-        },
-        {
-          "name": "COD_FONTERECURSODESTINACAOSUP",
-          "type": "java.lang.String",
-          "dbName": "COD_FONTERECURSODESTINACAOSUP",
-          "dbLength": 20,
-          "dbPrecision": "",
-          "dbScale": "",
-          "dbDefaultValue": "",
-          "label": "Código Superior",
           "mask": "",
           "isPrimaryKey": false,
           "isUniqueKey": false,
@@ -4089,6 +4067,37 @@
           "storageType": "",
           "storageSecret": "",
           "foreignKeyName": ""
+        },
+        {
+          "name": "ID_FONTERECURSOSUP",
+          "type": "FONTERECURSO",
+          "dbName": "fk_FONTERECURSO_0",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Código Superior",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -4108,12 +4117,12 @@
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
         "height": 205.984130859375,
-        "width": 388.28125
+        "width": 317.390625
       },
       "tableName": "FONTERECURSO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 44
+      "z": 113
     },
     {
       "angle": 0,
@@ -5054,6 +5063,9 @@
         "ID_ANOFISCAL:ANOFISCALENTIDADE"
       ],
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".uml-class-attrs-rect": {
           "height": 290,
           "transform": "translate(0,50)"
@@ -5513,7 +5525,7 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 228.52723693847656,
+        "height": 227.90223693847656,
         "width": 422.453125
       },
       "tableName": "PCA_ADIANTAMENTO",
@@ -5537,6 +5549,9 @@
         "SEQ_DESPESAORCAMENTO:DESPESAORCAMENTO"
       ],
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".uml-class-attrs-rect": {
           "height": 250,
           "transform": "translate(0,50)"
@@ -6204,7 +6219,7 @@
       "tableName": "PCA_ESTRUTURAPLANO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 67
+      "z": 111
     },
     {
       "angle": 0,
@@ -6226,6 +6241,9 @@
         "ID_CONTASUPERIOR:PCA_PLANOCONTAS"
       ],
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".uml-class-attrs-rect": {
           "height": 330,
           "transform": "translate(0,50)"
@@ -6767,6 +6785,9 @@
         "ID_CONTA:PCA_PLANOCONTAS"
       ],
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".uml-class-attrs-rect": {
           "height": 170,
           "transform": "translate(0,50)"
@@ -7031,8 +7052,8 @@
       "modelType": "Table",
       "name": "PCA_SUBTIPOADIANTAMENTO",
       "position": {
-        "x": 4110,
-        "y": 496
+        "x": 4112,
+        "y": 498
       },
       "queries": [],
       "realName": "",
@@ -7063,6 +7084,9 @@
         "ID_ENTIDADE:ENTIDADE"
       ],
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".uml-class-attrs-rect": {
           "height": 230,
           "transform": "translate(0,50)"
@@ -7441,7 +7465,7 @@
       "angle": 0,
       "attributes": [
         "ID_ACAO:java.lang.Integer",
-        "COD_ACAO:java.lang.Integer",
+        "COD_ACAO:java.lang.String",
         "DES_ACAO:java.lang.StringBuffer",
         "DES_ACAORESUMIDA:java.lang.String",
         "IDT_TIPOACAO:java.lang.String",
@@ -7464,8 +7488,8 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 154.65625,
-          "text": "Inteiro\nInteiro\nTexto Longo\nTexto\nTexto\nTexto Longo\nData e Hora\nTexto\nANOFISCALENTIDADE\n"
+          "ref-x": 152.640625,
+          "text": "Inteiro\nTexto\nTexto Longo\nTexto\nTexto\nTexto Longo\nData e Hora\nTexto\nANOFISCALENTIDADE\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
@@ -7526,7 +7550,7 @@
         },
         {
           "name": "COD_ACAO",
-          "type": "java.lang.Integer",
+          "type": "java.lang.String",
           "dbName": "COD_ACAO",
           "dbLength": "",
           "dbPrecision": "",
@@ -7780,7 +7804,7 @@
       "modelType": "Table",
       "name": "PPA_ACAO",
       "position": {
-        "x": 1506,
+        "x": 1498,
         "y": 606
       },
       "queries": [],
@@ -7789,8 +7813,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 185.533935546875,
-        "width": 292.296875
+        "height": 184.088623046875,
+        "width": 289.28125
       },
       "tableName": "PPA_ACAO",
       "tableScheme": null,
@@ -7822,7 +7846,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 126.734375,
+          "ref-x": 124.296875,
           "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -8085,8 +8109,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 163.671875,
-        "width": 205.515625
+        "height": 162.2265625,
+        "width": 201.609375
       },
       "tableName": "PPA_FUNCAO",
       "tableScheme": null,
@@ -8122,7 +8146,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 204.765625,
+          "ref-x": 202.328125,
           "text": "Inteiro\nTexto\nTexto Longo\nTexto\nTexto Longo\nTexto Longo\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\n"
         },
         ".uml-class-methods-rect": {
@@ -8509,8 +8533,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 207.429443359375,
-        "width": 342.40625
+        "height": 205.984130859375,
+        "width": 338.96875
       },
       "tableName": "PPA_PROGRAMA",
       "tableScheme": null,
@@ -10522,7 +10546,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 156.6875,
+          "ref-x": 155.453125,
           "text": "Texto\nInteiro\nTexto\nLógico\nLógico\nData e Hora\nTexto\nTexto\nTexto\nTexto\nTexto\nLógico\nTexto\nLógico\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -11237,8 +11261,8 @@
         ""
       ],
       "size": {
-        "height": 272.61024475097656,
-        "width": 235.21875
+        "height": 271.78211975097656,
+        "width": 232.765625
       },
       "tableName": "USER",
       "type": "uml.Class",
@@ -12160,6 +12184,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12403,6 +12430,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12552,6 +12582,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12597,6 +12630,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12642,6 +12678,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12687,6 +12726,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12780,6 +12822,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12825,6 +12870,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12870,6 +12918,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12921,6 +12972,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -12966,6 +13020,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13011,6 +13068,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13056,6 +13116,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13205,6 +13268,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13306,6 +13372,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13351,6 +13420,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13396,6 +13468,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13535,6 +13610,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13580,6 +13658,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13721,6 +13802,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13812,6 +13896,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -13914,6 +14001,60 @@
           "fill": ""
         }
       },
+      "connector": {
+        "name": "rounded"
+      },
+      "id": "b5d6ca13-0f4c-4f2c-8983-ee95800f2959",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_FONTERECURSOSUP:target"
+      ],
+      "router": {
+        "name": "orthogonal"
+      },
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0"
+      },
+      "target": {
+        "id": "5efd3fe8-249f-4db9-8ba2-d9c94167bdf0"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 112
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".": {
+          "display": "normal"
+        },
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
       "id": "b9359691-a7fa-42b3-af51-684ea23adb08",
       "labels": [
         {
@@ -13998,6 +14139,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -14091,6 +14235,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -14230,6 +14377,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -14387,6 +14537,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
@@ -14574,6 +14727,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
