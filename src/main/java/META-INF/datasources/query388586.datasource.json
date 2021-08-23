@@ -1,28 +1,24 @@
 {
-  "customId": "query78386",
-  "queryName": "Entidade",
+  "customId": "query388586",
+  "queryName": "SubtipoAdiantamernto",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
-  "entitySimpleName": "ENTIDADE",
-  "entityFullName": "app.entity.ENTIDADE",
+  "entitySimpleName": "PCA_SUBTIPOADIANTAMENTO",
+  "entityFullName": "app.entity.PCA_SUBTIPOADIANTAMENTO",
   "query": {
     "isValid": true,
-    "isEmpty": false,
-    "operationType": "object",
-    "type": "select",
     "rulesEntity": [
       {
-        "entity": "ENTIDADE",
-        "namespace": "app.entity.ENTIDADE",
-        "alias": "e"
+        "entity": "PCA_SUBTIPOADIANTAMENTO",
+        "alias": "p",
+        "namespace": "app.entity.PCA_SUBTIPOADIANTAMENTO"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "e",
-        "type": "string"
+        "field": "p"
       }
     ],
     "rulesGroupBy": [],
@@ -30,14 +26,10 @@
     "rulesOrderBy": [],
     "rules": {
       "condition": "AND",
-      "rules": [],
       "not": false,
-      "valid": true
-    },
-    "isRawSql": false,
-    "multiTenant": false,
-    "paginatorAutomatic": false,
-    "pagination": false
+      "valid": true,
+      "rules": []
+    }
   },
   "queryParamsValues": [],
   "verbs": {
@@ -65,33 +57,56 @@
     "onError": null
   },
   "defaultValues": {
-    "id_ENTIDADE": null,
-    "coD_ENTIDADE": null,
-    "deS_TIPOENTIDADE": null,
-    "nrO_CGC": null,
-    "nrO_INSCESTADUAL": null,
-    "deS_ENTIDADE": null,
-    "deS_LOGRADOURO": null,
-    "nrO_ENDERECO": null,
-    "deS_COMPLEMENTO": null,
-    "deS_BAIRRO": null,
-    "nrO_CEP": null,
-    "nrO_TELEFONE": null,
-    "nrO_FAX": null,
-    "deS_EMAIL": null,
-    "daT_LASTREC": {
+    "id_SUBTIPOADIANTAMENTO": null,
+    "coD_SUBTIPOADIANTAMENTO": null,
+    "deS_SUBTIPOADIANTAMENTO": {
       "type": "server",
-      "blocklyMethod": "DataLastrec",
-      "blocklyClass": "blockly.DataLastrec",
+      "blocklyMethod": "CarregarDescricaoConta",
+      "blocklyClass": "blockly.TipoAdiantamento",
       "blocklyLanguage": "java",
       "blocklyParams": [],
       "blocklyJson": {
-        "namespace": "blockly.DataLastrec",
-        "sourcePath": "src/main/java/blockly/DataLastrec.blockly",
+        "namespace": "blockly.TipoAdiantamento",
+        "sourcePath": "src/main/java/blockly/TipoAdiantamento.blockly",
         "language": "java",
         "methods": [
           {
-            "name": "DataLastrec",
+            "name": "CarregarDescricaoConta",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "daT_LASTREC": {
+      "type": "server",
+      "blocklyMethod": "ObterDataeHora",
+      "blocklyClass": "blockly.FuncoesComuns",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.FuncoesComuns",
+        "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterDataeHora",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterEntidadeUsuario",
             "hasReturn": "true",
             "params": []
           }
@@ -107,12 +122,12 @@
     "coD_USUARIO": {
       "type": "server",
       "blocklyMethod": "ObterIdUsuarioLogado",
-      "blocklyClass": "blockly.Usuario",
+      "blocklyClass": "blockly.FuncoesComuns",
       "blocklyLanguage": "java",
       "blocklyParams": [],
       "blocklyJson": {
-        "namespace": "blockly.Usuario",
-        "sourcePath": "src/main/java/blockly/Usuario.blockly",
+        "namespace": "blockly.FuncoesComuns",
+        "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
         "language": "java",
         "methods": [
           {
@@ -121,13 +136,13 @@
             "params": []
           },
           {
-            "name": "ValidarCPF",
+            "name": "ObterDataeHora",
             "hasReturn": "true",
             "params": []
           },
           {
-            "name": "ValidarCadastroOrgão",
-            "hasReturn": "false",
+            "name": "ObterEntidadeUsuario",
+            "hasReturn": "true",
             "params": []
           }
         ]
@@ -139,45 +154,26 @@
       "blocklyFILTERMethod": null,
       "blocklyCOUNTMethod": null
     },
-    "id_MUNICIPIO": null
+    "id_TIPOADIANTAMENTO": null,
+    "id_CONTA": null
   },
   "defaultValuesProperties": {
-    "id_ENTIDADE": null,
-    "coD_ENTIDADE": null,
-    "deS_TIPOENTIDADE": null,
-    "nrO_CGC": null,
-    "nrO_INSCESTADUAL": null,
-    "deS_ENTIDADE": null,
-    "deS_LOGRADOURO": null,
-    "nrO_ENDERECO": null,
-    "deS_COMPLEMENTO": null,
-    "deS_BAIRRO": null,
-    "nrO_CEP": null,
-    "nrO_TELEFONE": null,
-    "nrO_FAX": null,
-    "deS_EMAIL": null,
+    "id_SUBTIPOADIANTAMENTO": null,
+    "coD_SUBTIPOADIANTAMENTO": null,
+    "deS_SUBTIPOADIANTAMENTO": null,
     "daT_LASTREC": null,
     "coD_USUARIO": null,
-    "id_MUNICIPIO": null
+    "id_TIPOADIANTAMENTO": null,
+    "id_CONTA": null
   },
   "security": {
-    "id_ENTIDADE": null,
-    "coD_ENTIDADE": null,
-    "deS_TIPOENTIDADE": null,
-    "nrO_CGC": null,
-    "nrO_INSCESTADUAL": null,
-    "deS_ENTIDADE": null,
-    "deS_LOGRADOURO": null,
-    "nrO_ENDERECO": null,
-    "deS_COMPLEMENTO": null,
-    "deS_BAIRRO": null,
-    "nrO_CEP": null,
-    "nrO_TELEFONE": null,
-    "nrO_FAX": null,
-    "deS_EMAIL": null,
+    "id_SUBTIPOADIANTAMENTO": null,
+    "coD_SUBTIPOADIANTAMENTO": null,
+    "deS_SUBTIPOADIANTAMENTO": null,
     "daT_LASTREC": null,
     "coD_USUARIO": null,
-    "id_MUNICIPIO": null
+    "id_TIPOADIANTAMENTO": null,
+    "id_CONTA": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
@@ -187,6 +183,6 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query78386/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query388586/",
   "audit": false
 }

@@ -1,28 +1,24 @@
 {
-  "customId": "query78386",
-  "queryName": "Entidade",
+  "customId": "query841916",
+  "queryName": "Despesa Orçamento",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
-  "entitySimpleName": "ENTIDADE",
-  "entityFullName": "app.entity.ENTIDADE",
+  "entitySimpleName": "DESPESAORCAMENTO",
+  "entityFullName": "app.entity.DESPESAORCAMENTO",
   "query": {
     "isValid": true,
-    "isEmpty": false,
-    "operationType": "object",
-    "type": "select",
     "rulesEntity": [
       {
-        "entity": "ENTIDADE",
-        "namespace": "app.entity.ENTIDADE",
-        "alias": "e"
+        "entity": "DESPESAORCAMENTO",
+        "alias": "d",
+        "namespace": "app.entity.DESPESAORCAMENTO"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "e",
-        "type": "string"
+        "field": "d"
       }
     ],
     "rulesGroupBy": [],
@@ -30,14 +26,10 @@
     "rulesOrderBy": [],
     "rules": {
       "condition": "AND",
-      "rules": [],
       "not": false,
-      "valid": true
-    },
-    "isRawSql": false,
-    "multiTenant": false,
-    "paginatorAutomatic": false,
-    "pagination": false
+      "valid": true,
+      "rules": []
+    }
   },
   "queryParamsValues": [],
   "verbs": {
@@ -65,21 +57,10 @@
     "onError": null
   },
   "defaultValues": {
-    "id_ENTIDADE": null,
-    "coD_ENTIDADE": null,
-    "deS_TIPOENTIDADE": null,
-    "nrO_CGC": null,
-    "nrO_INSCESTADUAL": null,
-    "deS_ENTIDADE": null,
-    "deS_LOGRADOURO": null,
-    "nrO_ENDERECO": null,
-    "deS_COMPLEMENTO": null,
-    "deS_BAIRRO": null,
-    "nrO_CEP": null,
-    "nrO_TELEFONE": null,
-    "nrO_FAX": null,
-    "deS_EMAIL": null,
-    "daT_LASTREC": {
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": {
       "type": "server",
       "blocklyMethod": "DataLastrec",
       "blocklyClass": "blockly.DataLastrec",
@@ -139,45 +120,44 @@
       "blocklyFILTERMethod": null,
       "blocklyCOUNTMethod": null
     },
-    "id_MUNICIPIO": null
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
   },
   "defaultValuesProperties": {
-    "id_ENTIDADE": null,
-    "coD_ENTIDADE": null,
-    "deS_TIPOENTIDADE": null,
-    "nrO_CGC": null,
-    "nrO_INSCESTADUAL": null,
-    "deS_ENTIDADE": null,
-    "deS_LOGRADOURO": null,
-    "nrO_ENDERECO": null,
-    "deS_COMPLEMENTO": null,
-    "deS_BAIRRO": null,
-    "nrO_CEP": null,
-    "nrO_TELEFONE": null,
-    "nrO_FAX": null,
-    "deS_EMAIL": null,
-    "daT_LASTREC": null,
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": null,
     "coD_USUARIO": null,
-    "id_MUNICIPIO": null
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
   },
   "security": {
-    "id_ENTIDADE": null,
-    "coD_ENTIDADE": null,
-    "deS_TIPOENTIDADE": null,
-    "nrO_CGC": null,
-    "nrO_INSCESTADUAL": null,
-    "deS_ENTIDADE": null,
-    "deS_LOGRADOURO": null,
-    "nrO_ENDERECO": null,
-    "deS_COMPLEMENTO": null,
-    "deS_BAIRRO": null,
-    "nrO_CEP": null,
-    "nrO_TELEFONE": null,
-    "nrO_FAX": null,
-    "deS_EMAIL": null,
-    "daT_LASTREC": null,
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": null,
     "coD_USUARIO": null,
-    "id_MUNICIPIO": null
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
@@ -187,6 +167,6 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query78386/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query841916/",
   "audit": false
 }

@@ -37,9 +37,9 @@ public class FONTERECURSO implements Serializable {
     /**
     * @generated
     */
-    @Column(name = "COD_FONTERECURSO", nullable = true, unique = false, insertable=true, updatable=true)
+    @Column(name = "COD_FONTERECURSO", nullable = true, unique = false, length=12, insertable=true, updatable=true)
         
-        private java.lang.Integer coD_FONTERECURSO;
+        private java.lang.String coD_FONTERECURSO;
 
     /**
     * @generated
@@ -47,6 +47,13 @@ public class FONTERECURSO implements Serializable {
     @Column(name = "DES_FONTERECURSO", nullable = true, unique = false, length=40, insertable=true, updatable=true)
         
         private java.lang.String deS_FONTERECURSO;
+
+    /**
+    * @generated
+    */
+    @Column(name = "COD_FONTERECURSODESTINACAOSUP", nullable = true, unique = false, length=20, insertable=true, updatable=true)
+        
+        private java.lang.String coD_FONTERECURSODESTINACAOSUP;
 
     /**
     * @generated
@@ -100,14 +107,6 @@ public class FONTERECURSO implements Serializable {
         private ANOFISCALENTIDADE id_ANOFISCAL;
 
     /**
-    * @generated
-    */
-    @ManyToOne
-    @JoinColumn(name="fk_FONTERECURSO_0", nullable = true, referencedColumnName = "ID_FONTERECURSO", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
-        
-        private FONTERECURSO id_FONTERECURSOSUP;
-
-    /**
     * Construtor
     * @generated
     */
@@ -139,7 +138,7 @@ public class FONTERECURSO implements Serializable {
     * @generated
     */
     
-    public java.lang.Integer getCoD_FONTERECURSO(){
+    public java.lang.String getCoD_FONTERECURSO(){
         return this.coD_FONTERECURSO;
     }
 
@@ -148,7 +147,7 @@ public class FONTERECURSO implements Serializable {
     * @param coD_FONTERECURSO coD_FONTERECURSO
     * @generated
     */
-    public FONTERECURSO setCoD_FONTERECURSO(java.lang.Integer coD_FONTERECURSO){
+    public FONTERECURSO setCoD_FONTERECURSO(java.lang.String coD_FONTERECURSO){
         this.coD_FONTERECURSO = coD_FONTERECURSO;
         return this;
     }
@@ -169,6 +168,25 @@ public class FONTERECURSO implements Serializable {
     */
     public FONTERECURSO setDeS_FONTERECURSO(java.lang.String deS_FONTERECURSO){
         this.deS_FONTERECURSO = deS_FONTERECURSO;
+        return this;
+    }
+    /**
+    * Obtém coD_FONTERECURSODESTINACAOSUP
+    * return coD_FONTERECURSODESTINACAOSUP
+    * @generated
+    */
+    
+    public java.lang.String getCoD_FONTERECURSODESTINACAOSUP(){
+        return this.coD_FONTERECURSODESTINACAOSUP;
+    }
+
+    /**
+    * Define coD_FONTERECURSODESTINACAOSUP
+    * @param coD_FONTERECURSODESTINACAOSUP coD_FONTERECURSODESTINACAOSUP
+    * @generated
+    */
+    public FONTERECURSO setCoD_FONTERECURSODESTINACAOSUP(java.lang.String coD_FONTERECURSODESTINACAOSUP){
+        this.coD_FONTERECURSODESTINACAOSUP = coD_FONTERECURSODESTINACAOSUP;
         return this;
     }
     /**
@@ -302,25 +320,6 @@ public class FONTERECURSO implements Serializable {
     */
     public FONTERECURSO setId_ANOFISCAL(ANOFISCALENTIDADE id_ANOFISCAL){
         this.id_ANOFISCAL = id_ANOFISCAL;
-        return this;
-    }
-    /**
-    * Obtém id_FONTERECURSOSUP
-    * return id_FONTERECURSOSUP
-    * @generated
-    */
-    
-    public FONTERECURSO getId_FONTERECURSOSUP(){
-        return this.id_FONTERECURSOSUP;
-    }
-
-    /**
-    * Define id_FONTERECURSOSUP
-    * @param id_FONTERECURSOSUP id_FONTERECURSOSUP
-    * @generated
-    */
-    public FONTERECURSO setId_FONTERECURSOSUP(FONTERECURSO id_FONTERECURSOSUP){
-        this.id_FONTERECURSOSUP = id_FONTERECURSOSUP;
         return this;
     }
 
