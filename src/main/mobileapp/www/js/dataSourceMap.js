@@ -12,6 +12,7 @@ window.dataSourceMap["app.Login"] = { customId: "app.entity.Login", serviceUrl: 
 window.dataSourceMap["app.MUNICIPIO"] = { customId: "app.entity.MUNICIPIO", serviceUrl: "api/cronapi/crud/app.entity.MUNICIPIO", serviceUrlODATA: "/api/cronapi/odata/v2/app/MUNICIPIO" };
 window.dataSourceMap["app.ORGAOSICOM"] = { customId: "app.entity.ORGAOSICOM", serviceUrl: "api/cronapi/crud/app.entity.ORGAOSICOM", serviceUrlODATA: "/api/cronapi/odata/v2/app/ORGAOSICOM" };
 window.dataSourceMap["app.PCA_ESTRUTURAPLANO"] = { customId: "app.entity.PCA_ESTRUTURAPLANO", serviceUrl: "api/cronapi/crud/app.entity.PCA_ESTRUTURAPLANO", serviceUrlODATA: "/api/cronapi/odata/v2/app/PCA_ESTRUTURAPLANO" };
+window.dataSourceMap["app.PCA_PLANOCONTAS"] = { customId: "app.entity.PCA_PLANOCONTAS", serviceUrl: "api/cronapi/crud/app.entity.PCA_PLANOCONTAS", serviceUrlODATA: "/api/cronapi/odata/v2/app/PCA_PLANOCONTAS" };
 window.dataSourceMap["app.PPA_ACAO"] = { customId: "app.entity.PPA_ACAO", serviceUrl: "api/cronapi/crud/app.entity.PPA_ACAO", serviceUrlODATA: "/api/cronapi/odata/v2/app/PPA_ACAO" };
 window.dataSourceMap["app.PPA_FUNCAO"] = { customId: "app.entity.PPA_FUNCAO", serviceUrl: "api/cronapi/crud/app.entity.PPA_FUNCAO", serviceUrlODATA: "/api/cronapi/odata/v2/app/PPA_FUNCAO" };
 window.dataSourceMap["app.PPA_PROGRAMA"] = { customId: "app.entity.PPA_PROGRAMA", serviceUrl: "api/cronapi/crud/app.entity.PPA_PROGRAMA", serviceUrlODATA: "/api/cronapi/odata/v2/app/PPA_PROGRAMA" };
