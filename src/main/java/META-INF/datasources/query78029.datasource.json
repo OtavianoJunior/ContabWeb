@@ -1,0 +1,157 @@
+{
+  "customId": "query78029",
+  "queryName": "Fornecedor",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "CUC",
+  "entityFullName": "app.entity.CUC",
+  "query": {
+    "isValid": true,
+    "rulesEntity": [
+      {
+        "entity": "CUC",
+        "alias": "c",
+        "namespace": "app.entity.CUC"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "c"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "not": false,
+      "valid": true,
+      "rules": []
+    }
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "nrO_CUC": null,
+    "nrO_CGC": null,
+    "deS_NOME": null,
+    "deS_EMAIL": null,
+    "nrO_FONE1": null,
+    "daT_CADASTRO": null,
+    "daT_LASTREC": {
+      "type": "server",
+      "blocklyMethod": "DataLastrec",
+      "blocklyClass": "blockly.DataLastrec",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.DataLastrec",
+        "sourcePath": "src/main/java/blockly/DataLastrec.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "DataLastrec",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
+    "coD_USUARIO": {
+      "type": "server",
+      "blocklyMethod": "ObterIdUsuarioLogado",
+      "blocklyClass": "blockly.Usuario",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.Usuario",
+        "sourcePath": "src/main/java/blockly/Usuario.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ValidarCPF",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ValidarCadastroOrgão",
+            "hasReturn": "false",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    }
+  },
+  "defaultValuesProperties": {
+    "nrO_CUC": null,
+    "nrO_CGC": null,
+    "deS_NOME": null,
+    "deS_EMAIL": null,
+    "nrO_FONE1": null,
+    "daT_CADASTRO": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null
+  },
+  "security": {
+    "nrO_CUC": null,
+    "nrO_CGC": null,
+    "deS_NOME": null,
+    "deS_EMAIL": null,
+    "nrO_FONE1": null,
+    "daT_CADASTRO": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query78029/",
+  "audit": false
+}

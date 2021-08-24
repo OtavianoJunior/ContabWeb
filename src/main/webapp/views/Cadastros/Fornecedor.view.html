@@ -1,0 +1,93 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="" primary-datasource="CUC">
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-44436">Fornedor</h1>
+
+<datasource data-component="crn-datasource" filter="" name="CUC" entity="app.CUC" keys="_objectKey" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;nrO_CUC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_CGC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_NOME&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_EMAIL&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_FONE1&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_CADASTRO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}]" condition="{&quot;maxRecord&quot;:100,&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;deS_NOME&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true" parameters="" dependent-lazy-post="" checkrequired=""></datasource>
+
+        <div role="search" ng-hide="CUC.inserting || CUC.editing" data-component="crn-textinput" id="crn-datasource-filter-general44436" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<section ng-hide="CUC.editing || CUC.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;CUC&quot;,&quot;entity&quot;:&quot;app.CUC&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.CUC&quot;,&quot;customId&quot;:&quot;CUC&quot;,&quot;name&quot;:&quot;CUC&quot;,&quot;customQueryName&quot;:&quot;app.CUC&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.CUC&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;nrO_CUC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_CGC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_NOME&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_EMAIL&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_FONE1&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_CADASTRO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;keys&quot;:&quot;_objectKey&quot;,&quot;rowsPerPage&quot;:&quot;100&quot;,&quot;schema&quot;:[{&quot;name&quot;:&quot;nrO_CUC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_CGC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_NOME&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;deS_EMAIL&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;nrO_FONE1&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_CADASTRO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;daT_LASTREC&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;coD_USUARIO&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;parameters&quot;:&quot;&quot;,&quot;condition&quot;:&quot;{\&quot;maxRecord\&quot;:100,\&quot;params\&quot;:[],\&quot;expression\&quot;:{\&quot;type\&quot;:\&quot;OR\&quot;,\&quot;args\&quot;:[{\&quot;type\&quot;:\&quot;%\&quot;,\&quot;left\&quot;:\&quot;deS_NOME\&quot;,\&quot;right\&quot;:\&quot;{{vars.search|raw}}\&quot;,\&quot;args\&quot;:[]}]}}&quot;,&quot;dependentLazyPost&quot;:&quot;&quot;,&quot;lazy&quot;:&quot;true&quot;,&quot;checkrequired&quot;:&quot;&quot;,&quot;onBeforeCreate&quot;:&quot;&quot;,&quot;onAfterCreate&quot;:&quot;&quot;,&quot;onBeforeUpdate&quot;:&quot;&quot;,&quot;onAfterUpdate&quot;:&quot;&quot;,&quot;onBeforeDelete&quot;:&quot;&quot;,&quot;onAfterDelete&quot;:&quot;&quot;,&quot;onAfterFill&quot;:&quot;&quot;,&quot;dataComponent&quot;:&quot;crn-datasource&quot;,&quot;id&quot;:&quot;&quot;,&quot;oldName&quot;:&quot;&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;batchMode&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;pathView&quot;:&quot;src/main/webapp/views/Cadastros/Fornecedor.view.html&quot;,&quot;modelGrid&quot;:&quot;custom&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;deS_NOME&quot;,&quot;headerText&quot;:&quot;Nome&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;nrO_CGC&quot;,&quot;headerText&quot;:&quot;CNPJ / CPF&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]},&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;,&quot;blocklyInfo&quot;:{&quot;blocklyParams&quot;:[]}}],&quot;details&quot;:[],&quot;groupings&quot;:[]}" ng-model="vars.grid44436" class="" style="" scrollable="false">
+    </cron-grid>
+</section>
+
+<div data-component="crn-form" id="crn-form-form-CUC-44436">
+    <section class="form" ng-show="CUC.editing || CUC.inserting">
+        <form crn-datasource="CUC" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <button aria-label="{{'StartInserting' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startInserting()"><span class="k-icon k-i-plus"></span></button>
+                <button aria-label="{{'StartEditing' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startEditing()"><span class="k-icon k-i-edit"></span></button>
+                <button aria-label="{{'Before' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasPrevious()" ng-click="datasource.previous()"><span class="k-icon k-i-arrow-chevron-left"></span></button>
+                <button aria-label="{{'Next' | translate}}" class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasNext()" ng-click="datasource.next()"><span class="k-icon k-i-arrow-chevron-right"></span></button>
+                <button aria-label="{{'Remove' | translate}}" class="btn btn-danger btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <button aria-label="{{'SaveChanges' | translate}}" class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="cronapi.server('blockly.Credor.Verificar_TipoValidado').names().run()"><span class="k-icon k-i-check"></span></button>
+                <button aria-label="{{'CancelChanges' | translate}}" class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button>
+            </div>
+            <br>
+            <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                    
+
+
+                    <div class="component-holder ng-scope" data-component="crn-vertical-container" id="crn-vertical-container-342504"><div class="col-md-12" data-container="true" data-replace="false"><div class="component-holder ng-scope col-md-12" data-component="crn-horizontal-container" id="crn-horizontal-container-32604"><div class="col-md-6" data-container="true" data-replace="false"><div class="component-holder ng-scope" data-component="crn-textinput" id="crn-textinput-TipoFornecedor-885068"><div class="form-group"><label for="input3229">Tipo</label><input type="text" mask="" mask-placeholder="" ng-required="true" ng-model="vars.tipoFornecedor" class="form-control k-textbox" id="input3229" placeholder="1 - CNPJ / 2 - CPF / 3 - Outros" ng-blur="cronapi.server('blockly.Credor.Validar_TipoCredor').names().run()"></div></div></div><div class="col-md-6" data-container="true" data-replace="false"><div data-component="crn-textinput" id="crn-textinput-nrO_CGC-44436" class="">
+                        <div class="form-group">
+                                <label for="textinput-nrO_CGC" class="">CNPJ / CPF</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="CUC.active.nrO_CGC" class="form-control k-textbox" id="textinput-nrO_CGC" placeholder="CNPJ / CPF" mask="" mask-placeholder="" ng-required="false" ng-blur="cronapi.server('blockly.Credor.Validar_TipoFornecedor').names().run()" ng-click="">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div></div></div></div></div><div class="component-holder ng-scope" data-component="crn-vertical-container" id="crn-vertical-container-853630"><div class="col-md-12" data-container="true" data-replace="false"><div class="component-holder ng-scope col-md-12" data-component="crn-horizontal-container" id="crn-horizontal-container-312212"><div class="col-md-6" data-container="true" data-replace="false"><div data-component="crn-textinput" id="crn-textinput-deS_NOME-44436" class="style1266">
+                        <div class="form-group">
+                                <label for="textinput-deS_NOME" class="">Nome</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="CUC.active.deS_NOME" class="form-control k-textbox" id="textinput-deS_NOME" placeholder="Nome" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div></div><div class="col-md-6" data-container="true" data-replace="false"><div data-component="crn-textinput" id="crn-textinput-deS_EMAIL-44436" class="">
+                        <div class="form-group">
+                                <label for="textinput-deS_EMAIL" class="">E-Mail</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="CUC.active.deS_EMAIL" class="form-control k-textbox" id="textinput-deS_EMAIL" placeholder="E-Mail" mask="" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div></div></div></div></div><div class="component-holder ng-scope" data-component="crn-vertical-container" id="crn-vertical-container-389624"><div class="component-holder ng-scope col-md-12" data-component="crn-horizontal-container" id="crn-horizontal-container-537162"></div></div>
+
+
+                    
+
+
+                    
+
+
+                    <div class="component-holder ng-scope" data-component="crn-vertical-container" id="crn-vertical-container-449393"><div class="col-md-12" data-container="true" data-replace="false"><div class="component-holder ng-scope col-md-12" data-component="crn-horizontal-container" id="crn-horizontal-container-508693"><div class="col-md-6" data-container="true" data-replace="false"><div data-component="crn-textinput" id="crn-textinput-nrO_FONE1-44436" class="">
+                        <div class="form-group">
+                                <label for="textinput-nrO_FONE1" class="">Fone</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input type="text" ng-model="CUC.active.nrO_FONE1" class="form-control k-textbox" id="textinput-nrO_FONE1" placeholder="Fone" mask="(99) 99999-9999;0" mask-placeholder="" ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div></div><div class="col-md-6" data-container="true" data-replace="false"><div class="component-holder ng-scope" data-component="crn-datepicker" id="crn-textinput-daT_CADASTRO-44436"><div class="form-group"><label for="label-crn-datepicker-672697">Data Cadastro</label><input type="date" mask="" mask-placeholder="" ng-required="true" ng-model="CUC.active.daT_CADASTRO" class="form-control k-textbox" id="input-crn-datepicker-672697"></div></div></div></div></div></div>
+                <!-- NtoN  -->
+                <!-- NtoN  end-->
+            </div>
+        </form>
+    </section>
+    <section class="form" ng-show="CUC.editing || CUC.inserting">
+        <form>
+            <div>
+                <!-- OneToN -->
+                <!-- OneToOne  end -->
+            </div>
+        </form>
+    </section>
+</div>
+
+
+</div>
