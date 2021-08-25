@@ -5516,7 +5516,7 @@
       "modelType": "Table",
       "name": "PCA_ADIANTAMENTO",
       "position": {
-        "x": 3968,
+        "x": 3966,
         "y": 746
       },
       "queries": [],
@@ -5940,7 +5940,7 @@
       "modelType": "Table",
       "name": "PCA_ADIANTAMENTOFICHAS",
       "position": {
-        "x": 3544,
+        "x": 3546,
         "y": 1048
       },
       "queries": [],
@@ -7459,7 +7459,7 @@
       "tableName": "PCA_TIPOADIANTAMENTO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 68
+      "z": 115
     },
     {
       "angle": 0,
