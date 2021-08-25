@@ -1,0 +1,2937 @@
+{
+  "customId": "query217658",
+  "queryName": "Integração",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "PCA_ADIANTAMENTO",
+  "entityFullName": "app.entity.PCA_ADIANTAMENTO",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "PCA_ADIANTAMENTO",
+        "namespace": "app.entity.PCA_ADIANTAMENTO",
+        "alias": "p"
+      },
+      {
+        "entity": "PCA_ADIANTAMENTOFICHAS",
+        "namespace": "app.entity.PCA_ADIANTAMENTOFICHAS",
+        "alias": "pc"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "p",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.daTLASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.daT_ADIANTAMENTO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.daT_CANCELAMENTOADIANTAMENTO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.daT_LIMITEPRESTACAOCONTA",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.deS_FINALIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.deS_MOTIVOCANCELAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.coD_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO.id_MUNICIPIO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.deS_BAIRRO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.deS_COMPLEMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.deS_EMAIL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.deS_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.deS_LOGRADOURO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.deS_TIPOENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO.coD_MUNICIPIO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO.coD_MUNICIPIOSICOM",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO.deS_MUNICIPIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO.id_UF",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO.nrO_SIAF",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.nrO_CEP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.nrO_CGC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.nrO_ENDERECO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.nrO_FAX",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.nrO_INSCESTADUAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ENTIDADE.nrO_TELEFONE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.deS_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.coD_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.deS_BAIRRO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.deS_COMPLEMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.deS_EMAIL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.deS_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.deS_LOGRADOURO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.deS_TIPOENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ESTRUTURAPLANO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.id_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.id_MUNICIPIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.nrO_CEP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.nrO_CGC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.nrO_ENDERECO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.nrO_FAX",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.nrO_INSCESTADUAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE.nrO_TELEFONE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.coD_SUBTIPOADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.deS_SUBTIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.coD_CONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.coD_CONTASEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTA",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.deS_CONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.fgL_INVERSAOSALDO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.flG_ENCERRASALDO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.flG_SINTETIDA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.flG_ULTIMONIVEL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.idT_NATUREZACONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.idT_VINCULARECEITADESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.idT_VINCULAVPDVPA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.coD_CONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.coD_CONTASEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.deS_CONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.fgL_INVERSAOSALDO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.flG_ENCERRASALDO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.flG_SINTETIDA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_SUBTIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_ESTRUTURAPLANO.id_ESTRUTURAPLANO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.id_CONTA",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.flG_ULTIMONIVEL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.idT_NATUREZACONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.idT_VINCULARECEITADESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.idT_VINCULAVPDVPA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.id_CONTASUPERIOR",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_ESTRUTURAPLANO.coD_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_ESTRUTURAPLANO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_ESTRUTURAPLANO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_ESTRUTURAPLANO.deS_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_CONTA.id_ESTRUTURAPLANO.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.coD_TIPOADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.daT_DESATIVACAO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.id_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.deS_TIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.fgL_EXIGEPRESTACAOCONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.idT_RECEITADESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.coD_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.deS_BAIRRO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.deS_COMPLEMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.deS_EMAIL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.deS_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.deS_LOGRADOURO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.deS_TIPOENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.id_MUNICIPIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.nrO_CEP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.nrO_CGC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.nrO_ENDERECO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_CUC.nrO_CUC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_TIPOADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.nrO_FAX",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.nrO_INSCESTADUAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE.nrO_TELEFONE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.nrO_MAXDEPENDENCIA",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_ADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_CUC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_CUC.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_CUC.daT_CADASTRO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_CUC.daT_LASTREC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_CUC.deS_EMAIL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_CUC.deS_NOME",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_CUC.nrO_CGC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.nrO_CUC.nrO_FONE1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.vlR_CONCEDIDO",
+        "type": "double"
+      },
+      {
+        "func": "get",
+        "field": "pc",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.daT_APROVACAO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.deS_HISTORICOREJEICAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.flG_REJEITADO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.daTLASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.daT_ADIANTAMENTO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.daT_CANCELAMENTOADIANTAMENTO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.daT_LIMITEPRESTACAOCONTA",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.deS_FINALIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.deS_MOTIVOCANCELAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.coD_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ESTRUTURAPLANO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.id_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_BAIRRO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_COMPLEMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_EMAIL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_LOGRADOURO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_TIPOENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_CEP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_CGC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_ENDERECO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_FAX",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_INSCESTADUAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_TELEFONE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.deS_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.coD_SUBTIPOADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_SUBTIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTA",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.deS_SUBTIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.coD_CONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.coD_CONTASEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.deS_CONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.fgL_INVERSAOSALDO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.flG_ENCERRASALDO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.flG_SINTETIDA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.flG_ULTIMONIVEL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.idT_NATUREZACONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.idT_VINCULARECEITADESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.idT_VINCULAVPDVPA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.id_CONTASUPERIOR",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_CONTA.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.coD_TIPOADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.daT_DESATIVACAO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.deS_TIPOADIANTAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.fgL_EXIGEPRESTACAOCONTA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTOFICHA",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_CUC.nrO_CUC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_TIPOADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.idT_RECEITADESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.id_SUBTIPOADIANTAMENTO.id_TIPOADIANTAMENTO.nrO_MAXDEPENDENCIA",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_ADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_CUC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_CUC.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_CUC.daT_CADASTRO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_CUC.daT_LASTREC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_CUC.deS_EMAIL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_CUC.deS_NOME",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_CUC.nrO_CGC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.nrO_CUC.nrO_FONE1",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ADIANTAMENTO.vlR_CONCEDIDO",
+        "type": "double"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.coD_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.coD_DESPESASEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.coD_DESPESASUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_DESPESACLASSIFICACAO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.id_DESPESACLASSIFICACAO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.deS_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.flG_SICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.flG_SINTETICA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.idT_TIPODESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_DESPESASUP.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.deS_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.flG_SICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.flG_SINTETICA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.idT_TIPODESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_DESPESASUP.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.id_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.deS_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.flG_SICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.flG_SINTETICA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.idT_TIPODESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.coD_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.deS_BAIRRO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.deS_COMPLEMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.deS_EMAIL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.deS_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.deS_LOGRADOURO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.deS_TIPOENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_DESPESACLASSIFICACAO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ESTRUTURAPLANO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.nrO_CEP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.nrO_CGC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.nrO_ENDERECO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.nrO_FAX",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.nrO_INSCESTADUAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ENTIDADE.nrO_TELEFONE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ESTRUTURAPLANO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ESTRUTURAPLANO.deS_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_DESPESACLASSIFICACAO.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.coD_FONTERECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.coD_FONTERECURSODESTINACAOSUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.coD_FONTESEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.deS_FONTERECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.flG_SICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.flG_SINTETICA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.idT_TIPORECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.id_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.coD_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.deS_BAIRRO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.deS_COMPLEMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.deS_EMAIL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.deS_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.deS_LOGRADOURO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.deS_TIPOENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.nrO_CEP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.nrO_CGC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.nrO_ENDERECO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.nrO_FAX",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.nrO_INSCESTADUAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE.nrO_TELEFONE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ACAO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_FONTERECURSO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ESTRUTURAPLANO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ESTRUTURAPLANO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ESTRUTURAPLANO.deS_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_FONTERECURSO.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.coD_FICHA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.dt_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.coD_ACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.deS_ACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.deS_ACAORESUMIDA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.deS_PRODUTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.idT_TIPOACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.id_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ACAO.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.coD_ENTIDADE",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_BAIRRO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_COMPLEMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_EMAIL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_LOGRADOURO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.deS_TIPOENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.id_MUNICIPIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ESTRUTURAPLANO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_CEP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_CGC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_ENDERECO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_FAX",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_INSCESTADUAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ENTIDADE.nrO_TELEFONE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.deS_ESTRUTURA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.id_ESTRUTURAPLANO.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.coD_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.coD_DESPESASEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.coD_DESPESASUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.deS_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.flG_SICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.flG_SINTETICA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_DESPESACLASSIFICACAO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.id_DESPESACLASSIFICACAO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.idT_TIPODESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESASUP.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.deS_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.flG_SICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.flG_SINTETICA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.idT_TIPODESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_DESPESA.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.coD_FONTERECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.coD_FONTERECURSODESTINACAOSUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.coD_FONTESEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FUNCAO.id_FUNCAO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_FONTERECURSO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.deS_FONTERECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.flG_SICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.flG_SINTETICA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.idT_TIPORECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FONTERECURSO.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FUNCAO.coD_FUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FUNCAO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FUNCAO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FUNCAO.deS_FUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FUNCAO.flG_EDUCACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_FUNCAO.flG_SAUDE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_PROGRAMA",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.coD_PROGRAMA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.deS_FORMULA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.deS_PIBLICOALVO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.deS_PROGRAMA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.deS_PROGRAMA_ORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.flG_CAPTURADOORCAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.flG_NOVO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_PROGRAMA.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_SUBFUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.coD_SUBFUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.deS_SUBFUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.id_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.id_SUBFUNCAO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.flG_EDUCACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.flG_SAUDE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.coD_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.coD_UNIDORCSEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.daT_CRIACAO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.daT_EXTINCAO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.deS_UNIDADEORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.flG_SINTETICA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.deS_MASCCONTAB",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.deS_MASCDESPESAFIXA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.deS_MASCRECEITA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.deS_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.id_ENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.id_ESTRUTURAPLANO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ANOFISCALENTIDADE.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ORGAOSICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ORGAOSICOM.coD_CPFGESTOR",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ORGAOSICOM.coD_ORGAOSICOM",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.seQ_DESPESAORCAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.id_UNIDORC",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORC",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ORGAOSICOM.id_ORGAOSICOM",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ORGAOSICOM.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ORGAOSICOM.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ORGAOSICOM.deS_NOMEGESTOR",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ORGAOSICOM.deS_ORGAOSICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_ORGAOSICOM.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.coD_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.coD_UNIDORCSEMMASCARA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.coD_USUARIO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.daT_CRIACAO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.daT_EXTINCAO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.daT_LASTREC",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.deS_UNIDADEORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.flG_SINTETICA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.id_ANOFISCALENTIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.id_ORGAOSICOM",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.id_UNIDORCSUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.seQ_DESPESAORCAMENTO.vlR_FIXED",
+        "type": "double"
+      },
+      {
+        "func": "get",
+        "field": "pc.vlR_CONCEDIDOFONTE",
+        "type": "double"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id_ADIANTAMENTO": null,
+    "nrO_ADIANTAMENTO": null,
+    "deS_FINALIDADE": null,
+    "vlR_CONCEDIDO": null,
+    "daT_ADIANTAMENTO": null,
+    "daT_LIMITEPRESTACAOCONTA": null,
+    "deS_MOTIVOCANCELAMENTO": null,
+    "daT_CANCELAMENTOADIANTAMENTO": null,
+    "daTLASTREC": null,
+    "coD_USUARIO": null,
+    "nrO_CUC": null,
+    "id_SUBTIPOADIANTAMENTO": null,
+    "id_ANOFISCAL": null
+  },
+  "defaultValuesProperties": {
+    "id_ADIANTAMENTO": null,
+    "nrO_ADIANTAMENTO": null,
+    "deS_FINALIDADE": null,
+    "vlR_CONCEDIDO": null,
+    "daT_ADIANTAMENTO": null,
+    "daT_LIMITEPRESTACAOCONTA": null,
+    "deS_MOTIVOCANCELAMENTO": null,
+    "daT_CANCELAMENTOADIANTAMENTO": null,
+    "daTLASTREC": null,
+    "coD_USUARIO": null,
+    "nrO_CUC": null,
+    "id_SUBTIPOADIANTAMENTO": null,
+    "id_ANOFISCAL": null
+  },
+  "security": {
+    "id_ADIANTAMENTO": null,
+    "nrO_ADIANTAMENTO": null,
+    "deS_FINALIDADE": null,
+    "vlR_CONCEDIDO": null,
+    "daT_ADIANTAMENTO": null,
+    "daT_LIMITEPRESTACAOCONTA": null,
+    "deS_MOTIVOCANCELAMENTO": null,
+    "daT_CANCELAMENTOADIANTAMENTO": null,
+    "daTLASTREC": null,
+    "coD_USUARIO": null,
+    "nrO_CUC": null,
+    "id_SUBTIPOADIANTAMENTO": null,
+    "id_ANOFISCAL": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query217658/",
+  "audit": false
+}

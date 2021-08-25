@@ -5516,8 +5516,8 @@
       "modelType": "Table",
       "name": "PCA_ADIANTAMENTO",
       "position": {
-        "x": 3968,
-        "y": 746
+        "x": 3946,
+        "y": 740
       },
       "queries": [],
       "realName": "",
@@ -6219,7 +6219,7 @@
       "tableName": "PCA_ESTRUTURAPLANO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 111
+      "z": 116
     },
     {
       "angle": 0,
@@ -13992,6 +13992,9 @@
     {
       "associationType": "Association",
       "attrs": {
+        ".": {
+          "display": "normal"
+        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"
