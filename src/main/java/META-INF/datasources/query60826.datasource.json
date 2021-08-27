@@ -1,11 +1,11 @@
 {
-  "customId": "query902916",
-  "queryName": "FontedeRecurso",
+  "customId": "query60826",
+  "queryName": "Despesa Classificacao",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
-  "entitySimpleName": "FONTERECURSO",
-  "entityFullName": "app.entity.FONTERECURSO",
+  "entitySimpleName": "DESPESACLASSIFICACAO",
+  "entityFullName": "app.entity.DESPESACLASSIFICACAO",
   "query": {
     "isValid": true,
     "isEmpty": false,
@@ -13,15 +13,15 @@
     "type": "select",
     "rulesEntity": [
       {
-        "entity": "FONTERECURSO",
-        "namespace": "app.entity.FONTERECURSO",
-        "alias": "f"
+        "entity": "DESPESACLASSIFICACAO",
+        "namespace": "app.entity.DESPESACLASSIFICACAO",
+        "alias": "d"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "f",
+        "field": "d",
         "type": "string"
       }
     ],
@@ -65,27 +65,46 @@
     "onError": null
   },
   "defaultValues": {
-    "id_FONTERECURSO": null,
-    "coD_FONTERECURSO": null,
-    "deS_FONTERECURSO": null,
-    "coD_FONTERECURSODESTINACAOSUP": null,
-    "coD_FONTESEMMASCARA": null,
-    "idT_TIPORECURSO": null,
-    "flG_SINTETICA": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "coD_DESPESA": null,
+    "coD_DESPESASEMMASCARA": null,
+    "deS_DESPESA": null,
     "flG_SICOM": null,
+    "idT_TIPODESPESA": null,
+    "flG_SINTETICA": null,
     "daT_LASTREC": {
       "type": "server",
-      "blocklyMethod": "DataLastrec",
-      "blocklyClass": "blockly.DataLastrec",
+      "blocklyMethod": "ObterDataeHora",
+      "blocklyClass": "blockly.FuncoesComuns",
       "blocklyLanguage": "java",
       "blocklyParams": [],
       "blocklyJson": {
-        "namespace": "blockly.DataLastrec",
-        "sourcePath": "src/main/java/blockly/DataLastrec.blockly",
+        "namespace": "blockly.FuncoesComuns",
+        "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
         "language": "java",
         "methods": [
           {
-            "name": "DataLastrec",
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterDataeHora",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterEntidadeUsuario",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterEstruturaPlanoContas",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterAnoFiscal",
             "hasReturn": "true",
             "params": []
           }
@@ -101,12 +120,12 @@
     "coD_USUARIO": {
       "type": "server",
       "blocklyMethod": "ObterIdUsuarioLogado",
-      "blocklyClass": "blockly.Usuario",
+      "blocklyClass": "blockly.FuncoesComuns",
       "blocklyLanguage": "java",
       "blocklyParams": [],
       "blocklyJson": {
-        "namespace": "blockly.Usuario",
-        "sourcePath": "src/main/java/blockly/Usuario.blockly",
+        "namespace": "blockly.FuncoesComuns",
+        "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
         "language": "java",
         "methods": [
           {
@@ -115,13 +134,23 @@
             "params": []
           },
           {
-            "name": "ValidarCPF",
+            "name": "ObterDataeHora",
             "hasReturn": "true",
             "params": []
           },
           {
-            "name": "ValidarCadastroOrgão",
-            "hasReturn": "false",
+            "name": "ObterEntidadeUsuario",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterEstruturaPlanoContas",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterAnoFiscal",
+            "hasReturn": "true",
             "params": []
           }
         ]
@@ -133,32 +162,33 @@
       "blocklyFILTERMethod": null,
       "blocklyCOUNTMethod": null
     },
+    "coD_DESPESASUP": null,
     "id_ANOFISCAL": null
   },
   "defaultValuesProperties": {
-    "id_FONTERECURSO": null,
-    "coD_FONTERECURSO": null,
-    "deS_FONTERECURSO": null,
-    "coD_FONTERECURSODESTINACAOSUP": null,
-    "coD_FONTESEMMASCARA": null,
-    "idT_TIPORECURSO": null,
-    "flG_SINTETICA": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "coD_DESPESA": null,
+    "coD_DESPESASEMMASCARA": null,
+    "deS_DESPESA": null,
     "flG_SICOM": null,
+    "idT_TIPODESPESA": null,
+    "flG_SINTETICA": null,
     "daT_LASTREC": null,
     "coD_USUARIO": null,
+    "coD_DESPESASUP": null,
     "id_ANOFISCAL": null
   },
   "security": {
-    "id_FONTERECURSO": null,
-    "coD_FONTERECURSO": null,
-    "deS_FONTERECURSO": null,
-    "coD_FONTERECURSODESTINACAOSUP": null,
-    "coD_FONTESEMMASCARA": null,
-    "idT_TIPORECURSO": null,
-    "flG_SINTETICA": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "coD_DESPESA": null,
+    "coD_DESPESASEMMASCARA": null,
+    "deS_DESPESA": null,
     "flG_SICOM": null,
+    "idT_TIPODESPESA": null,
+    "flG_SINTETICA": null,
     "daT_LASTREC": null,
     "coD_USUARIO": null,
+    "coD_DESPESASUP": null,
     "id_ANOFISCAL": null
   },
   "calcFields": {},
@@ -169,6 +199,6 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query902916/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query60826/",
   "audit": false
 }

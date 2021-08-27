@@ -3,15 +3,15 @@
     <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
+        <class>app.entity.CUC</class>
         <class>app.entity.PCA_ADIANTAMENTOFICHAS</class>
+        <class>app.entity.PPA_ACAO</class>
         <class>app.entity.PCA_ADIANTAMENTO</class>
         <class>app.entity.DESPESAORCAMENTO</class>
         <class>app.entity.FONTERECURSO</class>
-        <class>app.entity.PPA_ACAO</class>
         <class>app.entity.ENTIDADE</class>
         <class>app.entity.PCA_TIPOADIANTAMENTO</class>
         <class>app.entity.UserRole</class>
-        <class>app.entity.CUC</class>
         <class>app.entity.User</class>
         <class>app.entity.PCA_ESTRUTURAPLANO</class>
         <class>app.entity.AuditLog</class>

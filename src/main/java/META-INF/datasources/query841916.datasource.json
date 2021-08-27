@@ -1,28 +1,24 @@
 {
-  "customId": "query902916",
-  "queryName": "FontedeRecurso",
+  "customId": "query841916",
+  "queryName": "Despesa Orçamento",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
-  "entitySimpleName": "FONTERECURSO",
-  "entityFullName": "app.entity.FONTERECURSO",
+  "entitySimpleName": "DESPESAORCAMENTO",
+  "entityFullName": "app.entity.DESPESAORCAMENTO",
   "query": {
     "isValid": true,
-    "isEmpty": false,
-    "operationType": "object",
-    "type": "select",
     "rulesEntity": [
       {
-        "entity": "FONTERECURSO",
-        "namespace": "app.entity.FONTERECURSO",
-        "alias": "f"
+        "entity": "DESPESAORCAMENTO",
+        "alias": "d",
+        "namespace": "app.entity.DESPESAORCAMENTO"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "f",
-        "type": "string"
+        "field": "d"
       }
     ],
     "rulesGroupBy": [],
@@ -30,14 +26,10 @@
     "rulesOrderBy": [],
     "rules": {
       "condition": "AND",
-      "rules": [],
       "not": false,
-      "valid": true
-    },
-    "isRawSql": false,
-    "multiTenant": false,
-    "paginatorAutomatic": false,
-    "pagination": false
+      "valid": true,
+      "rules": []
+    }
   },
   "queryParamsValues": [],
   "verbs": {
@@ -65,15 +57,10 @@
     "onError": null
   },
   "defaultValues": {
-    "id_FONTERECURSO": null,
-    "coD_FONTERECURSO": null,
-    "deS_FONTERECURSO": null,
-    "coD_FONTERECURSODESTINACAOSUP": null,
-    "coD_FONTESEMMASCARA": null,
-    "idT_TIPORECURSO": null,
-    "flG_SINTETICA": null,
-    "flG_SICOM": null,
-    "daT_LASTREC": {
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": {
       "type": "server",
       "blocklyMethod": "DataLastrec",
       "blocklyClass": "blockly.DataLastrec",
@@ -133,33 +120,44 @@
       "blocklyFILTERMethod": null,
       "blocklyCOUNTMethod": null
     },
-    "id_ANOFISCAL": null
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
   },
   "defaultValuesProperties": {
-    "id_FONTERECURSO": null,
-    "coD_FONTERECURSO": null,
-    "deS_FONTERECURSO": null,
-    "coD_FONTERECURSODESTINACAOSUP": null,
-    "coD_FONTESEMMASCARA": null,
-    "idT_TIPORECURSO": null,
-    "flG_SINTETICA": null,
-    "flG_SICOM": null,
-    "daT_LASTREC": null,
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": null,
     "coD_USUARIO": null,
-    "id_ANOFISCAL": null
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
   },
   "security": {
-    "id_FONTERECURSO": null,
-    "coD_FONTERECURSO": null,
-    "deS_FONTERECURSO": null,
-    "coD_FONTERECURSODESTINACAOSUP": null,
-    "coD_FONTESEMMASCARA": null,
-    "idT_TIPORECURSO": null,
-    "flG_SINTETICA": null,
-    "flG_SICOM": null,
-    "daT_LASTREC": null,
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": null,
     "coD_USUARIO": null,
-    "id_ANOFISCAL": null
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
@@ -169,6 +167,6 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query902916/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query841916/",
   "audit": false
 }

@@ -1,28 +1,24 @@
 {
-  "customId": "query902916",
-  "queryName": "FontedeRecurso",
+  "customId": "query78029",
+  "queryName": "Fornecedor",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
-  "entitySimpleName": "FONTERECURSO",
-  "entityFullName": "app.entity.FONTERECURSO",
+  "entitySimpleName": "CUC",
+  "entityFullName": "app.entity.CUC",
   "query": {
     "isValid": true,
-    "isEmpty": false,
-    "operationType": "object",
-    "type": "select",
     "rulesEntity": [
       {
-        "entity": "FONTERECURSO",
-        "namespace": "app.entity.FONTERECURSO",
-        "alias": "f"
+        "entity": "CUC",
+        "alias": "c",
+        "namespace": "app.entity.CUC"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "f",
-        "type": "string"
+        "field": "c"
       }
     ],
     "rulesGroupBy": [],
@@ -30,14 +26,10 @@
     "rulesOrderBy": [],
     "rules": {
       "condition": "AND",
-      "rules": [],
       "not": false,
-      "valid": true
-    },
-    "isRawSql": false,
-    "multiTenant": false,
-    "paginatorAutomatic": false,
-    "pagination": false
+      "valid": true,
+      "rules": []
+    }
   },
   "queryParamsValues": [],
   "verbs": {
@@ -65,14 +57,12 @@
     "onError": null
   },
   "defaultValues": {
-    "id_FONTERECURSO": null,
-    "coD_FONTERECURSO": null,
-    "deS_FONTERECURSO": null,
-    "coD_FONTERECURSODESTINACAOSUP": null,
-    "coD_FONTESEMMASCARA": null,
-    "idT_TIPORECURSO": null,
-    "flG_SINTETICA": null,
-    "flG_SICOM": null,
+    "nrO_CUC": null,
+    "nrO_CGC": null,
+    "deS_NOME": null,
+    "deS_EMAIL": null,
+    "nrO_FONE1": null,
+    "daT_CADASTRO": null,
     "daT_LASTREC": {
       "type": "server",
       "blocklyMethod": "DataLastrec",
@@ -132,34 +122,27 @@
       "blocklyDELETEMethod": null,
       "blocklyFILTERMethod": null,
       "blocklyCOUNTMethod": null
-    },
-    "id_ANOFISCAL": null
+    }
   },
   "defaultValuesProperties": {
-    "id_FONTERECURSO": null,
-    "coD_FONTERECURSO": null,
-    "deS_FONTERECURSO": null,
-    "coD_FONTERECURSODESTINACAOSUP": null,
-    "coD_FONTESEMMASCARA": null,
-    "idT_TIPORECURSO": null,
-    "flG_SINTETICA": null,
-    "flG_SICOM": null,
+    "nrO_CUC": null,
+    "nrO_CGC": null,
+    "deS_NOME": null,
+    "deS_EMAIL": null,
+    "nrO_FONE1": null,
+    "daT_CADASTRO": null,
     "daT_LASTREC": null,
-    "coD_USUARIO": null,
-    "id_ANOFISCAL": null
+    "coD_USUARIO": null
   },
   "security": {
-    "id_FONTERECURSO": null,
-    "coD_FONTERECURSO": null,
-    "deS_FONTERECURSO": null,
-    "coD_FONTERECURSODESTINACAOSUP": null,
-    "coD_FONTESEMMASCARA": null,
-    "idT_TIPORECURSO": null,
-    "flG_SINTETICA": null,
-    "flG_SICOM": null,
+    "nrO_CUC": null,
+    "nrO_CGC": null,
+    "deS_NOME": null,
+    "deS_EMAIL": null,
+    "nrO_FONE1": null,
+    "daT_CADASTRO": null,
     "daT_LASTREC": null,
-    "coD_USUARIO": null,
-    "id_ANOFISCAL": null
+    "coD_USUARIO": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
@@ -169,6 +152,6 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query902916/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query78029/",
   "audit": false
 }

@@ -1469,8 +1469,8 @@
       "modelType": "Table",
       "name": "CUC",
       "position": {
-        "x": 4508,
-        "y": 738
+        "x": 4506,
+        "y": 740
       },
       "queries": [],
       "realName": "",
@@ -1484,7 +1484,7 @@
       "tableName": "CUC",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 72
+      "z": 116
     },
     {
       "angle": 0,
@@ -5940,7 +5940,7 @@
       "modelType": "Table",
       "name": "PCA_ADIANTAMENTOFICHAS",
       "position": {
-        "x": 3546,
+        "x": 3548,
         "y": 1048
       },
       "queries": [],
