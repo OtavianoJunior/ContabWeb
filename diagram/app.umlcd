@@ -1469,8 +1469,8 @@
       "modelType": "Table",
       "name": "CUC",
       "position": {
-        "x": 4508,
-        "y": 738
+        "x": 4506,
+        "y": 740
       },
       "queries": [],
       "realName": "",
@@ -1484,7 +1484,7 @@
       "tableName": "CUC",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 72
+      "z": 116
     },
     {
       "angle": 0,
@@ -5516,8 +5516,8 @@
       "modelType": "Table",
       "name": "PCA_ADIANTAMENTO",
       "position": {
-        "x": 3946,
-        "y": 740
+        "x": 3966,
+        "y": 746
       },
       "queries": [],
       "realName": "",
@@ -5940,7 +5940,7 @@
       "modelType": "Table",
       "name": "PCA_ADIANTAMENTOFICHAS",
       "position": {
-        "x": 3544,
+        "x": 3548,
         "y": 1048
       },
       "queries": [],
@@ -6219,7 +6219,7 @@
       "tableName": "PCA_ESTRUTURAPLANO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 116
+      "z": 111
     },
     {
       "angle": 0,
@@ -7459,7 +7459,7 @@
       "tableName": "PCA_TIPOADIANTAMENTO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 68
+      "z": 115
     },
     {
       "angle": 0,
@@ -13992,9 +13992,6 @@
     {
       "associationType": "Association",
       "attrs": {
-        ".": {
-          "display": "normal"
-        },
         ".marker-source": {
           "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
           "fill": "#cecece"

@@ -1,11 +1,11 @@
 {
-  "customId": "query60826",
-  "queryName": "Despesa Classificacao",
+  "customId": "query971959",
+  "queryName": "AdiantamentoFichaseDespesas",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
-  "entitySimpleName": "DESPESACLASSIFICACAO",
-  "entityFullName": "app.entity.DESPESACLASSIFICACAO",
+  "entitySimpleName": "PCA_ADIANTAMENTOFICHAS",
+  "entityFullName": "app.entity.PCA_ADIANTAMENTOFICHAS",
   "query": {
     "isValid": true,
     "isEmpty": false,
@@ -13,15 +13,65 @@
     "type": "select",
     "rulesEntity": [
       {
-        "entity": "DESPESACLASSIFICACAO",
-        "namespace": "app.entity.DESPESACLASSIFICACAO",
+        "entity": "PCA_ADIANTAMENTOFICHAS",
+        "namespace": "app.entity.PCA_ADIANTAMENTOFICHAS",
+        "alias": "p"
+      },
+      {
+        "entity": "DESPESAORCAMENTO",
+        "namespace": "app.entity.DESPESAORCAMENTO",
         "alias": "d"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "d",
+        "field": "p",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.coD_FICHA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_DESPESACLASSIFICACAO.coD_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_FONTERECURSO.coD_FONTERECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.id_ACAO.coD_ACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_ACAO.coD_ACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_SUBFUNCAO.coD_SUBFUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_PROGRAMA.coD_PROGRAMA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_FUNCAO.coD_FUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_UNIDORC.coD_UNIDORC",
         "type": "string"
       }
     ],
@@ -65,13 +115,11 @@
     "onError": null
   },
   "defaultValues": {
-    "id_DESPESACLASSIFICACAO": null,
-    "coD_DESPESA": null,
-    "coD_DESPESASEMMASCARA": null,
-    "deS_DESPESA": null,
-    "flG_SICOM": null,
-    "idT_TIPODESPESA": null,
-    "flG_SINTETICA": null,
+    "id_ADIANTAMENTOFICHA": null,
+    "vlR_CONCEDIDOFONTE": null,
+    "flG_REJEITADO": null,
+    "deS_HISTORICOREJEICAO": null,
+    "daT_APROVACAO": null,
     "daT_LASTREC": {
       "type": "server",
       "blocklyMethod": "ObterDataeHora",
@@ -162,34 +210,36 @@
       "blocklyFILTERMethod": null,
       "blocklyCOUNTMethod": null
     },
-    "coD_DESPESASUP": null,
-    "id_ANOFISCAL": null
+    "id_ADIANTAMENTO": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "id_FONTERECURSO": null,
+    "seQ_DESPESAORCAMENTO": null
   },
   "defaultValuesProperties": {
-    "id_DESPESACLASSIFICACAO": null,
-    "coD_DESPESA": null,
-    "coD_DESPESASEMMASCARA": null,
-    "deS_DESPESA": null,
-    "flG_SICOM": null,
-    "idT_TIPODESPESA": null,
-    "flG_SINTETICA": null,
+    "id_ADIANTAMENTOFICHA": null,
+    "vlR_CONCEDIDOFONTE": null,
+    "flG_REJEITADO": null,
+    "deS_HISTORICOREJEICAO": null,
+    "daT_APROVACAO": null,
     "daT_LASTREC": null,
     "coD_USUARIO": null,
-    "coD_DESPESASUP": null,
-    "id_ANOFISCAL": null
+    "id_ADIANTAMENTO": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "id_FONTERECURSO": null,
+    "seQ_DESPESAORCAMENTO": null
   },
   "security": {
-    "id_DESPESACLASSIFICACAO": null,
-    "coD_DESPESA": null,
-    "coD_DESPESASEMMASCARA": null,
-    "deS_DESPESA": null,
-    "flG_SICOM": null,
-    "idT_TIPODESPESA": null,
-    "flG_SINTETICA": null,
+    "id_ADIANTAMENTOFICHA": null,
+    "vlR_CONCEDIDOFONTE": null,
+    "flG_REJEITADO": null,
+    "deS_HISTORICOREJEICAO": null,
+    "daT_APROVACAO": null,
     "daT_LASTREC": null,
     "coD_USUARIO": null,
-    "coD_DESPESASUP": null,
-    "id_ANOFISCAL": null
+    "id_ADIANTAMENTO": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "id_FONTERECURSO": null,
+    "seQ_DESPESAORCAMENTO": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
@@ -199,6 +249,6 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query60826/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query971959/",
   "audit": false
 }
