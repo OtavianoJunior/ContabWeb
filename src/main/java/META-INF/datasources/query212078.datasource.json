@@ -68,6 +68,11 @@
         "func": "get",
         "field": "p.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESA",
         "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.id_ACAO.coD_ACAO",
+        "type": "string"
       }
     ],
     "rulesGroupBy": [],

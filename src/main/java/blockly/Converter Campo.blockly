@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" bpmnAble="false" formTarget="src/main/webapp/views/Cadastros/anofiscalentidade.view.html" resourceType="JAVA" ruleDescription="Converter Campo" ruleName="Converter Campo" ruleSynchronous="false" ruleTimeout="300" ruleType="I" soap="false">
+  <metadata scale="1" scrollx="434.0000000000004" scrolly="-31.999999999999943" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-427" y="143">
+    <field customattributes="" name="NAME">Converter_Campo_Nro_anofiscal</field>
+    <comment h="80" pinned="false" w="160">Converter Campo</comment>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="B`Am{kTq9aR/Lg.5*zIg" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field customattributes="" name="VAR">converter</field>
+        <value name="VALUE">
+          <block asynccall="false" colour="#5b80a5" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Ht0W$VhNpA{9qLzf]*NO" origintype="logic_compare" output="true" tooltip="function () { [native code] }" type="logic_compare">
+            <field customattributes="" name="OP">EQ</field>
+            <value name="A">
+              <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="+_Br)LfS$41KK8Wc!/QO" multilayer="false" namespace="cronapi.screen.Operations.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.JSON" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Json%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.screen.Operations.getValueOfField%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.screen.Operations.getValueOfField}}" return-raw-type="cronapi.Var">
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Campo"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4c~8j+/[z+AyWxgVz|^z" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                    <field customattributes="" name="SELECT">ANOFISCALENTIDADE.active.nrO_ANOFISCAL</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <value name="B">
+              <block asynccall="false" colour="#0e9a6c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="3kb^fF7lLL/|a7^~SbWo" inline="true" multilayer="false" namespace="cronapi.conversion.Operations.convert" origintype="procedures_callreturn" output="true" returntype="ObjectType.VOID" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EConverter%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EConverte%20valores%20entre%20diferentes%20tipos%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20valor%20:%20Objeto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20para%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Sem%20retorno%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://ide.cronapp.io/help?type=blockly&amp;amp;id=cronapi.conversion.Operations.convert%22%3EAjuda%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.conversion.Operations.convert}}" return-raw-type="cronapi.Var">
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.OBJECT" name="valor"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="para"/>
+                </mutation>
+                <value name="ARG0">
+                  <block asynccall="false" colour="#0e9a6c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="EVYd]h(A:)o7p1sa^4#O" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="STRING" value="String"/>
+                      <arg name="BOOLEAN" value="Lógico"/>
+                      <arg name="LONG" value="Inteiro Longo"/>
+                      <arg name="INTEGER" value="Inteiro"/>
+                      <arg name="DOUBLE" value="Numérico"/>
+                      <arg name="DATETIME" value="Date e Hora"/>
+                      <arg name="DATE" value="Data"/>
+                      <arg name="ISODATE" value="Data em ISO"/>
+                      <arg name="TIME" value="Hora"/>
+                      <arg name="TEXTTIME" value="Hora Textual"/>
+                      <arg name="MAP" value="Mapa"/>
+                      <arg name="JSON" value="Json"/>
+                      <arg name="LIST" value="Lista"/>
+                      <arg name="BYTEARRAY" value="Bytes"/>
+                      <arg name="SHORT" value="SHORT"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">INTEGER</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block asynccall="false" colour="#0e9a6c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="RCJO-i!x^)^xoJ-*c5]Q" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="STRING" value="String"/>
+                      <arg name="BOOLEAN" value="Lógico"/>
+                      <arg name="LONG" value="Inteiro Longo"/>
+                      <arg name="INTEGER" value="Inteiro"/>
+                      <arg name="DOUBLE" value="Numérico"/>
+                      <arg name="DATETIME" value="Date e Hora"/>
+                      <arg name="DATE" value="Data"/>
+                      <arg name="ISODATE" value="Data em ISO"/>
+                      <arg name="TIME" value="Hora"/>
+                      <arg name="TEXTTIME" value="Hora Textual"/>
+                      <arg name="MAP" value="Mapa"/>
+                      <arg name="JSON" value="Json"/>
+                      <arg name="LIST" value="Lista"/>
+                      <arg name="BYTEARRAY" value="Bytes"/>
+                      <arg name="SHORT" value="SHORT"/>
+                    </mutation>
+                    <field customattributes="" name="SELECT">STRING</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </value>
+      </block>
+    </statement>
+    <value name="RETURN">
+      <block asynccall="false" colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="slZS~tpzdXkK_autZdH%" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+        <field customattributes="" name="VAR">converter</field>
+      </block>
+    </value>
+  </block>
+</blockly>
