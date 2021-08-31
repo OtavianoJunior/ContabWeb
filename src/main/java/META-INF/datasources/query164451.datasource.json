@@ -32,12 +32,12 @@
       "condition": "AND",
       "rules": [
         {
-          "id": "e.coD_ENTIDADE",
-          "field": "e.coD_ENTIDADE",
+          "id": "e.id_ENTIDADE",
+          "field": "e.id_ENTIDADE",
           "type": "integer",
           "input": "text",
           "operator": "equal",
-          "value": ":entidade",
+          "value": ":id_ENTIDADE",
           "valueIsField": false
         }
       ],
@@ -51,7 +51,7 @@
   },
   "queryParamsValues": [
     {
-      "fieldName": "entidade",
+      "fieldName": "id_ENTIDADE",
       "fieldValue": {
         "type": "server",
         "blocklyMethod": "ObterEntidadeUsuario",
@@ -75,6 +75,16 @@
             },
             {
               "name": "ObterEntidadeUsuario",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterEstruturaPlanoContas",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterAnoFiscal",
               "hasReturn": "true",
               "params": []
             }

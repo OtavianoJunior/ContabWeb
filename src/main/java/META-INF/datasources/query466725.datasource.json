@@ -1,6 +1,6 @@
 {
-  "customId": "query212078",
-  "queryName": "Integração",
+  "customId": "query466725",
+  "queryName": "AdiantamentoFichaIntegração",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
@@ -8,66 +8,17 @@
   "entityFullName": "app.entity.PCA_ADIANTAMENTOFICHAS",
   "query": {
     "isValid": true,
-    "isEmpty": false,
-    "operationType": "object",
-    "type": "select",
     "rulesEntity": [
       {
         "entity": "PCA_ADIANTAMENTOFICHAS",
-        "namespace": "app.entity.PCA_ADIANTAMENTOFICHAS",
-        "alias": "p"
-      },
-      {
-        "entity": "PCA_ADIANTAMENTO",
-        "namespace": "app.entity.PCA_ADIANTAMENTO",
-        "alias": "pc"
+        "alias": "p",
+        "namespace": "app.entity.PCA_ADIANTAMENTOFICHAS"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "p",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "pc.nrO_CUC.deS_NOME",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "pc.nrO_ADIANTAMENTO",
-        "type": "integer"
-      },
-      {
-        "func": "get",
-        "field": "pc.daT_ADIANTAMENTO",
-        "type": "date"
-      },
-      {
-        "func": "get",
-        "field": "p.id_FONTERECURSO.deS_FONTERECURSO",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "p.seQ_DESPESAORCAMENTO.id_FUNCAO.coD_FUNCAO",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "p.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.coD_SUBFUNCAO",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "p.seQ_DESPESAORCAMENTO.id_PROGRAMA.coD_PROGRAMA",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "p.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESA",
-        "type": "string"
+        "field": "p"
       }
     ],
     "rulesGroupBy": [],
@@ -75,14 +26,10 @@
     "rulesOrderBy": [],
     "rules": {
       "condition": "AND",
-      "rules": [],
       "not": false,
-      "valid": true
-    },
-    "isRawSql": false,
-    "multiTenant": false,
-    "paginatorAutomatic": false,
-    "pagination": false
+      "valid": true,
+      "rules": []
+    }
   },
   "queryParamsValues": [],
   "verbs": {
@@ -156,6 +103,6 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query212078/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query466725/",
   "audit": false
 }
