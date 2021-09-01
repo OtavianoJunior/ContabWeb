@@ -122,6 +122,11 @@ public static Var ObterEntidadeUsuario() throws Exception {
     Var.valueOf(
     Var.valueOf("entidade = ").toString() +
     item.toString()));
+
+    System.out.println(
+    Var.valueOf(
+    Var.valueOf("entidade").toString() +
+    item.toString()).getObjectAsString());
     return
 cronapi.database.Operations.getField(
 cronapi.database.Operations.query(Var.valueOf("app.entity.USERACESSO"),Var.valueOf("select u from USERACESSO u where u.id_USER.normalizedUserName = :id_USERNormalizedUserName"),Var.valueOf("id_USERNormalizedUserName",

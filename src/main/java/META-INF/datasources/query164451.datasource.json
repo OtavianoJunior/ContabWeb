@@ -32,12 +32,12 @@
       "condition": "AND",
       "rules": [
         {
-          "id": "e.coD_ENTIDADE",
-          "field": "e.coD_ENTIDADE",
+          "id": "e.id_ENTIDADE",
+          "field": "e.id_ENTIDADE",
           "type": "integer",
           "input": "text",
           "operator": "equal",
-          "value": ":entidade",
+          "value": ":id_ENTIDADE",
           "valueIsField": false
         }
       ],
@@ -51,36 +51,8 @@
   },
   "queryParamsValues": [
     {
-      "fieldName": "entidade",
-      "fieldValue": {
-        "type": "server",
-        "blocklyMethod": "ObterEntidadeUsuario",
-        "blocklyClass": "blockly.FuncoesComuns",
-        "blocklyLanguage": "java",
-        "blocklyParams": [],
-        "blocklyJson": {
-          "namespace": "blockly.FuncoesComuns",
-          "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
-          "language": "java",
-          "methods": [
-            {
-              "name": "ObterIdUsuarioLogado",
-              "hasReturn": "true",
-              "params": []
-            },
-            {
-              "name": "ObterDataeHora",
-              "hasReturn": "true",
-              "params": []
-            },
-            {
-              "name": "ObterEntidadeUsuario",
-              "hasReturn": "true",
-              "params": []
-            }
-          ]
-        }
-      }
+      "fieldName": "id_ENTIDADE",
+      "fieldValue": ""
     }
   ],
   "verbs": {
