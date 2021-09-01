@@ -73,6 +73,16 @@
         "func": "get",
         "field": "p.seQ_DESPESAORCAMENTO.id_ACAO.coD_ACAO",
         "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.id_ANOFISCAL",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "pc.nrO_CUC",
+        "type": "string"
       }
     ],
     "rulesGroupBy": [],

@@ -147,9 +147,41 @@
     "coD_USUARIO": null,
     "id_ANOFISCAL": null
   },
-  "calcFields": {},
-  "calcFieldsSecurity": {},
-  "calcFieldsProperties": {},
+  "calcFields": {
+    "AnoFiscalConvertido": {
+      "type": "server",
+      "blocklyMethod": "Converter_Campo_Nro_anofiscal",
+      "blocklyClass": "blockly.ConverterCampo",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.ConverterCampo",
+        "sourcePath": "src/main/java/blockly/Converter Campo.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "Converter_Campo_Nro_anofiscal",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    }
+  },
+  "calcFieldsSecurity": {
+    "AnoFiscalConvertido": null
+  },
+  "calcFieldsProperties": {
+    "AnoFiscalConvertido": {
+      "type": "String"
+    }
+  },
   "headers": {},
   "errorHandles": {
     "primaryKey": null,

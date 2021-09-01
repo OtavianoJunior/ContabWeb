@@ -25,12 +25,10 @@ public static Var Converter_Campo_Nro_anofiscal() throws Exception {
    public Var call() throws Exception {
 
     converter =
-    Var.valueOf(
-    cronapi.screen.Operations.getValueOfField(
-    Var.valueOf("ANOFISCALENTIDADE.active.nrO_ANOFISCAL")).equals(
     cronapi.conversion.Operations.convert(
-    Var.valueOf("INTEGER"),
-    Var.valueOf("STRING"))));
+    cronapi.screen.Operations.getValueOfField(
+    Var.valueOf("AnoFiscal.active.nrO_ANOFISCAL")),
+    Var.valueOf("STRING"));
     return converter;
    }
  }.call();
