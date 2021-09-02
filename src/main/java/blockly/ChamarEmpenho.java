@@ -38,7 +38,7 @@ public static Var ChamarEmpenho() throws Exception {
     cronapi.screen.Operations.getValueOfField(
     Var.valueOf("Integracao.active.seQ_DESPESAORCAMENTO"))));
 
-    cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeView"), Var.valueOf("#/home/Cadastros/empenho"), cronapi.list.Operations.newList(Var.valueOf("EMPENHO.inserting",
+    cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeView"), Var.valueOf("#/home/Cadastros/empenho"), cronapi.list.Operations.newList(Var.valueOf("params.EMPENHO.inserting",
     Var.VAR_TRUE)));
     return Var.VAR_NULL;
    }
