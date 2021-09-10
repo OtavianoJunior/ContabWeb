@@ -2689,7 +2689,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 192.5625,
+          "ref-x": 192.421875,
           "text": "Inteiro\nInteiro\nNumérico\nData e Hora\nData e Hora\nTexto\nCUC\nDESPESACLASSIFICACAO\nPCA_ADIANTAMENTO\nANOFISCALENTIDADE\nDESPESAORCAMENTO\n"
         },
         ".uml-class-methods-rect": {
@@ -3067,8 +3067,8 @@
       "modelType": "Table",
       "name": "EMPENHO",
       "position": {
-        "x": 3716,
-        "y": 1334
+        "x": 3714,
+        "y": 1358
       },
       "queries": [],
       "realName": "",
@@ -3076,13 +3076,13 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 205.984130859375,
-        "width": 351
+        "height": 205.976318359375,
+        "width": 350.734375
       },
       "tableName": "EMPENHO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 73
+      "z": 121
     },
     {
       "angle": 0,
@@ -5531,7 +5531,7 @@
       "tableName": "PCA_ADIANTAMENTO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 76
+      "z": 119
     },
     {
       "angle": 0,
@@ -5940,8 +5940,8 @@
       "modelType": "Table",
       "name": "PCA_ADIANTAMENTOFICHAS",
       "position": {
-        "x": 3548,
-        "y": 1048
+        "x": 3552,
+        "y": 1050
       },
       "queries": [],
       "realName": "",
@@ -5955,7 +5955,7 @@
       "tableName": "PCA_ADIANTAMENTOFICHAS",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 74
+      "z": 120
     },
     {
       "angle": 0,

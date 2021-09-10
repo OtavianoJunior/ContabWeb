@@ -15,7 +15,7 @@
     </cron-grid>
 </section>
 
-<div data-component="crn-form" id="crn-form-form-CUC-44436">
+<div data-component="crn-form" id="crn-form-form-CUC-44436" style="width: 996px; height: 309px;">
     <section class="form" ng-show="CUC.editing || CUC.inserting">
         <form crn-datasource="CUC" class="">
             <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
@@ -26,8 +26,8 @@
                 <button aria-label="{{'Remove' | translate}}" class="btn btn-danger btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button>
             </div>
             <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
-                <button aria-label="{{'SaveChanges' | translate}}" class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="cronapi.server('blockly.Credor.Verificar_TipoValidado').names().run()"><span class="k-icon k-i-check"></span></button>
-                <button aria-label="{{'CancelChanges' | translate}}" class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button>
+                
+                
             </div>
             <br>
             <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
@@ -50,7 +50,7 @@
                                     <input type="text" ng-model="CUC.active.deS_NOME" class="form-control k-textbox" id="textinput-deS_NOME" placeholder="Nome" mask="" mask-placeholder="" ng-required="false">
                              <!-- end if !model.hasCronappFramework() -->
                         </div>
-                    </div></div><div class="col-md-6" data-container="true" data-replace="false"><div data-component="crn-textinput" id="crn-textinput-deS_EMAIL-44436" class="">
+                    </div></div><div class="col-md-6" data-container="true" data-replace="false"><div data-component="crn-textinput" id="crn-textinput-deS_EMAIL-44436" class="style9056">
                         <div class="form-group">
                                 <label for="textinput-deS_EMAIL" class="">E-Mail</label>
  <!-- else for if !model.hasCronappFramework() -->
@@ -73,7 +73,7 @@
                                     <input type="text" ng-model="CUC.active.nrO_FONE1" class="form-control k-textbox" id="textinput-nrO_FONE1" placeholder="Fone" mask="(99) 99999-9999;0" mask-placeholder="" ng-required="false">
                              <!-- end if !model.hasCronappFramework() -->
                         </div>
-                    </div></div><div class="col-md-6" data-container="true" data-replace="false"><div class="component-holder ng-scope" data-component="crn-datepicker" id="crn-textinput-daT_CADASTRO-44436"><div class="form-group"><label for="label-crn-datepicker-672697">Data Cadastro</label><input type="date" mask="" mask-placeholder="" ng-required="true" ng-model="CUC.active.daT_CADASTRO" class="form-control k-textbox" id="input-crn-datepicker-672697"></div></div></div></div></div></div>
+                    </div></div><div class="col-md-6" data-container="true" data-replace="false"><div class="component-holder ng-scope" data-component="crn-datepicker" id="crn-textinput-daT_CADASTRO-44436"><div class="form-group"><label for="label-crn-datepicker-672697">Data Cadastro</label><input type="date" mask="" mask-placeholder="" ng-required="true" ng-model="CUC.active.daT_CADASTRO" class="form-control k-textbox" id="input-crn-datepicker-672697"></div></div><div class="component-holder ng-scope" data-component="crn-vertical-container" id="crn-vertical-container-151142"></div></div></div></div></div>
                 <!-- NtoN  -->
                 <!-- NtoN  end-->
             </div>
@@ -90,4 +90,4 @@
 </div>
 
 
-</div>
+<div class="component-holder ng-scope" data-component="crn-vertical-container" id="crn-vertical-container-653802"><div class="col-md-12" data-container="true" data-replace="false" style="margin-left: 29px;"><button aria-label="{{'SaveChanges' | translate}}" class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="cronapi.server('blockly.Credor.Verificar_TipoValidado').names().run()"><span class="k-icon k-i-check"></span></button><button aria-label="{{'CancelChanges' | translate}}" class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()" style="margin-left: 5px;"><span class="k-icon k-i-cancel"></span></button></div></div></div>

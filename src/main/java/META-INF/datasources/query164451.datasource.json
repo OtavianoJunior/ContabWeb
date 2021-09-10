@@ -52,7 +52,45 @@
   "queryParamsValues": [
     {
       "fieldName": "id_ENTIDADE",
-      "fieldValue": ""
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "ObterEntidadeUsuario",
+        "blocklyClass": "blockly.FuncoesComuns",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.FuncoesComuns",
+          "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "ObterIdUsuarioLogado",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterDataeHora",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterEntidadeUsuario",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterEstruturaPlanoContas",
+              "hasReturn": "true",
+              "params": []
+            },
+            {
+              "name": "ObterAnoFiscal",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
     }
   ],
   "verbs": {

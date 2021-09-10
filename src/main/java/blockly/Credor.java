@@ -108,17 +108,17 @@ public static Var Alterar_valorDoCampoCod() throws Exception {
         cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"),
         Var.valueOf("CUC.active.nrO_CGC"),
         cronapi.conversion.Operations.formatDouble(
-        cronapi.conversion.Operations.convert(
-        Var.valueOf("DOUBLE"),
-        Var.valueOf("STRING")),
-        Var.valueOf("999999999-99")));
+        Var.valueOf("CUC.active.nrO_CGC"),
+        cronapi.conversion.Operations.toString(
+        Var.valueOf("999.999.999-99"))));
     } else {
 
         cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeValueOfField"),
-        Var.valueOf("vars.radio5401"),
+        Var.valueOf("CUC.active.nrO_CGC"),
         cronapi.conversion.Operations.formatDouble(
         Var.valueOf("CUC.active.nrO_CGC"),
-        Var.valueOf("999999999999-99")));
+        cronapi.conversion.Operations.toString(
+        Var.valueOf("99.999.999/9999-99"))));
     }
     return Var.VAR_NULL;
    }

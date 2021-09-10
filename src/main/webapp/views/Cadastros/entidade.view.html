@@ -26,8 +26,8 @@
                 <button aria-label="{{'Remove' | translate}}" class="btn btn-danger btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button>
             </div>
             <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
-                <button aria-label="{{'SaveChanges' | translate}}" class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="cronapi.server('blockly.CNPJ.Validar_Cadastro_CNPJ').names().run()"><span class="k-icon k-i-check"></span></button>
-                <button aria-label="{{'CancelChanges' | translate}}" class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button>
+                
+                
             </div>
             <br>
             <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
@@ -146,7 +146,7 @@
                                     <input maxlength="100" type="text" ng-model="ENTIDADE.active.coD_USUARIO" class="form-control k-textbox" id="textinput-coD_USUARIO" placeholder="Usuário" mask="" mask-placeholder="" ng-required="false" ng-init="" ng-blur="cronapi.server('blockly.Usuario.ObterIdUsuarioLogado').names().run()">
                              <!-- end if !model.hasCronappFramework() -->
                         </div>
-                    </div></div></div>
+                    </div></div></div><div class="component-holder ng-scope col-md-12" data-component="crn-vertical-container" id="crn-vertical-container-649730"><div class="col-md-12" data-container="true" data-replace="false" style="margin-left: 14px;"><button aria-label="{{'SaveChanges' | translate}}" class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="cronapi.server('blockly.CNPJ.Validar_Cadastro_CNPJ').names().run()"><span class="k-icon k-i-check"></span></button><button aria-label="{{'CancelChanges' | translate}}" class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()" style="margin-left: 5px;"><span class="k-icon k-i-cancel"></span></button></div></div>
 
 
                     
