@@ -62,6 +62,7 @@ window.dataSourceMap["app.query78386"] = { customId: "query78386", serviceUrl: "
 window.dataSourceMap["app.query841916"] = { customId: "query841916", serviceUrl: "api/cronapi/odata/v2/app/query841916/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query841916" };
 window.dataSourceMap["app.query892456"] = { customId: "query892456", serviceUrl: "api/cronapi/odata/v2/app/query892456/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query892456" };
 window.dataSourceMap["app.query902916"] = { customId: "query902916", serviceUrl: "api/cronapi/odata/v2/app/query902916/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query902916" };
+window.dataSourceMap["app.query91246"] = { customId: "query91246", serviceUrl: "api/cronapi/odata/v2/app/query91246/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query91246" };
 window.dataSourceMap["app.query913507"] = { customId: "query913507", serviceUrl: "api/cronapi/odata/v2/app/query913507/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query913507" };
 window.dataSourceMap["app.query951406"] = { customId: "query951406", serviceUrl: "api/cronapi/odata/v2/app/query951406/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query951406" };
 window.dataSourceMap["app.query959849"] = { customId: "query959849", serviceUrl: "api/cronapi/odata/v2/app/query959849/", serviceUrlODATA: "/api/cronapi/odata/v2/app/query959849" };

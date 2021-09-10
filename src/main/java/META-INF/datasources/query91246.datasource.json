@@ -1,0 +1,122 @@
+{
+  "customId": "query91246",
+  "queryName": "EmpenhoFicha",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "DESPESAORCAMENTO",
+  "entityFullName": "app.entity.DESPESAORCAMENTO",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "DESPESAORCAMENTO",
+        "namespace": "app.entity.DESPESAORCAMENTO",
+        "alias": "d"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "d",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
+  },
+  "defaultValuesProperties": {
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
+  },
+  "security": {
+    "seQ_DESPESAORCAMENTO": null,
+    "coD_FICHA": null,
+    "vlR_FIXED": null,
+    "dt_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ANOFISCAL": null,
+    "id_UNIDORC": null,
+    "id_FUNCAO": null,
+    "id_SUBFUNCAO": null,
+    "id_PROGRAMA": null,
+    "id_ACAO": null,
+    "id_DESPESA": null,
+    "id_FONTERECURSO": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query91246/",
+  "audit": false
+}
