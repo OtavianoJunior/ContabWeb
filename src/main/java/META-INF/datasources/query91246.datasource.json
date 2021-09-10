@@ -23,6 +23,26 @@
         "func": "get",
         "field": "d",
         "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_UNIDORC.deS_UNIDADEORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_PROGRAMA.deS_PROGRAMA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_DESPESA.coD_DESPESASUP.deS_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_DESPESA.coD_DESPESASUP.coD_DESPESASUP.deS_DESPESA",
+        "type": "string"
       }
     ],
     "rulesGroupBy": [],
