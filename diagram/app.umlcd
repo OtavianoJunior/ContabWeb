@@ -58,7 +58,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 171.59375,
+          "ref-x": 171.25,
           "text": "Inteiro\nInteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nPCA_ESTRUTURAPLANO\nENTIDADE\n"
         },
         ".uml-class-methods-rect": {
@@ -414,13 +414,13 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 195.0330047607422,
-        "width": 323.296875
+        "height": 195.0251922607422,
+        "width": 322.84375
       },
       "tableName": "ANOFISCALENTIDADE",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 32
+      "z": 125
     },
     {
       "angle": 0,
@@ -1184,7 +1184,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 122.875,
+          "ref-x": 122.671875,
           "text": "Texto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\n"
         },
         ".uml-class-methods-rect": {
@@ -1469,7 +1469,7 @@
       "modelType": "Table",
       "name": "CUC",
       "position": {
-        "x": 4506,
+        "x": 4504,
         "y": 740
       },
       "queries": [],
@@ -1478,13 +1478,13 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 173.1524887084961,
-        "width": 167.171875
+        "height": 173.1446762084961,
+        "width": 167.625
       },
       "tableName": "CUC",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 116
+      "z": 117
     },
     {
       "angle": 0,
@@ -1941,7 +1941,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 188.0625,
+          "ref-x": 187.9375,
           "text": "Inteiro\nTexto\nNumérico\nData\nTexto\nANOFISCALENTIDADE\nPPA_UNIDADEORCAMENTO\nPPA_FUNCAO\nPPA_SUBFUNCAO\nPPA_PROGRAMA\nPPA_ACAO\nDESPESACLASSIFICACAO\nFONTERECURSO\n"
         },
         ".uml-class-methods-rect": {
@@ -2382,7 +2382,7 @@
       "name": "DESPESAORCAMENTO",
       "position": {
         "x": 2296,
-        "y": 720
+        "y": 720.0001831054688
       },
       "queries": [],
       "realName": "",
@@ -2390,13 +2390,13 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 227.90223693847656,
-        "width": 354.625
+        "height": 227.89442443847656,
+        "width": 354.375
       },
       "tableName": "DESPESAORCAMENTO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 114
+      "z": 123
     },
     {
       "angle": 0,
@@ -2670,6 +2670,7 @@
         "DAT_LASTREC:java.sql.Date",
         "COD_USUARIO:java.lang.String",
         "NRO_CUC:CUC",
+        "DES_EMPEMHO:java.lang.String",
         "ID_DESPESACLASSIFICACAO:DESPESACLASSIFICACAO",
         "ID_ADIANTAMENTO:PCA_ADIANTAMENTO",
         "ID_ANOFISCAL:ANOFISCALENTIDADE",
@@ -2680,21 +2681,21 @@
           "display": "normal"
         },
         ".uml-class-attrs-rect": {
-          "height": 250,
+          "height": 270,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID_EMPENHO\nNRO_EMPENHO\nVLR_EMPENHO\nDAT_EMPENHO\nDAT_LASTREC\nCOD_USUARIO\nNRO_CUC\nID_DESPESACLASSIFICACAO\nID_ADIANTAMENTO\nID_ANOFISCAL\nSEQ_DESPESAORCAMENTO\n"
+          "text": "ID_EMPENHO\nNRO_EMPENHO\nVLR_EMPENHO\nDAT_EMPENHO\nDAT_LASTREC\nCOD_USUARIO\nNRO_CUC\nDES_EMPEMHO\nID_DESPESACLASSIFICACAO\nID_ADIANTAMENTO\nID_ANOFISCAL\nSEQ_DESPESAORCAMENTO\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 192.421875,
-          "text": "Inteiro\nInteiro\nNumérico\nData e Hora\nData e Hora\nTexto\nCUC\nDESPESACLASSIFICACAO\nPCA_ADIANTAMENTO\nANOFISCALENTIDADE\nDESPESAORCAMENTO\n"
+          "text": "Inteiro\nInteiro\nNumérico\nData e Hora\nData e Hora\nTexto\nCUC\nTexto\nDESPESACLASSIFICACAO\nPCA_ADIANTAMENTO\nANOFISCALENTIDADE\nDESPESAORCAMENTO\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,300)"
+          "transform": "translate(0,320)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -2936,6 +2937,37 @@
           "foreignKeyName": ""
         },
         {
+          "name": "DES_EMPEMHO",
+          "type": "java.lang.String",
+          "dbName": "DES_EMPEMHO",
+          "dbLength": 100,
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Descrição",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
+        },
+        {
           "name": "ID_DESPESACLASSIFICACAO",
           "type": "DESPESACLASSIFICACAO",
           "dbName": "ID_DESPESACLASSIFICACAO",
@@ -3067,7 +3099,7 @@
       "modelType": "Table",
       "name": "EMPENHO",
       "position": {
-        "x": 3714,
+        "x": 3708,
         "y": 1358
       },
       "queries": [],
@@ -3076,13 +3108,13 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 205.976318359375,
+        "height": 216.93304443359375,
         "width": 350.734375
       },
       "tableName": "EMPENHO",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 121
+      "z": 127
     },
     {
       "angle": 0,
@@ -4147,7 +4179,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 139.15625,
+          "ref-x": 139.609375,
           "text": "Texto\nTexto\nTexto\nTexto\nUser\n"
         },
         ".uml-class-methods-rect": {
@@ -4357,7 +4389,7 @@
         "user"
       ],
       "position": {
-        "x": 1216,
+        "x": 1218,
         "y": 692
       },
       "primaryKeys": [
@@ -4381,8 +4413,8 @@
         ""
       ],
       "size": {
-        "height": 140.4170379638672,
-        "width": 183.453125
+        "height": 140.4092254638672,
+        "width": 184.5625
       },
       "tableName": "LOGIN",
       "type": "uml.Class",
@@ -5049,7 +5081,7 @@
       "angle": 0,
       "attributes": [
         "ID_ADIANTAMENTO:java.lang.Integer",
-        "NRO_ADIANTAMENTO:java.lang.Integer",
+        "NRO_ADIANTAMENTO:java.lang.String",
         "DES_FINALIDADE:java.lang.String",
         "VLR_CONCEDIDO:java.lang.Double",
         "DAT_ADIANTAMENTO:java.sql.Date",
@@ -5076,8 +5108,8 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 240.609375,
-          "text": "Inteiro\nInteiro\nTexto\nNumérico\nData e Hora\nData e Hora\nTexto\nData e Hora\nData e Hora\nTexto\nCUC\nPCA_SUBTIPOADIANTAMENTO\nANOFISCALENTIDADE\n"
+          "ref-x": 240.421875,
+          "text": "Inteiro\nTexto\nTexto\nNumérico\nData e Hora\nData e Hora\nTexto\nData e Hora\nData e Hora\nTexto\nCUC\nPCA_SUBTIPOADIANTAMENTO\nANOFISCALENTIDADE\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
@@ -5117,7 +5149,7 @@
           "mask": "",
           "isPrimaryKey": true,
           "isUniqueKey": false,
-          "isNullable": false,
+          "isNullable": true,
           "pkType": "Identity",
           "multitenantContext": "",
           "jsonIgnore": false,
@@ -5138,7 +5170,7 @@
         },
         {
           "name": "NRO_ADIANTAMENTO",
-          "type": "java.lang.Integer",
+          "type": "java.lang.String",
           "dbName": "NRO_ADIANTAMENTO",
           "dbLength": "",
           "dbPrecision": "",
@@ -5525,8 +5557,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 227.90223693847656,
-        "width": 422.453125
+        "height": 227.89442443847656,
+        "width": 422.125
       },
       "tableName": "PCA_ADIANTAMENTO",
       "tableScheme": null,

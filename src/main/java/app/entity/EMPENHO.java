@@ -82,6 +82,13 @@ public class EMPENHO implements Serializable {
     /**
     * @generated
     */
+    @Column(name = "DES_EMPEMHO", nullable = true, unique = false, length=100, insertable=true, updatable=true)
+        
+        private java.lang.String deS_EMPEMHO;
+
+    /**
+    * @generated
+    */
     @ManyToOne
     @JoinColumn(name="ID_DESPESACLASSIFICACAO", nullable = true, referencedColumnName = "ID_DESPESACLASSIFICACAO", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
         
@@ -249,6 +256,25 @@ public class EMPENHO implements Serializable {
     */
     public EMPENHO setNrO_CUC(CUC nrO_CUC){
         this.nrO_CUC = nrO_CUC;
+        return this;
+    }
+    /**
+    * Obtém deS_EMPEMHO
+    * return deS_EMPEMHO
+    * @generated
+    */
+    
+    public java.lang.String getDeS_EMPEMHO(){
+        return this.deS_EMPEMHO;
+    }
+
+    /**
+    * Define deS_EMPEMHO
+    * @param deS_EMPEMHO deS_EMPEMHO
+    * @generated
+    */
+    public EMPENHO setDeS_EMPEMHO(java.lang.String deS_EMPEMHO){
+        this.deS_EMPEMHO = deS_EMPEMHO;
         return this;
     }
     /**

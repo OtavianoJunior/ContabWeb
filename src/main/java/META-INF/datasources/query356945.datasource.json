@@ -1,11 +1,11 @@
 {
-  "customId": "query913507",
-  "queryName": "Adiantamento",
+  "customId": "query356945",
+  "queryName": "Empenho",
   "sourceType": "entityFullName",
   "baseEntity": null,
   "blockly": null,
-  "entitySimpleName": "PCA_ADIANTAMENTO",
-  "entityFullName": "app.entity.PCA_ADIANTAMENTO",
+  "entitySimpleName": "EMPENHO",
+  "entityFullName": "app.entity.EMPENHO",
   "query": {
     "isValid": true,
     "isEmpty": false,
@@ -13,21 +13,21 @@
     "type": "select",
     "rulesEntity": [
       {
-        "entity": "PCA_ADIANTAMENTO",
-        "namespace": "app.entity.PCA_ADIANTAMENTO",
-        "alias": "p"
+        "entity": "EMPENHO",
+        "namespace": "app.entity.EMPENHO",
+        "alias": "e"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "p",
+        "field": "e",
         "type": "string"
       },
       {
         "func": "get",
-        "field": "p.id_ANOFISCAL.nrO_ANOFISCAL",
-        "type": "integer"
+        "field": "e.nrO_CUC.deS_NOME",
+        "type": "string"
       }
     ],
     "rulesGroupBy": [],
@@ -70,42 +70,23 @@
     "onError": null
   },
   "defaultValues": {
-    "id_ADIANTAMENTO": null,
-    "nrO_ADIANTAMENTO": null,
-    "deS_FINALIDADE": null,
-    "vlR_CONCEDIDO": null,
-    "daT_ADIANTAMENTO": null,
-    "daT_LIMITEPRESTACAOCONTA": null,
-    "deS_MOTIVOCANCELAMENTO": null,
-    "daT_CANCELAMENTOADIANTAMENTO": null,
-    "daTLASTREC": {
+    "id_EMPENHO": null,
+    "nrO_EMPENHO": null,
+    "vlR_EMPENHO": null,
+    "daT_EMPENHO": null,
+    "daT_LASTREC": {
       "type": "server",
-      "blocklyMethod": "ObterDataeHora",
-      "blocklyClass": "blockly.FuncoesComuns",
+      "blocklyMethod": "DataLastrec",
+      "blocklyClass": "blockly.DataLastrec",
       "blocklyLanguage": "java",
       "blocklyParams": [],
       "blocklyJson": {
-        "namespace": "blockly.FuncoesComuns",
-        "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
+        "namespace": "blockly.DataLastrec",
+        "sourcePath": "src/main/java/blockly/DataLastrec.blockly",
         "language": "java",
         "methods": [
           {
-            "name": "ObterIdUsuarioLogado",
-            "hasReturn": "true",
-            "params": []
-          },
-          {
-            "name": "ObterDataeHora",
-            "hasReturn": "true",
-            "params": []
-          },
-          {
-            "name": "ObterEntidadeUsuario",
-            "hasReturn": "true",
-            "params": []
-          },
-          {
-            "name": "ObterEstruturaPlanoContas",
+            "name": "DataLastrec",
             "hasReturn": "true",
             "params": []
           }
@@ -121,12 +102,12 @@
     "coD_USUARIO": {
       "type": "server",
       "blocklyMethod": "ObterIdUsuarioLogado",
-      "blocklyClass": "blockly.FuncoesComuns",
+      "blocklyClass": "blockly.Usuario",
       "blocklyLanguage": "java",
       "blocklyParams": [],
       "blocklyJson": {
-        "namespace": "blockly.FuncoesComuns",
-        "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
+        "namespace": "blockly.Usuario",
+        "sourcePath": "src/main/java/blockly/Usuario.blockly",
         "language": "java",
         "methods": [
           {
@@ -135,18 +116,13 @@
             "params": []
           },
           {
-            "name": "ObterDataeHora",
+            "name": "ValidarCPF",
             "hasReturn": "true",
             "params": []
           },
           {
-            "name": "ObterEntidadeUsuario",
-            "hasReturn": "true",
-            "params": []
-          },
-          {
-            "name": "ObterEstruturaPlanoContas",
-            "hasReturn": "true",
+            "name": "ValidarCadastroOrgão",
+            "hasReturn": "false",
             "params": []
           }
         ]
@@ -159,7 +135,9 @@
       "blocklyCOUNTMethod": null
     },
     "nrO_CUC": null,
-    "id_SUBTIPOADIANTAMENTO": null,
+    "deS_EMPEMHO": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "id_ADIANTAMENTO": null,
     "id_ANOFISCAL": {
       "type": "server",
       "blocklyMethod": "ObterAnoFiscal",
@@ -204,37 +182,36 @@
       "blocklyDELETEMethod": null,
       "blocklyFILTERMethod": null,
       "blocklyCOUNTMethod": null
-    }
+    },
+    "seQ_DESPESAORCAMENTO": null
   },
   "defaultValuesProperties": {
-    "id_ADIANTAMENTO": null,
-    "nrO_ADIANTAMENTO": null,
-    "deS_FINALIDADE": null,
-    "vlR_CONCEDIDO": null,
-    "daT_ADIANTAMENTO": null,
-    "daT_LIMITEPRESTACAOCONTA": null,
-    "deS_MOTIVOCANCELAMENTO": null,
-    "daT_CANCELAMENTOADIANTAMENTO": null,
-    "daTLASTREC": null,
+    "id_EMPENHO": null,
+    "nrO_EMPENHO": null,
+    "vlR_EMPENHO": null,
+    "daT_EMPENHO": null,
+    "daT_LASTREC": null,
     "coD_USUARIO": null,
     "nrO_CUC": null,
-    "id_SUBTIPOADIANTAMENTO": null,
-    "id_ANOFISCAL": null
+    "deS_EMPEMHO": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "id_ADIANTAMENTO": null,
+    "id_ANOFISCAL": null,
+    "seQ_DESPESAORCAMENTO": null
   },
   "security": {
-    "id_ADIANTAMENTO": null,
-    "nrO_ADIANTAMENTO": null,
-    "deS_FINALIDADE": null,
-    "vlR_CONCEDIDO": null,
-    "daT_ADIANTAMENTO": null,
-    "daT_LIMITEPRESTACAOCONTA": null,
-    "deS_MOTIVOCANCELAMENTO": null,
-    "daT_CANCELAMENTOADIANTAMENTO": null,
-    "daTLASTREC": null,
+    "id_EMPENHO": null,
+    "nrO_EMPENHO": null,
+    "vlR_EMPENHO": null,
+    "daT_EMPENHO": null,
+    "daT_LASTREC": null,
     "coD_USUARIO": null,
     "nrO_CUC": null,
-    "id_SUBTIPOADIANTAMENTO": null,
-    "id_ANOFISCAL": null
+    "deS_EMPEMHO": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "id_ADIANTAMENTO": null,
+    "id_ANOFISCAL": null,
+    "seQ_DESPESAORCAMENTO": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
@@ -244,6 +221,6 @@
     "primaryKey": null,
     "foreignKey": null
   },
-  "serviceUrl": "api/cronapi/odata/v2/app/query913507/",
+  "serviceUrl": "api/cronapi/odata/v2/app/query356945/",
   "audit": false
 }
