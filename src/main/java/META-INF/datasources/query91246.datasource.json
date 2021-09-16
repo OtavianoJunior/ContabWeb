@@ -43,6 +43,11 @@
         "func": "get",
         "field": "d.id_DESPESA.coD_DESPESASUP.coD_DESPESASUP.deS_DESPESA",
         "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "d.id_FONTERECURSO.deS_FONTERECURSO",
+        "type": "string"
       }
     ],
     "rulesGroupBy": [],

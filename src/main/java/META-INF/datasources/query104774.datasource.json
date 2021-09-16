@@ -8,17 +8,26 @@
   "entityFullName": "app.entity.PPA_ACAO",
   "query": {
     "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
     "rulesEntity": [
       {
         "entity": "PPA_ACAO",
-        "alias": "p",
-        "namespace": "app.entity.PPA_ACAO"
+        "namespace": "app.entity.PPA_ACAO",
+        "alias": "p"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "p"
+        "field": "p",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
       }
     ],
     "rulesGroupBy": [],
@@ -26,10 +35,14 @@
     "rulesOrderBy": [],
     "rules": {
       "condition": "AND",
+      "rules": [],
       "not": false,
-      "valid": true,
-      "rules": []
-    }
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
   },
   "queryParamsValues": [],
   "verbs": {
