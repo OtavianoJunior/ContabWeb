@@ -7,94 +7,9 @@
   "entitySimpleName": "PCA_ADIANTAMENTOFICHAS",
   "entityFullName": "app.entity.PCA_ADIANTAMENTOFICHAS",
   "query": {
-    "isValid": true,
-    "isEmpty": false,
-    "operationType": "object",
-    "type": "select",
-    "rulesEntity": [
-      {
-        "entity": "PCA_ADIANTAMENTOFICHAS",
-        "namespace": "app.entity.PCA_ADIANTAMENTOFICHAS",
-        "alias": "p"
-      },
-      {
-        "entity": "PCA_ADIANTAMENTO",
-        "namespace": "app.entity.PCA_ADIANTAMENTO",
-        "alias": "pc"
-      }
-    ],
-    "rulesSelect": [
-      {
-        "func": "get",
-        "field": "p",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "pc.nrO_CUC.deS_NOME",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "pc.nrO_ADIANTAMENTO",
-        "type": "integer"
-      },
-      {
-        "func": "get",
-        "field": "pc.daT_ADIANTAMENTO",
-        "type": "date"
-      },
-      {
-        "func": "get",
-        "field": "p.id_FONTERECURSO.deS_FONTERECURSO",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "p.seQ_DESPESAORCAMENTO.id_FUNCAO.coD_FUNCAO",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "p.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.coD_SUBFUNCAO",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "p.seQ_DESPESAORCAMENTO.id_PROGRAMA.coD_PROGRAMA",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "p.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESA",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "p.seQ_DESPESAORCAMENTO.id_ACAO.coD_ACAO",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "pc.id_ANOFISCAL",
-        "type": "string"
-      },
-      {
-        "func": "get",
-        "field": "pc.nrO_CUC",
-        "type": "string"
-      }
-    ],
-    "rulesGroupBy": [],
-    "rulesHaving": [],
-    "rulesOrderBy": [],
-    "rules": {
-      "condition": "AND",
-      "rules": [],
-      "not": false,
-      "valid": true
-    },
-    "isRawSql": false,
+    "isEmpty": true,
+    "isRawSql": true,
+    "sqlContent": "select p, pc.nrO_CUC.deS_NOME, pc.nrO_ADIANTAMENTO, pc.daT_ADIANTAMENTO, p.id_FONTERECURSO.deS_FONTERECURSO, p.seQ_DESPESAORCAMENTO.id_FUNCAO.coD_FUNCAO, p.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.coD_SUBFUNCAO, p.seQ_DESPESAORCAMENTO.id_PROGRAMA.coD_PROGRAMA, p.seQ_DESPESAORCAMENTO.id_DESPESA.coD_DESPESA, p.seQ_DESPESAORCAMENTO.id_ACAO.coD_ACAO, pc.id_ANOFISCAL, pc.nrO_CUC, pc.id_ADIANTAMENTO from PCA_ADIANTAMENTOFICHAS p, PCA_ADIANTAMENTO pc where p.id_ADIANTAMENTO \u003d pc.id_ADIANTAMENTO ",
     "multiTenant": false,
     "paginatorAutomatic": false,
     "pagination": false

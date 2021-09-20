@@ -1,0 +1,117 @@
+{
+  "customId": "query971699",
+  "queryName": "EmpenhoAdiantamento",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "EMPENHO",
+  "entityFullName": "app.entity.EMPENHO",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "EMPENHO",
+        "namespace": "app.entity.EMPENHO",
+        "alias": "e",
+        "name": "EMPENHO"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "e",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id_EMPENHO": null,
+    "nrO_EMPENHO": null,
+    "vlR_EMPENHO": null,
+    "daT_EMPENHO": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "nrO_CUC": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "id_ADIANTAMENTO": null,
+    "id_ANOFISCAL": null,
+    "seQ_DESPESAORCAMENTO": null
+  },
+  "defaultValuesProperties": {
+    "id_EMPENHO": null,
+    "nrO_EMPENHO": null,
+    "vlR_EMPENHO": null,
+    "daT_EMPENHO": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "nrO_CUC": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "id_ADIANTAMENTO": null,
+    "id_ANOFISCAL": null,
+    "seQ_DESPESAORCAMENTO": null
+  },
+  "security": {
+    "id_EMPENHO": null,
+    "nrO_EMPENHO": null,
+    "vlR_EMPENHO": null,
+    "daT_EMPENHO": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "nrO_CUC": null,
+    "id_DESPESACLASSIFICACAO": null,
+    "id_ADIANTAMENTO": null,
+    "id_ANOFISCAL": null,
+    "seQ_DESPESAORCAMENTO": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query971699/",
+  "audit": false
+}

@@ -3,8 +3,9 @@
     <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
-        <class>app.entity.CUC</class>
+        <class>app.entity.EMPENHO</class>
         <class>app.entity.PCA_ADIANTAMENTOFICHAS</class>
+        <class>app.entity.CUC</class>
         <class>app.entity.PPA_ACAO</class>
         <class>app.entity.PCA_ADIANTAMENTO</class>
         <class>app.entity.DESPESAORCAMENTO</class>
@@ -35,7 +36,6 @@
         <class>app.entity.PCA_SUBTIPOADIANTAMENTO</class>
         <class>app.entity.Device</class>
         <class>app.entity.Role</class>
-        <class>app.entity.EMPENHO</class>
         <class>app.entity.ORGAOSICOM</class>
         <properties>
             <property name="eclipselink.ddl-generation" value="create-or-extend-tables"/>

@@ -8,17 +8,26 @@
   "entityFullName": "app.entity.EMPENHO",
   "query": {
     "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
     "rulesEntity": [
       {
         "entity": "EMPENHO",
-        "alias": "e",
-        "namespace": "app.entity.EMPENHO"
+        "namespace": "app.entity.EMPENHO",
+        "alias": "e"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "e"
+        "field": "e",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "e.nrO_CUC.deS_NOME",
+        "type": "string"
       }
     ],
     "rulesGroupBy": [],
@@ -26,10 +35,14 @@
     "rulesOrderBy": [],
     "rules": {
       "condition": "AND",
+      "rules": [],
       "not": false,
-      "valid": true,
-      "rules": []
-    }
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
   },
   "queryParamsValues": [],
   "verbs": {
@@ -122,9 +135,54 @@
       "blocklyCOUNTMethod": null
     },
     "nrO_CUC": null,
+    "deS_EMPEMHO": null,
     "id_DESPESACLASSIFICACAO": null,
     "id_ADIANTAMENTO": null,
-    "id_ANOFISCAL": null,
+    "id_ANOFISCAL": {
+      "type": "server",
+      "blocklyMethod": "ObterAnoFiscal",
+      "blocklyClass": "blockly.FuncoesComuns",
+      "blocklyLanguage": "java",
+      "blocklyParams": [],
+      "blocklyJson": {
+        "namespace": "blockly.FuncoesComuns",
+        "sourcePath": "src/main/java/blockly/FuncoesComuns.blockly",
+        "language": "java",
+        "methods": [
+          {
+            "name": "ObterIdUsuarioLogado",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterDataeHora",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterEntidadeUsuario",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterEstruturaPlanoContas",
+            "hasReturn": "true",
+            "params": []
+          },
+          {
+            "name": "ObterAnoFiscal",
+            "hasReturn": "true",
+            "params": []
+          }
+        ]
+      },
+      "blocklyGETMethod": null,
+      "blocklyPOSTMethod": null,
+      "blocklyPUTMethod": null,
+      "blocklyDELETEMethod": null,
+      "blocklyFILTERMethod": null,
+      "blocklyCOUNTMethod": null
+    },
     "seQ_DESPESAORCAMENTO": null
   },
   "defaultValuesProperties": {
@@ -135,6 +193,7 @@
     "daT_LASTREC": null,
     "coD_USUARIO": null,
     "nrO_CUC": null,
+    "deS_EMPEMHO": null,
     "id_DESPESACLASSIFICACAO": null,
     "id_ADIANTAMENTO": null,
     "id_ANOFISCAL": null,
@@ -148,6 +207,7 @@
     "daT_LASTREC": null,
     "coD_USUARIO": null,
     "nrO_CUC": null,
+    "deS_EMPEMHO": null,
     "id_DESPESACLASSIFICACAO": null,
     "id_ADIANTAMENTO": null,
     "id_ANOFISCAL": null,

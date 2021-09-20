@@ -23,6 +23,11 @@
         "func": "get",
         "field": "p",
         "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
       }
     ],
     "rulesGroupBy": [],

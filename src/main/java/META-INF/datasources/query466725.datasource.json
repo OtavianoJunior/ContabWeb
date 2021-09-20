@@ -8,28 +8,147 @@
   "entityFullName": "app.entity.PCA_ADIANTAMENTOFICHAS",
   "query": {
     "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
     "rulesEntity": [
       {
         "entity": "PCA_ADIANTAMENTOFICHAS",
-        "alias": "p",
-        "namespace": "app.entity.PCA_ADIANTAMENTOFICHAS"
+        "namespace": "app.entity.PCA_ADIANTAMENTOFICHAS",
+        "alias": "p"
       }
     ],
     "rulesSelect": [
       {
         "func": "get",
-        "field": "p"
+        "field": "p",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.id_ADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.daT_ADIANTAMENTO",
+        "type": "date"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.coD_FICHA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.id_FUNCAO.coD_FUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.id_SUBFUNCAO.coD_SUBFUNCAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.id_PROGRAMA.coD_PROGRAMA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.id_ACAO.coD_ACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_DESPESACLASSIFICACAO.coD_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.nrO_CUC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_FONTERECURSO.coD_FONTERECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.id_UNIDORC.coD_UNIDORC",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.nrO_CUC.deS_NOME",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.vlR_CONCEDIDOFONTE",
+        "type": "double"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.deS_FINALIDADE",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.nrO_ADIANTAMENTO",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_DESPESACLASSIFICACAO.coD_DESPESA",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_DESPESACLASSIFICACAO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.id_ANOFISCAL.nrO_ANOFISCAL",
+        "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.id_ANOFISCAL.id_ANOFISCAL",
+        "type": "integer"
       }
     ],
     "rulesGroupBy": [],
     "rulesHaving": [],
-    "rulesOrderBy": [],
+    "rulesOrderBy": [
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.id_ADIANTAMENTO",
+        "order": "asc"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.coD_FICHA",
+        "order": "asc"
+      }
+    ],
     "rules": {
       "condition": "AND",
+      "rules": [],
       "not": false,
-      "valid": true,
-      "rules": []
-    }
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
   },
   "queryParamsValues": [],
   "verbs": {
@@ -104,5 +223,5 @@
     "foreignKey": null
   },
   "serviceUrl": "api/cronapi/odata/v2/app/query466725/",
-  "audit": false
+  "audit": true
 }
