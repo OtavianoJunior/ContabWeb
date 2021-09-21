@@ -123,6 +123,21 @@
         "func": "get",
         "field": "p.id_ADIANTAMENTO.id_ANOFISCAL.id_ANOFISCAL",
         "type": "integer"
+      },
+      {
+        "func": "get",
+        "field": "p.seQ_DESPESAORCAMENTO.id_UNIDORC.id_UNIDORCSUP.id_UNIDORCSUP",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_FONTERECURSO.deS_FONTERECURSO",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.id_ADIANTAMENTO.nrO_CUC.deS_NOME",
+        "type": "string"
       }
     ],
     "rulesGroupBy": [],
