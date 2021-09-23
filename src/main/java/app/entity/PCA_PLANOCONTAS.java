@@ -136,6 +136,14 @@ public class PCA_PLANOCONTAS implements Serializable {
         private PCA_PLANOCONTAS id_CONTASUPERIOR;
 
     /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="ID_CT_CTCOR", nullable = true, referencedColumnName = "ID", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+        
+        private CT_CTCOR id_CT_CTCOR;
+
+    /**
     * Construtor
     * @generated
     */
@@ -425,6 +433,25 @@ public class PCA_PLANOCONTAS implements Serializable {
     */
     public PCA_PLANOCONTAS setId_CONTASUPERIOR(PCA_PLANOCONTAS id_CONTASUPERIOR){
         this.id_CONTASUPERIOR = id_CONTASUPERIOR;
+        return this;
+    }
+    /**
+    * Obtém id_CT_CTCOR
+    * return id_CT_CTCOR
+    * @generated
+    */
+    
+    public CT_CTCOR getId_CT_CTCOR(){
+        return this.id_CT_CTCOR;
+    }
+
+    /**
+    * Define id_CT_CTCOR
+    * @param id_CT_CTCOR id_CT_CTCOR
+    * @generated
+    */
+    public PCA_PLANOCONTAS setId_CT_CTCOR(CT_CTCOR id_CT_CTCOR){
+        this.id_CT_CTCOR = id_CT_CTCOR;
         return this;
     }
 
