@@ -3,6 +3,9 @@
     <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
+        <class>app.entity.CT_CTCOR</class>
+        <class>app.entity.PCA_PLANOCONTAS</class>
+        <class>app.entity.CT_CTCORA</class>
         <class>app.entity.EMPENHO</class>
         <class>app.entity.PCA_ADIANTAMENTOFICHAS</class>
         <class>app.entity.CUC</class>
@@ -32,7 +35,6 @@
         <class>app.entity.Securable</class>
         <class>app.entity.PPA_PROGRAMA</class>
         <class>app.entity.ANOFISCALENTIDADE</class>
-        <class>app.entity.PCA_PLANOCONTAS</class>
         <class>app.entity.PCA_SUBTIPOADIANTAMENTO</class>
         <class>app.entity.Device</class>
         <class>app.entity.Role</class>
