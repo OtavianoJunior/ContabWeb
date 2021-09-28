@@ -1417,7 +1417,7 @@
       "tableName": "CT_CTCOR",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 135
+      "z": 136
     },
     {
       "angle": 0,
@@ -1427,25 +1427,26 @@
         "DES_VRS:java.lang.String",
         "SIT_VRS:java.lang.String",
         "COD_USUARIO:java.lang.String",
-        "DAT_LASTREC:java.sql.Date"
+        "DAT_LASTREC:java.sql.Date",
+        "ID_CT_CTCOR:CT_CTCOR"
       ],
       "attrs": {
         ".uml-class-attrs-rect": {
-          "height": 150,
+          "height": 170,
           "transform": "translate(0,50)"
         },
         ".uml-class-attrs-text": {
           "font-size": 11,
-          "text": "ID\nCOD_VRS\nDES_VRS\nSIT_VRS\nCOD_USUARIO\nDAT_LASTREC\n"
+          "text": "ID\nCOD_VRS\nDES_VRS\nSIT_VRS\nCOD_USUARIO\nDAT_LASTREC\nID_CT_CTCOR\n"
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
           "ref-x": 114.953125,
-          "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\n"
+          "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nData e Hora\nCT_CTCOR\n"
         },
         ".uml-class-methods-rect": {
           "height": 30,
-          "transform": "translate(0,200)"
+          "transform": "translate(0,220)"
         },
         ".uml-class-methods-text": {
           "fill": "#0066FF",
@@ -1654,6 +1655,37 @@
           "storageType": "",
           "storageSecret": "",
           "foreignKeyName": ""
+        },
+        {
+          "name": "ID_CT_CTCOR",
+          "type": "CT_CTCOR",
+          "dbName": "ID_CT_CTCOR",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Identificação Conta Corrente - fk",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": ""
         }
       ],
       "generateView": "Auto",
@@ -1672,13 +1704,13 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 151.30570220947266,
-        "width": 192.890625
+        "height": 162.21875,
+        "width": 193.859375
       },
       "tableName": "CT_CTCORA",
       "tableScheme": null,
       "type": "uml.Class",
-      "z": 130
+      "z": 137
     },
     {
       "angle": 0,
@@ -4283,7 +4315,7 @@
         },
         ".uml-class-attrs-value": {
           "font-size": 11,
-          "ref-x": 180.75,
+          "ref-x": 180.375,
           "text": "Inteiro\nTexto\nTexto\nTexto\nTexto\nTexto\nTexto\nData e Hora\nTexto\nANOFISCALENTIDADE\nFONTERECURSO\n"
         },
         ".uml-class-methods-rect": {
@@ -4408,7 +4440,7 @@
         {
           "name": "COD_FONTESEMMASCARA",
           "type": "java.lang.String",
-          "dbName": "COD_FONTESEMMASCARA",
+          "dbName": "CODIGO_FONTESEMMASCARA",
           "dbLength": 20,
           "dbPrecision": "",
           "dbScale": "",
@@ -4661,8 +4693,8 @@
       "modelType": "Table",
       "name": "FONTERECURSO",
       "position": {
-        "x": 3038,
-        "y": 364
+        "x": 3034,
+        "y": 360
       },
       "queries": [],
       "realName": "",
@@ -4670,8 +4702,8 @@
       "role": "Auto",
       "runtimeClass": "cronos.widgets.joint.uml.Class",
       "size": {
-        "height": 205.984130859375,
-        "width": 317.390625
+        "height": 205.976318359375,
+        "width": 316.796875
       },
       "tableName": "FONTERECURSO",
       "tableScheme": null,
@@ -7342,8 +7374,8 @@
       "modelType": "Table",
       "name": "PCA_PLANOCONTAS",
       "position": {
-        "x": 3480,
-        "y": 34
+        "x": 3498,
+        "y": 22
       },
       "queries": [],
       "realName": "",
@@ -12916,6 +12948,51 @@
       "type": "uml.Composition",
       "vertices": [],
       "z": 49
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "1f420750-6666-4229-93f2-a1ddebab50c3",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "ID_CT_CTCOR:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "6bfffdd8-87e6-4100-8944-1ba9c1c555cb"
+      },
+      "target": {
+        "id": "330cd87e-0a25-40aa-b3df-35fb0b660ab9"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 138
     },
     {
       "associationType": "Association",

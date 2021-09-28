@@ -71,6 +71,14 @@ public class CT_CTCORA implements Serializable {
         private java.util.Date daT_LASTREC;
 
     /**
+    * @generated
+    */
+    @ManyToOne
+    @JoinColumn(name="ID_CT_CTCOR", nullable = true, referencedColumnName = "ID", insertable=true, updatable=true, foreignKey = @ForeignKey(name = ""))
+        
+        private CT_CTCOR id_CT_CTCOR;
+
+    /**
     * Construtor
     * @generated
     */
@@ -189,6 +197,25 @@ public class CT_CTCORA implements Serializable {
     */
     public CT_CTCORA setDaT_LASTREC(java.util.Date daT_LASTREC){
         this.daT_LASTREC = daT_LASTREC;
+        return this;
+    }
+    /**
+    * Obtém id_CT_CTCOR
+    * return id_CT_CTCOR
+    * @generated
+    */
+    
+    public CT_CTCOR getId_CT_CTCOR(){
+        return this.id_CT_CTCOR;
+    }
+
+    /**
+    * Define id_CT_CTCOR
+    * @param id_CT_CTCOR id_CT_CTCOR
+    * @generated
+    */
+    public CT_CTCORA setId_CT_CTCOR(CT_CTCOR id_CT_CTCOR){
+        this.id_CT_CTCOR = id_CT_CTCOR;
         return this;
     }
 
