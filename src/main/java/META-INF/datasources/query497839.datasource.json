@@ -1,0 +1,137 @@
+{
+  "customId": "query497839",
+  "queryName": "PlanoContasNOVO",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "PCA_PLANOCONTAS",
+  "entityFullName": "app.entity.PCA_PLANOCONTAS",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "PCA_PLANOCONTAS",
+        "namespace": "app.entity.PCA_PLANOCONTAS",
+        "alias": "p",
+        "name": "PCA_PLANOCONTAS"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "p",
+        "type": "string"
+      },
+      {
+        "func": "get",
+        "field": "p.ct_CTCOR",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id_CONTA": null,
+    "coD_CONTA": null,
+    "deS_CONTA": null,
+    "coD_CONTASEMMASCARA": null,
+    "flG_ULTIMONIVEL": null,
+    "flG_ENCERRASALDO": null,
+    "fgL_INVERSAOSALDO": null,
+    "idT_NATUREZACONTA": null,
+    "idT_VINCULAVPDVPA": null,
+    "idT_VINCULARECEITADESPESA": null,
+    "flG_SINTETIDA": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ESTRUTURAPLANO": null,
+    "id_CONTASUPERIOR": null,
+    "ct_CTCOR": null
+  },
+  "defaultValuesProperties": {
+    "id_CONTA": null,
+    "coD_CONTA": null,
+    "deS_CONTA": null,
+    "coD_CONTASEMMASCARA": null,
+    "flG_ULTIMONIVEL": null,
+    "flG_ENCERRASALDO": null,
+    "fgL_INVERSAOSALDO": null,
+    "idT_NATUREZACONTA": null,
+    "idT_VINCULAVPDVPA": null,
+    "idT_VINCULARECEITADESPESA": null,
+    "flG_SINTETIDA": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ESTRUTURAPLANO": null,
+    "id_CONTASUPERIOR": null,
+    "ct_CTCOR": null
+  },
+  "security": {
+    "id_CONTA": null,
+    "coD_CONTA": null,
+    "deS_CONTA": null,
+    "coD_CONTASEMMASCARA": null,
+    "flG_ULTIMONIVEL": null,
+    "flG_ENCERRASALDO": null,
+    "fgL_INVERSAOSALDO": null,
+    "idT_NATUREZACONTA": null,
+    "idT_VINCULAVPDVPA": null,
+    "idT_VINCULARECEITADESPESA": null,
+    "flG_SINTETIDA": null,
+    "daT_LASTREC": null,
+    "coD_USUARIO": null,
+    "id_ESTRUTURAPLANO": null,
+    "id_CONTASUPERIOR": null,
+    "ct_CTCOR": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query497839/",
+  "audit": false
+}

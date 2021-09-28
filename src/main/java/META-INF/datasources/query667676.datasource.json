@@ -27,7 +27,13 @@
     ],
     "rulesGroupBy": [],
     "rulesHaving": [],
-    "rulesOrderBy": [],
+    "rulesOrderBy": [
+      {
+        "func": "get",
+        "field": "p.coD_CONTA",
+        "order": "asc"
+      }
+    ],
     "rules": {
       "condition": "AND",
       "rules": [
@@ -190,7 +196,8 @@
       "blocklyCOUNTMethod": null
     },
     "id_ESTRUTURAPLANO": null,
-    "id_CONTASUPERIOR": null
+    "id_CONTASUPERIOR": null,
+    "ct_CTCOR": null
   },
   "defaultValuesProperties": {
     "id_CONTA": null,
@@ -207,7 +214,8 @@
     "daT_LASTREC": null,
     "coD_USUARIO": null,
     "id_ESTRUTURAPLANO": null,
-    "id_CONTASUPERIOR": null
+    "id_CONTASUPERIOR": null,
+    "ct_CTCOR": null
   },
   "security": {
     "id_CONTA": null,
@@ -224,7 +232,8 @@
     "daT_LASTREC": null,
     "coD_USUARIO": null,
     "id_ESTRUTURAPLANO": null,
-    "id_CONTASUPERIOR": null
+    "id_CONTASUPERIOR": null,
+    "ct_CTCOR": null
   },
   "calcFields": {},
   "calcFieldsSecurity": {},
